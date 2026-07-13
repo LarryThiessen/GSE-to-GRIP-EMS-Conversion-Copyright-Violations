@@ -74,6 +74,8 @@ This is conduct, and it shows knowledge and intent, not incidental interop.
 - **GRIP wrote code specifically to get around that lock.** When GSE's runtime table is unavailable because it is locked, GRIP falls back to reading GSE's raw SavedVariables directly — `Import/LegacyMigrate.lua:92-99` documents the workaround: *"newer source builds keep the runtime table private,"* so GRIP reaches into `GSESequences` on disk instead (`LegacyMigrate.lua:195-207`).
 - **This is intentional, not accidental.** The fallback exists *because* GSE hid the data; GRIP's own comments acknowledge GSE's privacy measure and route around it. A tool that merely wanted a user's own data casually would not document and engineer past a named anti-scraping lock. The workaround is evidence of knowledge of GSE's protection and a deliberate decision to defeat it.
 
+**What the lock was protecting: the creators' licensed content.** GSE's anti-scraping proxy is the technical measure guarding the sequence library — which includes the rights holder's **SLG-Sequences, published "All Rights Reserved"** (`SLG-Sequences-LICENSE.txt`: no redistribution, no derivatives, no removal of attribution). GSE put a lock on third-party access to that content; the rights holder additionally reserved all rights over his own works within it. GRIP's engineered workaround reaches around **that** lock to read **that** content — the very sequences whose license forbids exactly this reproduction/derivation. So the circumvention is not abstract: it is the mechanism by which GRIP obtains All-Rights-Reserved sequences it is not licensed to copy, and it does so with documented awareness that GSE had affirmatively blocked such access. (GSE's own protected/subscriber content, encrypted with the ChaCha20 codec GRIP lacks, GRIP cannot reach and refuses — so the workaround's practical reach is precisely the *un-encrypted, licensed-but-not-DRM'd* creator content, including the rights holder's ARR sequences.)
+
 *(For counsel: whether reading another addon's SavedVariables around an in-memory proxy implicates any anti-circumvention theory is a legal question — the SavedVariables are plaintext on the user's disk, so this is not classic DRM circumvention. The point here is intent and non-consent: GSE said "no scraping," and GRIP built a bypass.)*
 
 ---
@@ -99,7 +101,22 @@ Together these are the sequence's provenance: *who owns it, where it lives, and 
 ## Why removal evidences intent
 `PlatformID` has **no function inside GRIP** — it is a GSE.Tools server key that means nothing to GRIP's engine. There is exactly one reason to go out of your way to *not carry* the one field that binds a sequence to its owner's server record and canonical listing: to sever the work from its owner. GSE itself treats `PlatformID` as the ownership handle (it wipes it on copy precisely so copies can't impersonate the original record). GRIP strips it on ingest. A tool merely importing content for a user's convenience has no reason to remove an inert owner-identifier — its removal is consistent with detaching creators' work from the creators, which is the conduct this GSE ecosystem's licenses exist to prevent.
 
-The same removal is visible in the public LazyGrip web decoder: it reproduces a submitted sequence's macros in full plaintext while its output carries no `PlatformID`, no `HelpURL`, and no `gse.tools` reference (`grip-lazygrip-webtool-exhibit.md`, Findings 1–2).
+## The removal happens at *every* stage — addon **and** public website
+
+The identifier stripping is not confined to the addon's private import. The **same operator** runs a public, on-demand web service that performs the same removal — so the conduct is repeated in a second, independently verifiable venue.
+
+**Operator nexus.** Per the rights holder, **sirsataana / "Sataana"** owns the **LazyGrip.net** site and authors **GRIP-EMS**, operating with **"Beard3d_Gamer"** and **"Slowdog"** (the Workshop tools page is titled "Tools by Beard3d_Gamer … integrated on LazyGrip by Slowdog"). *To be confirmed by counsel via CurseForge project ownership + WHOIS + the House of Lazy Macros Discord record.* The significance: the party stripping owner-IDs in the addon is the same party stripping them on the website.
+
+**Vector 1 — the addon import** (documented above): `PlatformID` dropped, `HelpURL`/`Checksum` absent from the shared/exported artifact.
+
+**Vector 2 — the public LazyGrip "Decode Export" web tool** (`/workshop/decode`), documented in full in `grip-lazygrip-webtool-exhibit.md`. Two acts in one tool, both reproduced live and captured:
+
+1. **It hands out the full copyrighted work in plaintext.** Submitting the rights holder's own `!GSE3!` export renders every macro line verbatim in the browser (the SLG-DK-BLD `/castsequence …`, `/cast Reaper's Mark`, `/cast Marrowrend`, the Loop/Priority block). No converted output is even required to obtain the work — the decoder itself reproduces it. This is a public service performing reproduction of All-Rights-Reserved content on demand.
+2. **It strips the owner-IDs in the same breath.** Decoding that same string through their server API (`POST /api/workshop/decode`, HTTP 200) returns the sequence with the human `author` name kept but **no `PlatformID`, no `Checksum`, no `HelpURL`, and no `gse.tools` reference anywhere** — the ownership linkage removed at the decode stage, before any conversion.
+
+**Vector 3 — the "Convert to GRIP" web tool** re-emits a `!GRIP1!` string with `PlatformID`/`HelpURL`/`Checksum` gone (before/after captured on a third-party sequence; the rights holder's own collection was *refused* by name — "Sequence 'SLG-DK-Oh-!@#$' has no convertible macro blocks").
+
+**One argument, three venues.** Whether the sequence is imported into the addon, decoded on the website, or converted on the website, the owner-identifying `PlatformID` (and the `gse.tools` source link, and the integrity `Checksum`) is removed at each stage while the work itself is preserved and, on the website, reproduced in plaintext for anyone logged in. A single inert server key does not get removed three different ways by accident; it is removed because it is the thing that ties the work to its owner. Both web vectors are **server-side and login-only** (any account, no paid tier) — the capability is offered to the public.
 
 ---
 
