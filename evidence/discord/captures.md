@@ -10,6 +10,25 @@
 
 > Chain-of-evidence note: timestamps are as displayed in the client (local). For any item used in a filing, re-open in Discord and use "Copy Message Link" for the permalink, and confirm the author's user ID via profile.
 
+> **MODEL NOTE (read before the "paywall"/"Patreon" entries below):** The **GSE addon is 100% free** (CurseForge). Timothy Luke's Patreon buys only **two optional creator quality-of-life features** — *opening the Editor in combat* and *mass-exporting sequences* — a supporter perk, not a content gate. **ScaryLarryGames publishes all his current content free on CurseForge.** A **sequence is not the addon** and is never required (users can write their own on the free version); a few creators paywall *their own* sequences, but that is their content, not the addon. Where entries below use words like "paywalled," "Patreon-locked," "paid members," or "patreon edition," treat those as either the speakers' verbatim words or early analyst shorthand — **not** a finding that the content was gated. The actual wrong is copyright (reverse-engineering the free, All-Rights-Reserved addon; stripping the owner ID; redistribution without permission), not paywall bypass.
+
+---
+
+## OWNERSHIP & IDENTITY (established 2026-07-13)
+
+- **House of Macros** (Discord + `houseofmacros.com` phpBB forum) is **owned by MFDOOM** (who also holds the in-server "Operations" role). This is the server where the 2026-04-30 bypass conversation and most #general activity occurred. When MFDOOM says "my discord" — e.g., the 2026-06-17 "we shared the patreon edition" admission, which he posted in *Sataana's* server — he means **House of Macros**.
+- **GRIP / Temptation / Sataana** is **Sataana's own server** (Discord invite `discord.gg/temptingus`).
+- **GRIP-EMS addon** (CurseForge `grip-enhanced-macro-sequencer`) is authored by **`sirsataana` (Sataana)** and marked **All Rights Reserved**. Per Sataana's own publicly-linked accounts on that CurseForge profile, the person behind "Sataana"/"sirsataana"/"mrsataana" appears to be **Jesper Driessen**: GitHub `JesperLive`, Facebook `JesperDriessen`, Patreon `patreon.com/cw/JesperLive`, Reddit `user/JesperLive`, plus `@mrsataana` on X/Twitch/YouTube/Instagram/TikTok. *(Derived from his own cross-linked socials — confirm before use in a filing.)*
+- **LazyGrip.net — ownership deliberately anonymized; NOT publicly provable:**
+  - Registrar **NameCheap**, registrant **privacy-redacted**, domain created **2026-05-03** (three days after the 2026-04-30 bypass thread). Generic contact `admin@lazygrip.net`. Hosting: Vercel + Supabase.
+  - ToS (`/tos`), Privacy (`/privacy`), and About name **no** operator ("we" / "our operators" only) and **repeatedly disclaim** "affiliation with … the GRIP-EMS addon developer."
+  - GitHub org `github.com/lazygrip` has **no public members**.
+  - BUT LazyGrip.net is the official GRIP-EMS companion sequence site, and **Sataana is personally active across `forum.lazygrip.net`** (Slowdog posts the release notes). The site's decode/convert tools were credited in-panel to "Beard3d_Gamer" (BeardBd_Gamer / bearded_dad_bod).
+  - **Assessment:** circumstantially tied to Sataana / the GRIP team (his addon's companion site; his forum presence; registered days after the bypass plan) — but ownership is hidden at every public layer and the site actively denies affiliation with the addon dev. **To confirm the registrant/operator:** DMCA subpoena to NameCheap / Vercel / Supabase, the site's Discord-OAuth app owner, or a paid reverse-WHOIS (DomainTools / SecurityTrails) on `admin@lazygrip.net`.
+  - **The anonymization + the affiliation-disclaimer are themselves relevant** — consistent with an operator keeping legal separation between the ARR addon and the website that decodes/reproduces GSE strings.
+
+---
+
 ---
 
 ## 2026-02-10 (start point)
@@ -42,7 +61,7 @@ Search results below are scoped to House of Macros #general (channel ID 12092205
 
 ### "gse" search — page 2 (#general)
 
-**Sataana — (date TBD)**:
+**Sataana — CONFIRMED 2026-06-18 21:21:57 UTC ([permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517278221794676846))**:
 > "I dont understand the logic, but I had to build in support for it just for the people who wanted it / GSE strings that had it 🫡"
 - **SIGNIFICANT — direct admission Sataana personally built GSE-string import support into GRIP**, in his own words, despite claiming not to "understand the logic" of GSE.
 
@@ -105,12 +124,12 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 - Describes the exact GSE→EMS copy workflow in plain language.
 
 **Sataana — (date TBD)**:
-> "In theory (I cant advise it since the GitHub is under AGPL Licence) you can look at what TL has committed regarding GSE / GSE tools / Companion App [HERE — link to github.com/TimothyLuke/... truncated]"
-- **SIGNIFICANT.** Direct evidence Sataana is aware GSE's source is **AGPL-licensed** and was actively directing others to review Timothy Luke's GitHub commit history regarding GSE/GSE.Tools/Companion App — i.e., studying GSE's own development to inform GRIP's. Get the full link from the original message (right-click → Copy Message Link, or open and copy the URL).
+> "In theory (I cant advise it since the GitHub is under ARR Licence) you can look at what TL has committed regarding GSE / GSE tools / Companion App [HERE — link to github.com/TimothyLuke/... truncated]"
+- **SIGNIFICANT.** Direct evidence Sataana is aware GSE's source is **ARR-licensed** and was actively directing others to review Timothy Luke's GitHub commit history regarding GSE/GSE.Tools/Companion App — i.e., studying GSE's own development to inform GRIP's. Get the full link from the original message (right-click → Copy Message Link, or open and copy the URL).
 
 **Action items:** (1) get full untruncated text of every message above via "Copy Message Link" / hover, (2) get exact timestamps, (3) identify "WLM" and "peytonjo" fully, (4) pull the full GitHub link Sataana referenced.
 
-> Screenshot saved: zoom of "gse" search results page 4 (Sataana "competitor"/AGPL/GitHub + CzarTheMad "gse United...paywall" + peytonjo "copying") — re-file as `gse-search-p4-competitor-agpl-copying.png`. **This is the single most evidentially important page captured so far.**
+> Screenshot saved: zoom of "gse" search results page 4 (Sataana "competitor"/ARR/GitHub + CzarTheMad "gse United...paywall" + peytonjo "copying") — re-file as `gse-search-p4-competitor-agpl-copying.png`. **This is the single most evidentially important page captured so far.**
 
 ---
 
@@ -120,25 +139,42 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 
 **Participants: CzarTheMad (MOD badge) and Sataana (Developer role).**
 
-| # | Time (UTC) | Author | Permalink |
-|---|---|---|---|
-| 1 | 2026-04-30 12:39:37 | CzarTheMad | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389764921724940 |
-| 2 | 2026-04-30 12:42:08 | Sataana | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390399255678977 |
-| 3 | 2026-04-30 14:54:20 | Sataana ("Clean-Room") | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275 |
-| 4 | 2026-04-30 16:24:57 | Sataana ("Kind of solved it" + video) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697 |
+Every message below was individually right-click → "Copy Message Link"'d in the Discord app; the snowflake in each URL was then decoded to the authoritative UTC time shown. Listed in true chronological order.
+
+| # | Time (UTC) | Author | Message (short) | Permalink |
+|---|---|---|---|---|
+| 1 | 2026-04-30 11:25:17 | Sataana | "how to bypass the new GSE security system…" / "See, what the website is doing (transforming GSE to EMS) the add-on currently does" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896 |
+| 2 | 2026-04-30 12:38:03 | CzarTheMad | "Perhaps it would be easier for me to strip the gse tools stuff from gse" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389371697336340 |
+| 3 | 2026-04-30 12:39:11 | Sataana | "Well, lets take it back to basics, what is your most basic goal you want to achieve?" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389655408447699 |
+| 4 | 2026-04-30 12:39:37 | CzarTheMad | "Yes I'm worried you'll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389764921724940 |
+| 5 | 2026-04-30 12:40:24 | CzarTheMad | "Want to still be able to use GSE w/o the companion app. And to be able to import gse strings into ems for the forseeable future" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389964071469108 |
+| 6 | 2026-04-30 12:42:08 | Sataana | "Okay, so those are 2 separate problems to solve…" (migrate vs import) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390399255678977 |
+| 7 | 2026-04-30 12:43:13 | Sataana | "Importing GSE to EMS has 2 different options. Either migrate… or 'import'… encode/decode/figure out how the string is made, and then 'unstring' it" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390670283079793 |
+| 8 | 2026-04-30 12:54:22 | Sataana | "So, to solve the first problem… In theory (ARR Licence) you can look at what TL has committed… (Maybe some good AI can do it)… Disclaimer: …thinking out loud" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499393478285856838 |
+| 9 | 2026-04-30 14:54:20 | Sataana | "You could always 'Clean-Room' something" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275 |
+| 10 | 2026-04-30 16:24:57 | Sataana | "Kind of solved it, not 100% happy though…" (+ video attachment) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697 |
 
 **The whole arc — from "worried TL's obfuscation will make this time-prohibited" to "kind of solved it" with a video attached — spans under 4 hours on a single day (12:39–16:24 UTC, 2026-04-30).** That speed is itself notable: it is consistent with using an automated/AI-assisted method to work through TL's commit history rather than manual weeks-long study, corroborating Sataana's own suggestion in message #2 that "some good AI can do it."
 
-**CzarTheMad (12:39:37 UTC):**
-> "Yes I'm worried you'll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited"
+**Sataana (11:25:17 UTC — the origin message, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896)):**
+> "The challenge is to convert every single option, field, data, text etc etc that GSE / EMS has and make it compatible with each other, as well as be included properly within the strings 🙃
+> Oh, and ofcourse, **how to bypass the new GSE security system that wont allow import unless it includes some sort of secret stuff encoded by their gse tools website thing**
+> See, what the website is doing (transforming GSE to EMS) the add-on currently does. the problem is that when TL puts in so many ever changing variables and things that are take so much effort and time to decode / be unobscured / decipher just to get it to import in to EMS…
+> At what point does it become too much trouble, and at what point is it really even still needed"
 
-**Sataana:**
+**CzarTheMad (12:38:03 UTC — reply to the above, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389371697336340)):**
+> "Perhaps it would be easier for me to strip the gse tools stuff from gse"
+
+**Sataana (12:39:11 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389655408447699)):**
 > "Well, lets take it back to basics, what is your most basic goal you want to achieve?"
 
-**CzarTheMad:**
+**CzarTheMad (12:39:37 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389764921724940)):**
+> "Yes I'm worried you'll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited"
+
+**CzarTheMad (12:40:24 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389964071469108)):**
 > "Want to still be able to use GSE w/o the companion app. And to be able to import gse strings into ems for the forseeable future"
 
-**Sataana:**
+**Sataana (12:42:08 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390399255678977); continues at 12:43:13, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390670283079793)):**
 > "Okay, so those are 2 separate problems to solve.
 > Using GSE without the companion app itself should be doable, BUT you would need to pull your strings from the GSE Tools Website (IF they allow you to pull strings from there without the companion app) - If not, then there is no way to get the strings without the app anymore, unless you rely on someone else that has the app etc to manually export the strings.
 > Importing GSE to EMS has 2 different options.
@@ -146,26 +182,26 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 > The migrate option assumes you have GSE installed and active, and just reads the data and translates it to EMS as best it can (and ill be able to tweak it and keep supporting it)
 > The "import" is harder, since that is where I have to encode/decode/figure out how the string is made, and then "unstring" it."**
 
-**Sataana (next message):**
+**Sataana (12:54:22 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499393478285856838)):**
 > "So, to solve the first problem 'use GSE w/o the companion app' - You need to figure out what GSE.tools does so that GSE doesnt throw errors on import, and be able to reliably mimic that, then you have to keep track of any and all changes TL does, and keep up with that.
 >
 > To solve your second goal, 'import gse strings into ems for the forseeable future' - would largely be solved by solving the first problem I think.
 >
-> **In theory (I cant advise it since the GitHub is under AGPL Licence) you can look at what TL has committed regarding GSE / GSE.tools / Companion App HERE and go through each and every one to figure out the system. (Maybe some good AI can do it) And you can do the same with the Companion App source code (Again, legally I cant advice it) - which if you combine it, should give you at least a good starting off point.**
+> **In theory (I cant advise it since the GitHub is under ARR Licence) you can look at what TL has committed regarding GSE / GSE.tools / Companion App HERE and go through each and every one to figure out the system. (Maybe some good AI can do it) And you can do the same with the Companion App source code (Again, legally I cant advice it) - which if you combine it, should give you at least a good starting off point.**
 >
 > *Disclaimer: This is not advice, this is just philosophical thinking out loud, I take no responsibility for anything that happens as a result of my out loud thinking*"
 
-**Sataana (next message):**
+**Sataana (14:54:20 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275)):**
 > "You could always 'Clean-Room' something"
 
-**Sataana (final, with an attached video/clip showing dev footage):**
+**Sataana (final, 16:24:57 UTC, with an attached video/clip showing dev footage, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697)):**
 > "Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏"
 > [video attachment — screen recording, appears to show addon UI/dev work — capture separately]
 
 ### Why this is the central exhibit
 
 1. **Direct evidence of the reverse-engineering method, from the developer himself.** Sataana explicitly lays out a plan to go through Timothy Luke's GitHub commit history for GSE/GSE.Tools/Companion App "to figure out the system," explicitly floats "**Maybe some good AI can do it**" as the mechanism, and separately references reading "the Companion App source code" the same way, to "combine it" as "a good starting off point." **This is the AI-assisted/AI-transpiled reverse-engineering allegation, confirmed in the developer's own words** — not something the rights holder is inferring from code alone.
-2. **Explicit knowledge of GSE's AGPL license**, stated twice ("I cant advise it since the GitHub is under AGPL Licence" / "Again, legally I cant advice it") — proves knowing engagement with, and conscious legal hedging around, GSE's license terms while planning to study/derive from GSE's source.
+2. **Explicit knowledge of GSE's ARR license**, stated twice ("I cant advise it since the GitHub is under ARR Licence" / "Again, legally I cant advice it") — proves knowing engagement with, and conscious legal hedging around, GSE's license terms while planning to study/derive from GSE's source.
 3. **"Clean-Room" invoked by name** — a real legal term of art (clean-room reverse engineering) — immediately after describing a process that is the OPPOSITE of clean-room (reading TL's actual source commits with AI assistance). Using the term this way, right after describing a non-clean-room method, suggests either misunderstanding of what clean-room requires or an attempt to retroactively characterize the process using the term without following its actual discipline (a clean-room process requires a firewall between the team studying the original and the team writing new code — nothing here suggests that separation existed).
 4. **The disclaimer itself** ("I take no responsibility for anything that happens as a result of my out loud thinking") is worth preserving verbatim — it shows Sataana's own awareness that what he was describing carried legal risk.
 5. **"Kind of solved it"** — follow-up message with a video attachment, suggesting the plan was acted on shortly after.
@@ -187,7 +223,7 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 **Sataana:**
 > "Yeah, so the way I am doing it now, is I turn on Advanced Combat Logging, do a 5 minute dummy test, and then tell **Claude** to parse the Combatlog (and obviously I gave it Icy-Veins, WowHead and Archon so it can pretend it kinda knows how to play a hunter)"
 
-**Sataana** (same thread) posted an Anthropic (@AnthropicAI) tweet screenshot re: export-control changes for "Claude Fable 5 and Mythos 5" (x.com/AnthropicAI/status/2072106...), dated in-tweet 4/30/2026 6:52 PM — **places this Claude-use conversation on/around 2026-04-30, the SAME DAY as the "Clean-Room"/AGPL/AI-can-do-it conversation above.**
+**Sataana** (same thread) posted an Anthropic (@AnthropicAI) tweet screenshot re: export-control changes for "Claude Fable 5 and Mythos 5" (x.com/AnthropicAI/status/2072106...), dated in-tweet 4/30/2026 6:52 PM — **places this Claude-use conversation on/around 2026-04-30, the SAME DAY as the "Clean-Room"/ARR/AI-can-do-it conversation above.**
 
 **Why this matters:** this is NOT the GSE-parsing conversation itself, but it is Sataana, in his own words and on the same day, describing his standard working method as "tell Claude to parse [a data source] and figure out how it works, feeding it reference material so it can pretend it understands the domain." This is a direct behavioral pattern match to what he proposed doing with TL's GitHub commits ("Maybe some good AI can do it") earlier the same day — corroborating that the AI-assisted method wasn't just a hypothetical he floated, it is demonstrably how he actually works.
 
@@ -197,10 +233,11 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 
 **Search term: "patreon" in #general.** This is the most directly relevant find for the ScaryLarryGames/Larry Thiessen personal case — they discuss the rights holder's Patreon by name.
 
-**Sataana (date TBD):**
+**Sataana — CONFIRMED 2026-06-20 06:24:17 UTC ([permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517777091926687805)):**
 > "I don't think Sequence Creators know how this affects them either, even if they are GSE creators...
 > Like, if a user prefers using EMS, instead of GSE, but is fine paying the Patreon for the Sequence Creator to get the GSE strings and then import them in to EMS, they still make the money, right...
 > But then, GSE destroys that income / business be nuking those users..."
+- **DATE CORRECTION:** this message is **2026-06-20**, NOT 2026-04-30. It was previously grouped in the narrative with CzarTheMad's "Slg has 84 paid members" line (which IS 2026-04-30 21:17:21 UTC) as if same-day; they are ~7 weeks apart. Each now carries its own decoded timestamp + permalink.
 - **SIGNIFICANT.** Sataana explicitly describes the exact mechanism at issue: a user pays a creator's Patreon to obtain GSE strings, then imports them into EMS/GRIP via the very pipeline this evidence package documents — rationalizing it as harmless to the creator ("they still make the money"). This is Sataana's own articulation of the workflow the rights holder alleges is being used to bypass Patreon-gated access.
 
 **MFDOOM (date TBD):**
@@ -213,11 +250,11 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 > "im in the same boat. ive tried his as well as a few others that are requiring patreon and they have never been good. idk if people just dont look more into the sequence to see how its written or just use it blindly and think its amazing because its casting stuff lol"
 
 **CzarTheMad (date TBD) — NAMES THE RIGHTS HOLDER DIRECTLY:**
-> "Slg has 84 paid members but I can't see how he's making from Patreon"
+> "Slg has 84 paid members but I can't see how much he's making from Patreon"
 > "Just from Patreon"
 - **★ DIRECT NAMED REFERENCE.** "Slg" = ScaryLarryGames (the rights holder). This is House of Macros members specifically discussing ScaryLarryGames' Patreon, member count (84 paid members), and monetization — in the same channel and general timeframe as the GSE-import/strip conversations. Establishes House of Macros' specific awareness of, and interest in, the rights holder's Patreon-gated content — directly relevant to the rights holder's personal complaint (his Patreon-locked sequences being redistributed).
 - **CONFIRMED: 2026-04-30 21:17:21 UTC.** Permalink: https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499520058752372977
-- **★★★ THIS IS THE SAME DAY as the "Clean-Room"/AI/AGPL/GitHub reverse-engineering conversation (12:39–16:24 UTC) and the Claude-usage discussion.** On 2026-04-30, House of Macros discussed: (1) using AI to reverse-engineer TL's GitHub commits, (2) Sataana's routine practice of using Claude to parse data sources, and (3) ScaryLarryGames' Patreon by name with an exact paid-member count — all within roughly a 9-hour window (12:39–21:17 UTC). This single day is the strongest evidentiary anchor in the entire record and should be the spine of any timeline exhibit.
+- **★★★ THIS IS THE SAME DAY as the "Clean-Room"/AI/ARR/GitHub reverse-engineering conversation (12:39–16:24 UTC) and the Claude-usage discussion.** On 2026-04-30, House of Macros discussed: (1) using AI to reverse-engineer TL's GitHub commits, (2) Sataana's routine practice of using Claude to parse data sources, and (3) ScaryLarryGames' Patreon by name with an exact paid-member count — all within roughly a 9-hour window (12:39–21:17 UTC). This single day is the strongest evidentiary anchor in the entire record and should be the spine of any timeline exhibit.
 
 > Screenshot saved: "patreon" search results (Sataana rationalization + CzarTheMad naming "Slg"/84 paid members) — re-file as `patreon-search-slg-named.png`. **Second most evidentially important find, and the most directly on-point for the ScaryLarryGames personal case specifically.**
 
@@ -235,12 +272,12 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 
 ### ★★★★★ FULL CONTEXT RECOVERED — the origin of the whole reverse-engineering thread, same 2026-04-30 conversation
 
-Clicking into the "strip"/"bypass" search hit revealed this is the **beginning** of the SAME conversation as the "Clean-Room"/AGPL/AI thread captured earlier — i.e., all of the following and the "Clean-Room" thread above are ONE continuous exchange on 2026-04-30. Full transcript, in order, exact wording confirmed by direct zoom of the message pane:
+Clicking into the "strip"/"bypass" search hit revealed this is the **beginning** of the SAME conversation as the "Clean-Room"/ARR/AI thread captured earlier — i.e., all of the following and the "Clean-Room" thread above are ONE continuous exchange on 2026-04-30. Full transcript, in order, exact wording confirmed by direct zoom of the message pane:
 
 **Sataana:**
 > "Yup Yup, its been bothering me as well, not sure when or how it happened, but its on my list"
 
-**Sataana:**
+**Sataana — CONFIRMED 2026-04-30 11:25:17 UTC ([permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896)):**
 > "The challenge is to convert every single option, field, data, text etc etc that GSE / EMS has and make it compatible with each other, as well as be included properly within the strings 🙃
 > Oh, and ofcourse, **how to bypass the new GSE security system that wont allow import unless it includes some sort of secret stuff encoded by their gse tools website thing**
 > See, what the website is doing (transforming GSE to EMS) the add-on currently does. the problem is that when TL puts in so many ever changing variables and things that are take so much effort and time to decode / be unobscured / decipher just to get it to import in to EMS...
@@ -257,13 +294,13 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 > Thoughts? (anyone feel free to inject opinions)"
 - (This particular "strip" reference is about UI simplification, not CMI — included for completeness/accuracy; do not conflate with the CMI-stripping conduct.)
 
-**[in reply to Sataana's "how to bypass the new GSE security system..." message] CzarTheMad:**
+**[in reply to Sataana's "how to bypass the new GSE security system..." message] CzarTheMad — CONFIRMED 2026-04-30 12:38:03 UTC ([permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389371697336340)):**
 > "Perhaps it would be easier for me to **strip the gse tools stuff from gse**"
 - **DIRECT REPLY TO THE "BYPASS" MESSAGE.** CzarTheMad's proposed solution to Sataana's stated goal ("how to bypass the new GSE security system") is explicitly to "strip the gse tools stuff from gse" — i.e., strip GSE.Tools' protective/identifying data out of GSE content. This is CzarTheMad answering Sataana's bypass question with a stripping method.
 
-**Sataana:**
+**Sataana — CONFIRMED 2026-04-30 12:39:11 UTC ([permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389655408447699)):**
 > "Well, lets take it back to basics, what is your most basic goal you want to achieve?"
-*(→ this is the start of the "Clean-Room"/AGPL/AI thread already fully captured above — CONFIRMED to be the same continuous 2026-04-30 conversation.)*
+*(→ this is the start of the "Clean-Room"/ARR/AI thread already fully captured above — CONFIRMED to be the same continuous 2026-04-30 conversation. Full per-message permalink chain for this whole thread is in the 10-row table near the top of THE KEY CONVERSATION section.)*
 
 **CzarTheMad — CONFIRMED 2026-06-18 16:11:34 UTC** (permalink: https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517200109551489094) — **NOT the same day as the bypass/Clean-Room thread; this is ~7 weeks LATER:**
 > "hypothetically i want to make a version with it **stripped** out and let the masses have it, but we know that'd be against licensing, so if you happen see one out there it wasnt me"
@@ -273,7 +310,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 **Combined, this single conversation thread now reads as one continuous arc:**
 1. Sataana states the goal: bypass GSE's security system that blocks import without GSE.Tools-encoded "secret stuff."
 2. CzarTheMad proposes: strip the GSE.Tools stuff out.
-3. Sataana reframes it as a "basic goal" exercise, then proposes reading TL's AGPL-licensed GitHub commits "with AI" to reverse-engineer the system, invoking "Clean-Room" — while disclaiming legal advice/responsibility twice.
+3. Sataana reframes it as a "basic goal" exercise, then proposes reading TL's ARR-licensed GitHub commits "with AI" to reverse-engineer the system, invoking "Clean-Room" — while disclaiming legal advice/responsibility twice.
 4. Same day, Sataana reports "kind of solved it" with a video.
 5. Same day (later), CzarTheMad states outright that a "stripped" mass-distributable version would be "against licensing" and pre-denies future involvement.
 6. Same day, CzarTheMad separately names "Slg" (ScaryLarryGames) by handle with an exact Patreon paid-member count, in a thread about the pay-Patreon-then-import-to-EMS workflow.
@@ -450,7 +487,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 **TheKuhtas (#grip-ems, date TBD):**
 > "Maybe I'll run it through Claude and see what it thinks."
 
-**Sataana·Arthas (#grip-ems, date TBD):**
+**Sataana·Arthas (#grip-ems — CONFIRMED 2026-07-08 15:36:37 UTC, [permalink](https://ptb.discord.com/channels/170244820910997504/1484343595967184897/1524439073819984004)):**
 > **"All my shit is Claude"**
 - **★★★★★ Unambiguous, first-person, present-tense admission from the GRIP developer that his development work is done with Claude.** This is not a hypothetical or a one-off — it is a blanket statement about his own working method, directly corroborating the 2026-04-30 House of Macros conversation where he proposed using AI to study Timothy Luke's commits, and his separate demonstrated combat-log-parsing method.
 
@@ -473,8 +510,9 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 > The warning all the AIs give about checking it and it can be wrong, is true most of the time 😅"
 - **Confirms Sataana pays for Claude's top-tier ($200/mo) plan and uses it as his primary, heavy-usage development tool** — not casual/occasional use. This is a serious, funded, professional-grade AI development workflow.
 
-**Tony_Hronik:**
-> "I'm not a programmer or product owner —" [message continues, cut off in capture]
+**Tony_Hronik (full message, re-captured):**
+> "I'm not a programmer or product owner — so yes dictated short idea to Claude (in Russian))) and asked to describe it like feature for EMS ))"
+- **COMPLETES the earlier cut-off capture.** Tony_Hronik explicitly describes **dictating a feature idea to Claude in Russian and having it write up a formal feature description for EMS** — i.e., a non-developer using AI to directly generate feature/product content that goes into GRIP-EMS. Concrete, specific evidence of AI being used to produce actual EMS feature material, not just abstract "I use AI" chat.
 
 **Why this matters:** across both servers, in Sataana's own words, AI (specifically Claude, at the $200/mo tier) is his primary and heavily-used development tool ("All my shit is Claude"). Combined with the 2026-04-30 House of Macros conversation where he specifically proposed using AI to read Timothy Luke's licensed GitHub commits to "figure out the system," this establishes both **capability and demonstrated habitual practice** — he had the tool, used it constantly, and proposed using it for exactly the reverse-engineering task at issue.
 
@@ -507,8 +545,9 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 **Wildside:**
 > "well I was there just to say hi and keep in touch with what was new"
 
-**Sataana·Arthas:**
+**Sataana·Arthas — CONFIRMED 2026-06-17 21:18:44 UTC ([permalink](https://ptb.discord.com/channels/170244820910997504/1484343595967184897/1516915024625402036)) — 59 seconds after MFDOOM's message above:**
 > **"Hence, never a paid version of EMS 😄 Drama voided 😤"**
+> (the "shared in MANY Discords" line is Sataana's message immediately preceding this one, same ~21:18 UTC minute.)
 - **★★★★★ SIGNIFICANT.** Sataana directly states that this exact incident — sharing a creator's Patreon-paywalled content, obtained from "their own bot/site," across "MANY Discords," provoking the creator to "spazz out" — is the reason **GRIP-EMS itself was never made a paid product** ("never a paid version of EMS... Drama voided"). This is Sataana acknowledging, after the fact, that the redistribution happened, was widespread, and had real consequences for the creator — while treating the outcome ("Drama voided") as a joke/win rather than a wrongdoing.
 
 **MFDOOM:** "it was good to see and hear from you wildside enjoy topping the dps meters ❤️"
@@ -530,7 +569,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 ### Action items for this thread
 - [x] Get exact date/time for each key message — DONE, decoded from message-ID snowflakes, see table above (authoritative — independent of client display/timezone).
 - [x] Get "Copy Message Link" permalink for the 4 key messages — DONE, see table above.
-- [ ] Get permalinks for the remaining messages in the thread (the "so those are 2 separate problems" and "So, to solve the first problem" messages, and the intervening "Well, lets take it back to basics" line) for full chain-of-custody completeness.
+- [x] Get permalinks for the remaining messages in the thread — DONE (2026-07-13). All 10 messages in the 4/30 thread now individually right-click→"Copy Message Link"'d and snowflake-decoded; see the 10-row table above. Includes "how to bypass" (1499371059013750896), strip reply (1499389371697336340), "Well, lets take it back to basics" (1499389655408447699), "Yes I'm worried" (1499389764921724940), "Want to still be able to use GSE" (1499389964071469108), "2 separate problems" pt1 (1499390399255678977) + pt2 (1499390670283079793), "So, to solve the first problem / ARR / good AI" (1499393478285856838), "Clean-Room" (1499423669997277275), "Kind of solved it + video" (1499446471840239697).
 - [ ] Download/save the video attachment on Sataana's final message (16:24:57 UTC) — needs a save-video action, not yet performed.
 - [ ] Capture the full, non-truncated GitHub link Sataana posted ("HERE" hyperlink) in message #2 — likely `github.com/TimothyLuke/...`. Attempted via click (opened externally, URL not captured this pass) — retry via right-click→"Copy Link" on the hyperlink itself, or view page source / message JSON via Discord's API using the permalink above.
 - [x] CzarTheMad confirmed to carry a "MOD" badge in House of Macros (visible in every search-result screenshot) — he is a moderator of the server, which is relevant to server-level visibility/tolerance of this conversation, not just an ordinary member's idle chat.

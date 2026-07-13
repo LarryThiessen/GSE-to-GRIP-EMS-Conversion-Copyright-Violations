@@ -4,18 +4,20 @@
 **What this is:** a plain-English narrative of what House of Macros' own Discord messages show happened, over roughly March–June 2026. Every claim below is backed by a verbatim quote and a decoded, authoritative timestamp in `captures.md` — this file is the readable story; `captures.md` is the receipts.
 **What this is not:** a legal conclusion. It's the facts, told in order, so a reader — you, Timothy, or a lawyer — can see the shape of it at a glance.
 
+**A note on the model (so "paywall" isn't misread):** The **GSE addon is 100% free** (on CurseForge). Timothy Luke's Patreon buys only **two optional creator quality-of-life features** — *opening the Editor in combat* and *mass-exporting sequences* — a supporter perk, not a content gate. **ScaryLarryGames publishes all his current content free on CurseForge.** A **sequence is not the addon** and is never required: anyone can write their own anytime on the free version. (A few creators do choose to paywall *their own* sequences, but that is their content, not the addon.) So House of Macros' "pay the Patreon / bypass the paywall" framing below is *their* characterization, and it is false at the root — there is no paywall on the addon. What the record actually shows is **copyright** conduct — reverse-engineering the free, All-Rights-Reserved addon and redistributing content without permission — not paywall bypass. Where quotes below say "paid members" or "patreon edition," those are the speakers' own words, preserved verbatim; they do **not** mean the content was gated.
+
 ---
 
 ## The short version
 
-House of Macros is the Discord home of **GRIP-EMS**, a WoW macro addon, and **LazyGrip.net**, its companion website — both run by **sirsataana ("Sataana")**, who carries the server's "Developer" role. Over several months, in their own public channel, members of that team:
+**House of Macros** — a WoW macro Discord **owned by MFDOOM** — is where most of this played out. **GRIP-EMS** (the addon) and **LazyGrip.net** (its companion website) belong to **sirsataana ("Sataana")**, who carries the "Developer" role in House of Macros and also runs his own separate server, **"GRIP / Temptation / Sataana."** MFDOOM, the House of Macros owner, holds the "Operations" role. (Sataana's real identity, per his own publicly-linked accounts on his CurseForge profile, appears to be **Jesper Driessen** — GitHub `JesperLive`, Facebook `JesperDriessen`, Patreon `cw/JesperLive`.) Over several months, in House of Macros' public channel, members of that team:
 
-1. Got caught by the rights holder redistributing his Patreon-locked sequences (and other GSE creators' work) for free — which is why he banned them from GSE United and allied servers.
+1. Got caught by the rights holder redistributing his (and other GSE creators') All-Rights-Reserved sequences without permission — which is why he banned them from GSE United and allied servers.
 2. Spent a public Discord conversation, in detail, working out **how to bypass GSE's security system** so they could keep pulling in GSE creators' content without permission — and floated using **AI to read Timothy Luke's private GitHub commit history** to reverse-engineer it.
 3. Had a member state, in writing, that a version with the protective data "stripped out" for mass release "would be against licensing" — and pre-wrote his own alibi for when someone found one.
-4. Discussed the rights holder's Patreon by name, including his exact paid-subscriber count, in a message explaining how a user could pay a creator once and then get the same content forever through their tool.
+4. Discussed the rights holder's Patreon by name, including his exact supporter count, in a message pushing the idea that a user could pay a creator once and then get the same content forever through their tool — a premise that is false, since the content is free to begin with.
 5. Got confronted — with someone accusing them of building the whole thing with AI — and, rather than deny it, the developer said everyone does that, pointed at GSE's own commit history to prove it, and claimed he'd "not heard ANYTHING" from Timothy Luke or anyone at GSE.
-6. In the developer's own separate, more private Discord, confirmed AI use isn't hypothetical — it's how he works every day, on a paid $200/month plan — and separately admitted, again, to sharing a creator's Patreon-locked content across "MANY Discords," one day before the same topic came up again back in House of Macros.
+6. In the developer's own separate, more private Discord, confirmed AI use isn't hypothetical — it's how he works every day, on a paid $200/month plan — and separately admitted, again, to sharing a creator's content across "MANY Discords," one day before the same topic came up again back in House of Macros.
 
 None of this required guesswork. It's all typed by them. Most of the core plan is inside a single nine-hour window on one day — **April 30, 2026** — in House of Macros. The rest spans from March through June, across two Discord servers.
 
@@ -51,9 +53,9 @@ CzarTheMad then admits the real fear driving all of this — that Timothy Luke w
 
 Sataana walks him through it like a project plan: there are two ways to do this — "migrate" (read GSE's data live off a running copy) or "import" (crack the string format itself, which is harder). Then he lays out exactly how to crack it:
 
-> *"In theory (I cant advise it since the GitHub is under AGPL Licence) you can look at what TL has committed regarding GSE / GSE.tools / Companion App HERE and go through each and every one to figure out the system. **(Maybe some good AI can do it)** And you can do the same with the Companion App source code (Again, legally I cant advice it) — which if you combine it, should give you at least a good starting off point."*
+> *"In theory (I cant advise it since the GitHub is under ARR Licence) you can look at what TL has committed regarding GSE / GSE.tools / Companion App HERE and go through each and every one to figure out the system. **(Maybe some good AI can do it)** And you can do the same with the Companion App source code (Again, legally I cant advice it) — which if you combine it, should give you at least a good starting off point."*
 
-He knows exactly what he's describing — he says so twice, citing the AGPL license by name and disclaiming legal advice both times, then adds:
+He knows exactly what he's describing — he says so twice, citing the ARR license by name and disclaiming legal advice both times, then adds:
 
 > *"Disclaimer: This is not advice, this is just philosophical thinking out loud, I take no responsibility for anything that happens as a result of my out loud thinking"*
 
@@ -69,22 +71,24 @@ Clean-room reverse engineering is a real, defined process — one team studies t
 
 — with a video attached, showing his own screen.
 
-**9:17 PM (21:17 UTC), same day.** The conversation turns to money. Sataana lays out the business logic, unprompted:
+**9:17 PM (21:17:21 UTC), same day.** The conversation turns to money, and CzarTheMad names the rights holder specifically, with a number attached:
+
+> *"Slg has 84 paid members but I can't see how much he's making from Patreon"*
+> *"Just from Patreon"*
+
+**"Slg" is Larry Thiessen — ScaryLarryGames.** This is House of Macros discussing his Patreon, by name, with his exact paid-member count, on the very day the team confirmed they'd cracked GSE's import protection. (Permalink and snowflake-decoded time in `captures.md`; message ID `1499520058752372977`.)
+
+**The same money logic resurfaces later — 2026-06-20, ~7 weeks on.** Sataana lays out the business rationale for the whole pipeline, unprompted. (This message is dated **2026-06-20 06:24:17 UTC**, not April 30 — an earlier draft of this narrative grouped it with the 84-members line above as if same-day; it isn't. It's a separate, later message on the same theme, ID `1517777091926687805`.):
 
 > *"I don't think Sequence Creators know how this affects them either, even if they are GSE creators... Like, if a user prefers using EMS, instead of GSE, but is fine paying the Patreon for the Sequence Creator to get the GSE strings and then import them in to EMS, they still make the money, right... But then, GSE destroys that income / business be nuking those users..."*
 
-Right after that, CzarTheMad names the rights holder specifically, with a number attached:
-
-> *"Slg has 84 paid members but I can't see how he's making from Patreon"*
-> *"Just from Patreon"*
-
-**"Slg" is Larry Thiessen — ScaryLarryGames.** This is House of Macros discussing his Patreon, by name, with his exact paid-member count, on the very day the team confirmed they'd cracked GSE's import protection.
+That the same crew was still reasoning out loud about a creator's Patreon income two months after the bypass work — is itself part of the pattern.
 
 ### June 17–18, 2026 — two servers, one day apart, same story
 
 Two months later, the same conduct surfaces again, in two different Discords, a single day apart.
 
-**June 17, in Sataana's own server ("GRIP / Temptation / Sataana" — the separate, more private "GRIP Discord" he'd mentioned).** MFDOOM says, plainly:
+**June 17, in Sataana's own server ("GRIP / Temptation / Sataana" — the separate, more private "GRIP Discord" he'd mentioned).** MFDOOM — who **owns House of Macros** — says, plainly (his "my discord" is House of Macros):
 
 > *"if you were in my discord — he got you. he spazzed out on us pretty hard cuz we shared the patreon edition that you can get from their own bot/site"*
 
@@ -92,7 +96,7 @@ Sataana confirms it wasn't small: *"I think up to a point that version was share
 
 > *"Hence, never a paid version of EMS 😄 Drama voided 😤"*
 
-Sataana is saying, out loud, that a creator's Patreon-locked content got shared around, the creator found out and was upset, and the lesson the team took from it wasn't "don't do that" — it was "don't charge for our own thing, so we can't get accused of the same thing." (Whether the creator in question was Larry specifically isn't confirmed yet — that's still open. But the conduct described — take someone's paywalled content, hand it out, watch them react — is the exact thing this whole story is about.)
+Sataana is saying, out loud, that a creator's content got shared around, the creator found out and was upset, and the lesson the team took from it wasn't "don't do that" — it was "don't charge for our own thing, so we can't get accused of the same thing." (Whether the creator in question was Larry specifically isn't confirmed yet — that's still open. But the conduct described — take someone's content, hand it out, watch them react — is the exact thing this whole story is about.)
 
 **June 18, back in House of Macros.** CzarTheMad brings up the same idea, and says the quiet part outright:
 
@@ -119,7 +123,7 @@ The same server also turned up who's behind the anti-GSE YouTube video shared as
 - **The role structure isn't casual.** House of Macros has named roles: Sataana is tagged "Developer," MFDOOM and itmeteemo are tagged "Operations," bearded_dad_bod/CzarTheMad/Pershizzle are "BETA Testers." This is an organized team, not a scattered fan chat.
 - **A hostile PR push ran in parallel.** CzarTheMad shared a Reddit post titled *"We Need to Talk About the GSE Addon Community,"* describing GSE as having a "kill switch to corrupt" and "invasively reading" — around the same period as the ban complaints and the bypass conversation. CzarTheMad separately remarked it was *"wild... that some random german wow video blog picked up the GSE drama."*
 - **Sataana's working method matches what he proposed.** Separately, he described how he actually builds features: turn on WoW's combat logging, run a test, then *"tell Claude to parse the Combatlog"* — feeding it reference material "so it can pretend it kinda knows" the domain. That's the same method — feed AI raw data, have it work out the system — he proposed using on Timothy Luke's commit history.
-- **The banned members confirm the ban, and why.** Tony_Hronik: *"I was removed from GSE:nited and OAK discord."* Sataana, discussing it: *"If SLG was a mod / admin with banning powers on that Discord, I can only assume it was him... he banned people from every server he could."* This matches the rights holder's own account of why he acted — House of Macros members were redistributing Patreon-locked and other creators' GSE content.
+- **The banned members confirm the ban, and why.** Tony_Hronik: *"I was removed from GSE:nited and OAK discord."* Sataana, discussing it: *"If SLG was a mod / admin with banning powers on that Discord, I can only assume it was him... he banned people from every server he could."* This matches the rights holder's own account of why he acted — House of Macros members were redistributing creators' All-Rights-Reserved GSE content without permission.
 
 ---
 
@@ -127,9 +131,9 @@ The same server also turned up who's behind the anti-GSE YouTube video shared as
 
 **Solidly established, in their own words:**
 - Explicit, stated intent to defeat GSE's protective encoding ("bypass the new GSE security system").
-- A proposed method — AI-assisted study of Timothy Luke's private/licensed commit history — floated by the developer himself, with an explicit AGPL-license citation and a legal disclaimer attached both times he described it.
+- A proposed method — AI-assisted study of Timothy Luke's private/licensed commit history — floated by the developer himself, with an explicit ARR-license citation and a legal disclaimer attached both times he described it.
 - A team member's direct admission that a stripped, mass-distributed version would violate the license, plus a pre-built denial.
-- Direct, named discussion of the rights holder's Patreon-gated business.
+- Direct, named discussion of the rights holder's Patreon and his content — under a false assumption that it was gated (it is free).
 - A timeline in which "figure out how to bypass it" and "kind of solved it" are under four hours apart.
 
 **What the record does NOT establish, and shouldn't be overclaimed:**

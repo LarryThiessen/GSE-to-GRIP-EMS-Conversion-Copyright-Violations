@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRIP-EMS / LazyGrip — Sourced Discord Evidence</title>
+<style>
+  :root { --bg:#f6f4ef; --panel:#ffffff; --ink:#1c1a17; --dim:#5c574e; --faint:#8a8378;
+    --line:#e3ded4; --accent:#8b1e1e; --accent2:#0b5c8a; --quote-bg:#f0ece3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15151a; --panel:#1d1d23; --ink:#e9e6df; --dim:#a8a294; --faint:#7a7568;
+      --line:#2c2c34; --accent:#e0654f; --accent2:#6bb6e0; --quote-bg:#23232b; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:920px; margin:0 auto; padding:2.4rem 1.2rem 4rem; }
+  header.head { border-bottom:2px solid var(--accent); padding-bottom:1.1rem; margin-bottom:1.6rem; }
+  .eyebrow { font:600 0.72rem/1 ui-monospace,monospace; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); }
+  h1 { font-size:1.9rem; margin:.5rem 0 .3rem; letter-spacing:-.01em; }
+  .sub { color:var(--dim); margin:.2rem 0 0; max-width:60ch; }
+  .legend { margin-top:1rem; padding:.8rem 1rem; background:var(--panel); border:1px solid var(--line);
+    border-radius:8px; font-size:.9rem; color:var(--dim); }
+  .legend strong { color:var(--ink); }
+  .rebuttal { background:var(--panel); border:2px solid var(--accent); border-radius:10px; padding:1.1rem 1.2rem; margin:0 0 1.4rem; }
+  .rblabel { font:700 .74rem/1 ui-monospace,monospace; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin-bottom:.55rem; }
+  .card { display:grid; grid-template-columns:120px 1fr; gap:1rem; background:var(--panel);
+    border:1px solid var(--line); border-radius:10px; padding:1.05rem 1.15rem; margin:.9rem 0; }
+  .rail { display:flex; flex-direction:column; gap:.35rem; border-right:1px solid var(--line); padding-right:.9rem; }
+  .num { font:700 1.5rem/1 ui-monospace,monospace; color:var(--accent); }
+  .time { font:0.72rem/1.3 ui-monospace,monospace; color:var(--faint); font-variant-numeric:tabular-nums; }
+  .meta { display:flex; flex-wrap:wrap; gap:.3rem .8rem; align-items:baseline; margin-bottom:.5rem; }
+  .who { font-weight:700; color:var(--accent); }
+  .ch { font:0.78rem/1 ui-monospace,monospace; color:var(--faint); }
+  blockquote { margin:0; padding:.7rem .9rem; background:var(--quote-bg); border-left:3px solid var(--accent);
+    border-radius:0 6px 6px 0; font:0.95rem/1.6 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--ink); }
+  .note { font-size:.86rem; color:var(--dim); margin:.55rem 0 .2rem; }
+  .links { display:flex; flex-wrap:wrap; gap:.5rem .8rem; margin:.5rem 0 .2rem; }
+  .lnk { font:600 .82rem/1 ui-monospace,monospace; text-decoration:none; padding:.4rem .6rem; border-radius:6px;
+    border:1px solid var(--line); }
+  .lnk.discord { color:var(--accent2); }
+  .lnk.shot { color:var(--accent); }
+  .lnk:hover { background:var(--quote-bg); }
+  .thumbwrap { display:block; margin-top:.7rem; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .thumbwrap img { display:block; width:100%; height:auto; background:#000; }
+  footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--faint); font-size:.82rem; }
+  @media (max-width:640px) { .card { grid-template-columns:1fr; } .rail { flex-direction:row; border-right:none;
+    border-bottom:1px solid var(--line); padding:0 0 .6rem; gap:.9rem; align-items:baseline; } }
+  @media print { body { background:#fff; } .card { break-inside:avoid; border-color:#ccc; } .lnk { border-color:#ccc; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <div class="eyebrow">Sourced Discord Evidence &middot; GSE vs GRIP-EMS / LazyGrip</div>
+    <h1>Every cited message &mdash; permalink + screenshot</h1>
+    <p class="sub">Each entry below is a Discord message quoted in the complaint. It carries a live <strong>permalink</strong> to the message and a <strong>screenshot</strong> of it, cropped to the message itself. Timestamps are decoded from each message’s own Discord ID (authoritative, timezone-independent).</p>
+    <div class="legend"><strong>Why both.</strong> The permalink proves the message is live in Discord now; the screenshot preserves it if it is later edited or deleted. &nbsp;<strong>GSE’s license:</strong> the GSE addon and its content are <em>All Rights Reserved</em> (“Copyright (c) 2026 Timothy Minahan. All Rights Reserved.”) — not a public/open license. Redistribution and derivative works require permission that was never granted.</div>
+    <div class="legend" style="border-color:var(--accent);"><strong>On “Patreon” and “paywall” — how this actually works.</strong> The <strong>GSE addon is 100% free</strong> — the entire addon, distributed free (<a href="https://www.curseforge.com/wow/addons/gse-gnome-sequencer-enhanced-advanced-macros" target="_blank" rel="noopener">GSE on CurseForge</a>). Timothy Luke’s Patreon buys two optional <em>creator</em> quality-of-life features only — <strong>opening the Editor in combat</strong> and <strong>mass-exporting sequences</strong> — a supporter perk, the way any legitimate addon author funds their work; it gates nothing a user needs. Patreon is purely <strong>voluntary tipping — not required, and not monetary</strong> (the rights holder says exactly this publicly — see the rebuttal box below). <strong>ScaryLarryGames publishes all his current content free on <a href="https://www.curseforge.com/members/scarylarrygames/projects" target="_blank" rel="noopener">CurseForge</a>.</strong> And <strong>sequences are not the addon</strong>: no sequence is required to use GSE — anyone can write their own anytime on the free version. (A few creators do choose to paywall <em>their own</em> sequences, but a sequence is user content, not the addon, and never necessary to use it.) So House of Macros’ “bypass the paywall / pay the Patreon then import” premise is false at the root — there is no paywall on the addon, and the two Patreon perks have nothing to do with importing sequences. The real issue is <strong>copyright</strong>: reverse-engineering the free, All-Rights-Reserved addon, stripping the owner identifier, and redistributing content without permission. Free is not free to take.</div>
+  </header>
+  <section class="rebuttal">
+    <div class="rblabel">Rights-holder rebuttal &mdash; the sequences are free</div>
+    <div class="meta"><span class="who">ScaryLarryGames</span><span class="ch">GSE Official &middot; 2026-05-21 21:22</span></div>
+    <blockquote>“<strong>You DO NOT have to Sub to me to get my Sequences.</strong> Search Collections &gt; Public &gt; SLG &mdash; Class Sets are up there for the taking &mdash; they are the same but you get the entire class set at one time! Enjoy!”</blockquote>
+    <p class="note">Posted by the rights holder in reply to a user asking <em>how to pay</em> for access. Every class Set is marked <strong>PUBLIC</strong> (13 class sets + interrupt/mount macros; 54 collections total). Patreon is <strong>voluntary tipping only — not required, not monetary</strong>. This is the rights holder’s own contemporaneous statement that the “paywall” the House-of-Macros messages assume does not exist.</p>
+    <div class="links">
+      <a class="lnk shot" href="img/00_slg-sequences-free-public.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+      <a class="lnk discord" href="https://www.curseforge.com/members/scarylarrygames/projects" target="_blank" rel="noopener">SLG sequences on CurseForge (free) &#8599;</a>
+      <a class="lnk discord" href="https://www.curseforge.com/wow/addons/gse-gnome-sequencer-enhanced-advanced-macros" target="_blank" rel="noopener">GSE addon on CurseForge (free) &#8599;</a>
+    </div>
+    <a class="thumbwrap" href="img/00_slg-sequences-free-public.png" target="_blank" rel="noopener"><img loading="lazy" src="img/00_slg-sequences-free-public.png" alt="ScaryLarryGames: you do not have to sub to get my sequences"></a>
+  </section>
+
+    <article class="card">
+      <div class="rail"><span class="num">01</span><span class="time">2026-03-21 19:17:47 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“SLG, I know you can see this… I had a look at GSE’s actual git history. … Four commits in the last five days, every single one: Co-Authored-By: Claude Sonnet 4.6 … I use AI. Tim uses AI. Everyone with half a brain uses AI in 2026.”</blockquote>
+        <p class="note">Six weeks before the bypass plan: Sataana addresses the rights holder by name and pulls GSE’s commit history — the same commits he later tells the team to study with AI.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1484994453558136853" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/17_ai-git-history-defense.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/17_ai-git-history-defense.png" target="_blank" rel="noopener"><img loading="lazy" src="img/17_ai-git-history-defense.png" alt="Screenshot of message 1"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">02</span><span class="time">2026-04-30 11:25:17 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Oh, and ofcourse, how to bypass the new GSE security system that wont allow import unless it includes some sort of secret stuff encoded by their gse tools website thing”</blockquote>
+        <p class="note">The stated goal, first person: bypass GSE’s import protection.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/01_how-to-bypass-gse-security.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/01_how-to-bypass-gse-security.png" target="_blank" rel="noopener"><img loading="lazy" src="img/01_how-to-bypass-gse-security.png" alt="Screenshot of message 2"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">03</span><span class="time">2026-04-30 12:38:03 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">CzarTheMad</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Perhaps it would be easier for me to strip the gse tools stuff from gse”</blockquote>
+        <p class="note">The proposed method, in reply to the bypass message: strip out GSE.Tools’ identifiers.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389371697336340" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/02_strip-the-gse-tools.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/02_strip-the-gse-tools.png" target="_blank" rel="noopener"><img loading="lazy" src="img/02_strip-the-gse-tools.png" alt="Screenshot of message 3"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">04</span><span class="time">2026-04-30 12:39:11 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Well, lets take it back to basics, what is your most basic goal you want to achieve?”</blockquote>
+        <p class="note">Sataana reframes it as a project-planning exercise. (Discord’s hover reaction bar overlaps the middle of this line in the capture.)</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389655408447699" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/03_back-to-basics.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/03_back-to-basics.png" target="_blank" rel="noopener"><img loading="lazy" src="img/03_back-to-basics.png" alt="Screenshot of message 4"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">05</span><span class="time">2026-04-30 12:39:37 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">CzarTheMad</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Yes I’m worried you’ll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited”</blockquote>
+        <p class="note">The real fear driving it: that the GSE author will harden the protection faster than they can defeat it.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389764921724940" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/04_worried-obfuscating.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/04_worried-obfuscating.png" target="_blank" rel="noopener"><img loading="lazy" src="img/04_worried-obfuscating.png" alt="Screenshot of message 5"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">06</span><span class="time">2026-04-30 12:40:24 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">CzarTheMad</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Want to still be able to use GSE w/o the companion app. And to be able to import gse strings into ems for the forseeable future”</blockquote>
+        <p class="note">The objective stated plainly.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499389964071469108" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/05_import-gse-strings-into-ems.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/05_import-gse-strings-into-ems.png" target="_blank" rel="noopener"><img loading="lazy" src="img/05_import-gse-strings-into-ems.png" alt="Screenshot of message 6"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">07</span><span class="time">2026-04-30 12:42:08 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Okay, so those are 2 separate problems to solve. … Importing GSE to EMS has 2 different options. Either migrate … or ‘import’ … The ‘import’ is harder, since that is where I have to encode/decode/figure out how the string is made, and then ‘unstring’ it.”</blockquote>
+        <p class="note">The two-path plan — migrate (read a live GSE library) or import (crack the export string). Spans two messages (12:42:08 + 12:43:13, ID 1499390670283079793).</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390399255678977" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/06_migrate-vs-import-unstring.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/06_migrate-vs-import-unstring.png" target="_blank" rel="noopener"><img loading="lazy" src="img/06_migrate-vs-import-unstring.png" alt="Screenshot of message 7"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">08</span><span class="time">2026-04-30 12:54:22 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“In theory (I cant advise it since the GitHub is under ARR Licence) you can look at what TL has committed regarding GSE / GSE.tools / Companion App HERE and go through each and every one to figure out the system. (Maybe some good AI can do it) … Disclaimer: This is not advice … I take no responsibility for anything that happens as a result of my out loud thinking”</blockquote>
+        <p class="note">The central line. Sataana names GSE’s license correctly — <strong>ARR (All Rights Reserved)</strong>, which grants zero rights — then proposes reverse-engineering it with AI anyway, disclaiming twice. GSE’s LICENSE file reads verbatim: <em>Copyright (c) 2026 Timothy Minahan. All Rights Reserved.</em></p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499393478285856838" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/07_arr-license-good-ai.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/07_arr-license-good-ai.png" target="_blank" rel="noopener"><img loading="lazy" src="img/07_arr-license-good-ai.png" alt="Screenshot of message 8"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">09</span><span class="time">2026-04-30 14:54:20 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“You could always ‘Clean-Room’ something”</blockquote>
+        <p class="note">Invokes the legal term — right after describing the opposite of it (reading TL’s actual source with AI).</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/08_clean-room.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/08_clean-room.png" target="_blank" rel="noopener"><img loading="lazy" src="img/08_clean-room.png" alt="Screenshot of message 9"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">10</span><span class="time">2026-04-30 16:24:57 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏”</blockquote>
+        <p class="note">Under four hours after “how to bypass” — with a screen-recording of the in-development EMS addon attached (visible directly below the message). This is GRIP-EMS shown on screen alongside the result.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/09_kind-of-solved-grip-ems-shown.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/09_kind-of-solved-grip-ems-shown.png" target="_blank" rel="noopener"><img loading="lazy" src="img/09_kind-of-solved-grip-ems-shown.png" alt="Screenshot of message 10"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">11</span><span class="time">2026-04-30 21:17:21 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">CzarTheMad</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“Slg has 84 paid members but I can’t see how much he’s making from Patreon”</blockquote>
+        <p class="note">“Slg” = ScaryLarryGames. His Patreon named with an exact supporter count — same day as the bypass work. (The Patreon is a donation/tip jar; Larry’s sequences are free. “Paid members” are supporters, not buyers of gated content.)</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499520058752372977" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/10_slg-84-paid-members.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/10_slg-84-paid-members.png" target="_blank" rel="noopener"><img loading="lazy" src="img/10_slg-84-paid-members.png" alt="Screenshot of message 11"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">12</span><span class="time">2026-06-17 21:17:45 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">MFDOOM</span><span class="ch">GRIP / Temptation / Sataana · #grip-ems</span></div>
+        <blockquote>“if you were in my discord — he got you. he spazzed out on us pretty hard cuz we shared the patreon edition that you can get from their own bot/site”</blockquote>
+        <p class="note">First-person admission of redistributing a creator’s content, obtained via the creator’s own bot/site. (“Patreon edition” is their wording — the content is free and Patreon is a tip jar, so this is unauthorized redistribution of free-but-All-Rights-Reserved work, not paywall-bypass.)</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/170244820910997504/1484343595967184897/1516914774187708568" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/13_shared-patreon-edition.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/13_shared-patreon-edition.png" target="_blank" rel="noopener"><img loading="lazy" src="img/13_shared-patreon-edition.png" alt="Screenshot of message 12"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">13</span><span class="time">2026-06-17 21:18:44 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">GRIP / Temptation / Sataana · #grip-ems</span></div>
+        <blockquote>“I think up to a point that version was shared in MANY Discords”  /  “Hence, never a paid version of EMS 😄 Drama voided 😤”</blockquote>
+        <p class="note">Confirms the redistribution was widespread — 59 seconds after MFDOOM’s message.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/170244820910997504/1484343595967184897/1516915024625402036" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/14_never-paid-drama-voided.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/14_never-paid-drama-voided.png" target="_blank" rel="noopener"><img loading="lazy" src="img/14_never-paid-drama-voided.png" alt="Screenshot of message 13"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">14</span><span class="time">2026-06-18 16:11:34 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">CzarTheMad</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“hypothetically i want to make a version with it stripped out and let the masses have it, but we know that’d be against licensing, so if you happen see one out there it wasnt me”</blockquote>
+        <p class="note">Explicit knowledge that a stripped, mass-released version violates the license — with a pre-written alibi.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517200109551489094" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/11_stripped-masses-against-licensing.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/11_stripped-masses-against-licensing.png" target="_blank" rel="noopener"><img loading="lazy" src="img/11_stripped-masses-against-licensing.png" alt="Screenshot of message 14"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">15</span><span class="time">2026-06-18 21:21:57 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“I dont understand the logic, but I had to build in support for it just for the people who wanted it / GSE strings that had it”</blockquote>
+        <p class="note">Sataana confirms he personally built the GSE-string ingest into GRIP.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517278221794676846" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/12_build-in-support.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/12_build-in-support.png" target="_blank" rel="noopener"><img loading="lazy" src="img/12_build-in-support.png" alt="Screenshot of message 15"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">16</span><span class="time">2026-06-20 06:24:17 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">House of Macros · #general</span></div>
+        <blockquote>“… if a user prefers using EMS … but is fine paying the Patreon for the Sequence Creator to get the GSE strings and then import them in to EMS, they still make the money, right… But then, GSE destroys that income / business be nuking those users…”</blockquote>
+        <p class="note">Sataana’s own articulation of the workflow — built on a false premise: there is no paywall to “pay” past. The creators give it away free; Patreon is a voluntary tip. The “they still make the money” logic assumes a paid gate that does not exist.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1517777091926687805" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/16_patreon-rationalization.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/16_patreon-rationalization.png" target="_blank" rel="noopener"><img loading="lazy" src="img/16_patreon-rationalization.png" alt="Screenshot of message 16"></a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="rail"><span class="num">17</span><span class="time">2026-07-08 15:36:37 UTC</span></div>
+      <div class="body">
+        <div class="meta"><span class="who">Sataana</span><span class="ch">GRIP / Temptation / Sataana · #grip-ems</span></div>
+        <blockquote>“All my shit is Claude”</blockquote>
+        <p class="note">The AI method as routine fact, not hypothetical — the same method proposed against TL’s commits on 2026-04-30.</p>
+        <div class="links">
+          <a class="lnk discord" href="https://ptb.discord.com/channels/170244820910997504/1484343595967184897/1524439073819984004" target="_blank" rel="noopener">Open message in Discord &#8599;</a>
+          <a class="lnk shot" href="img/15_all-my-shit-is-claude.png" target="_blank" rel="noopener">View screenshot &#8599;</a>
+        </div>
+        <a class="thumbwrap" href="img/15_all-my-shit-is-claude.png" target="_blank" rel="noopener"><img loading="lazy" src="img/15_all-my-shit-is-claude.png" alt="Screenshot of message 17"></a>
+      </div>
+    </article>
+  <footer>17 messages &middot; two servers (House of Macros, GRIP / Temptation / Sataana) &middot; screenshots cropped to the message only (no desktop, no account panel). Order is chronological. Generated for ScaryLarryGames &amp; Timothy Luke.</footer>
+</div>
+</body>
+</html>
