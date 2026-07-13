@@ -15,8 +15,9 @@ House of Macros is the Discord home of **GRIP-EMS**, a WoW macro addon, and **La
 3. Had a member state, in writing, that a version with the protective data "stripped out" for mass release "would be against licensing" — and pre-wrote his own alibi for when someone found one.
 4. Discussed the rights holder's Patreon by name, including his exact paid-subscriber count, in a message explaining how a user could pay a creator once and then get the same content forever through their tool.
 5. Got confronted — with someone accusing them of building the whole thing with AI — and, rather than deny it, the developer said everyone does that, pointed at GSE's own commit history to prove it, and claimed he'd "not heard ANYTHING" from Timothy Luke or anyone at GSE.
+6. In the developer's own separate, more private Discord, confirmed AI use isn't hypothetical — it's how he works every day, on a paid $200/month plan — and separately admitted, again, to sharing a creator's Patreon-locked content across "MANY Discords," one day before the same topic came up again back in House of Macros.
 
-None of this required guesswork. It's all typed by them, in a channel with 50-60 members, most of it inside a single nine-hour window on one day: **April 30, 2026**.
+None of this required guesswork. It's all typed by them. Most of the core plan is inside a single nine-hour window on one day — **April 30, 2026** — in House of Macros. The rest spans from March through June, across two Discord servers.
 
 ---
 
@@ -79,15 +80,39 @@ Right after that, CzarTheMad names the rights holder specifically, with a number
 
 **"Slg" is Larry Thiessen — ScaryLarryGames.** This is House of Macros discussing his Patreon, by name, with his exact paid-member count, on the very day the team confirmed they'd cracked GSE's import protection.
 
-### Roughly seven weeks later (2026-06-18) — it wasn't a one-off
+### June 17–18, 2026 — two servers, one day apart, same story
 
-CzarTheMad brings up the same idea again, and this time says the quiet part outright:
+Two months later, the same conduct surfaces again, in two different Discords, a single day apart.
+
+**June 17, in Sataana's own server ("GRIP / Temptation / Sataana" — the separate, more private "GRIP Discord" he'd mentioned).** MFDOOM says, plainly:
+
+> *"if you were in my discord — he got you. he spazzed out on us pretty hard cuz we shared the patreon edition that you can get from their own bot/site"*
+
+Sataana confirms it wasn't small: *"I think up to a point that version was shared in MANY Discords."* Then he says why it matters going forward:
+
+> *"Hence, never a paid version of EMS 😄 Drama voided 😤"*
+
+Sataana is saying, out loud, that a creator's Patreon-locked content got shared around, the creator found out and was upset, and the lesson the team took from it wasn't "don't do that" — it was "don't charge for our own thing, so we can't get accused of the same thing." (Whether the creator in question was Larry specifically isn't confirmed yet — that's still open. But the conduct described — take someone's paywalled content, hand it out, watch them react — is the exact thing this whole story is about.)
+
+**June 18, back in House of Macros.** CzarTheMad brings up the same idea, and says the quiet part outright:
 
 > *"hypothetically i want to make a version with it stripped out and let the masses have it, but we know that'd be against licensing, so if you happen see one out there it wasnt me"*
 
-He states, plainly, that he knows a stripped, mass-released version would violate the license — and pre-writes his own denial for the day it shows up. Coming almost two months after the original bypass conversation, this shows the idea didn't die in April. It was still being discussed as something someone might actually do.
+He states, plainly, that he knows a stripped, mass-released version would violate the license — and pre-writes his own denial for the day it shows up.
+
+**One day apart. Two different people. Two different servers. Same subject.** This isn't a single bad moment in April — it's a pattern that was still alive and being talked about in June, in more than one place.
 
 ---
+
+### A second server confirms the AI method as routine, not hypothetical
+
+In Sataana's own, separate Discord — the one referenced above as the real "GRIP Discord" — the AI question comes up again, this time as plain fact rather than a proposal. Someone asks about running something "through Claude." Sataana's answer:
+
+> *"All my shit is Claude"*
+
+He goes further: he's on Claude's $200-a-month tier, and says over half his monthly usage goes to "just making sure my AI behaves and knows things." Two other regulars — MFDOOM and TheKuhtas — separately confirm they use Claude or Gemini specifically for understanding and writing Lua code. This isn't a one-off — it's how this whole team works, day to day. It's the same method Sataana proposed using on Timothy Luke's commit history back on April 30th, just now described as his normal habit rather than a hypothetical.
+
+The same server also turned up who's behind the anti-GSE YouTube video shared as a Reddit post in House of Macros: a creator called **TheKephas**, whose video was cross-posted in both servers under the same title, "We Need to Talk About the GSE Addon Community."
 
 ## What backs this up, beyond the words
 
