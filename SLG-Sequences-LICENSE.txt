@@ -1,0 +1,29 @@
+SLG-Sequences License
+Copyright (c) 2026 Larry A. Thiessen ("ScaryLarryGames"). All Rights Reserved.
+
+1. GRANT. You are granted a personal, non-exclusive, non-transferable, revocable
+   license to download and use this software and its sequence/macro content
+   ("the Work") for your own personal, non-commercial use in World of Warcraft,
+   including modifying it for your own personal use.
+
+2. RESTRICTIONS. You may NOT, without the prior written permission of the author:
+   (a) redistribute, re-host, re-upload, mirror, or publish the Work or any part
+       of it on any website, platform, or service (CurseForge, Wago, etc.);
+   (b) distribute or share modified or derivative versions of the Work;
+   (c) sell, license, sublicense, rent, or otherwise commercialize the Work or
+       any part of it, or include it in any paid or monetized product;
+   (d) remove or alter this license or any author or attribution notices.
+
+3. DISTRIBUTION. Official distribution of the Work is performed solely by the
+   author (e.g., via the author's CurseForge and GSE.Tools pages). Subscriber and
+   other paid content remains the property of the author and may not be shared.
+
+4. RESERVATION. All rights not expressly granted above are reserved by the author.
+
+5. NO WARRANTY. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+   EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
