@@ -1,0 +1,250 @@
+{
+  "type": "COLLECTION",
+  "payload": {
+    "ElementCount": 4,
+    "Sequences": {
+      "SLG-DK-BLD": {
+        "LastUpdated": "20260530185505",
+        "Versions": {
+          "1": {
+            "InbuiltVariables": {
+              "Combat": true
+            },
+            "Actions": [
+              {
+                "type": "macro",
+                "Disabled": false,
+                "Interval": "3",
+                "macro": "/targetenemy [noharm][dead]\n/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/castsequence [@player]   reset=target  195292, 43265, 50842, 49998, 50842, 316239\n/petattack [harm,combat]",
+                "Icon": 1376743,
+                "Type": "Repeat"
+              },
+              {
+                "type": "macro",
+                "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast [nochanneling:Consumption] Consumption\n/cast 439843\n/use [combat] 46585\n/petattack [harm,combat]",
+                "Interval": "2",
+                "Icon": 5927621,
+                "Type": "Repeat"
+              },
+              {
+                "type": "macro",
+                "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast 195182\n/petattack [harm,combat]",
+                "Interval": "1",
+                "Icon": 1376745,
+                "Type": "Repeat"
+              },
+              {
+                "Type": "Repeat",
+                "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast 439843\n/use [combat] 46585\n/petattack [harm,combat]",
+                "Interval": "1",
+                "Icon": 5927621,
+                "type": "macro"
+              },
+              {
+                "type": "macro",
+                "Disabled": false,
+                "Interval": "3",
+                "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast [harm] 1229376\n/petattack [harm,combat]",
+                "Icon": 6718291,
+                "Type": "Action"
+              },
+              {
+                "1": {
+                  "Type": "Repeat",
+                  "macro": "/targetenemy [noharm][dead]\n/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast [nochanneling:Consumption] Consumption\n/use [known:433895] Vampiric Strike; [known:439843] 439843\n/use [combat] 46585",
+                  "type": "macro",
+                  "Icon": 5927621,
+                  "Interval": "4"
+                },
+                "Repeat": 2,
+                "Type": "Loop",
+                "StepFunction": "Priority"
+              },
+              {
+                "1": {
+                  "type": "macro",
+                  "Disabled": false,
+                  "Interval": "4",
+                  "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/use [known:433895] Vampiric Strike\n/castsequence [@player]   reset=combat/target  195292, 43265, 50842\n/petattack [harm,combat]",
+                  "Icon": 5927645,
+                  "Type": "Repeat"
+                },
+                "2": {
+                  "type": "macro",
+                  "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast 195182\n/petattack [harm,combat]",
+                  "Type": "Repeat",
+                  "Icon": 1376745,
+                  "Interval": "3"
+                },
+                "3": {
+                  "Type": "Repeat",
+                  "macro": "/stopmacro [@playertarget,noexists][channeling:Consumption]\n/startattack\n/cast [known:433901] Death Strike, Heart Strike; 49998\n/use [combat] 46585\n/petattack [harm,combat]",
+                  "type": "macro",
+                  "Icon": 237517,
+                  "Interval": "2"
+                },
+                "Repeat": 2,
+                "StepFunction": "Sequential",
+                "Type": "Loop"
+              }
+            ],
+            "Label": "Default"
+          }
+        },
+        "MetaData": {
+          "Checksum": "v2:7870VPC5ZaoJkFtHdx7228JEd8TVE5dxMKpNSx1WgOEpaoSV0KaOMmDJKY4ZqJpKdCHvBb6_tf_RMop4Nmu1Cg",
+          "Notes": "REMOVE /targetenemy [noharm][dead] IF you DO NOT Want AUTO Targeting! - HIT SAVE!\n\n**Read Notes: [GSE United Discord/ScaryLarryGames/Sequence Notes](https://discord.com/channels/1105517054754295888/1493671688586399794)**\n\nEnjoy,\n**ScaryLarryGames!**\n\nPatreon: https://www.patreon.com/c/ScaryLarryGames646\nKo-Fi: https://ko-fi.com/scarylarrygames\n\n",
+          "Talents": [],
+          "EnforceCompatability": true,
+          "Default": 1,
+          "Author": "ScaryLarryGames",
+          "ManualIntervention": false,
+          "HelpURL": "https://gse.tools/sequences/69e6f76961cd20b1721993cb",
+          "Help": "REMOVE /targetenemy [noharm][dead] IF you DO NOT Want AUTO Targeting! - HIT SAVE!\n\n|cFFffffffRead Notes: |cFF00aaffGSE United Discord/ScaryLarryGames/Sequence Notes|r (https://discord.com/channels/1105517054754295888/1493671688586399794)|r\n\nEnjoy,\n|cFFffffffScaryLarryGames!|r\n\nPatreon: https://www.patreon.com/c/ScaryLarryGames646\nKo-Fi: https://ko-fi.com/scarylarrygames\n\n",
+          "Name": "SLG-DK-BLD",
+          "PlatformID": "69e6f76961cd20b1721993cb",
+          "Dependencies": {
+            "Variables": [],
+            "Macros": [],
+            "Sequences": []
+          },
+          "SpecID": 250,
+          "TOC": 120007,
+          "Helplink": "https://discord.gg/gseunited",
+          "GSEVersion": 3323
+        }
+      },
+      "SLG-DK-BLD-CNSMP": {
+        "LastUpdated": "20260530185504",
+        "Versions": {
+          "1": {
+            "Actions": [
+              {
+                "type": "macro",
+                "macro": "/cast [channeling:Consumption] 1263824",
+                "Interval": "3",
+                "Icon": 1121487,
+                "Type": "Action"
+              }
+            ],
+            "InbuiltVariables": {
+              "Combat": true
+            },
+            "Label": "Default"
+          }
+        },
+        "MetaData": {
+          "Helplink": "https://discord.gg/gseunited",
+          "Talents": [],
+          "ManualIntervention": false,
+          "Help": "",
+          "Author": "ScaryLarryGames",
+          "EnforceCompatability": true,
+          "HelpURL": "https://gse.tools/sequences/69e6f76861cd20b17219937c",
+          "Name": "SLG-DK-BLD-CNSMP",
+          "Default": 1,
+          "PlatformID": "69e6f76861cd20b17219937c",
+          "Dependencies": {
+            "Variables": [],
+            "Macros": [],
+            "Sequences": []
+          },
+          "SpecID": 250,
+          "TOC": 120007,
+          "Checksum": "v2:krIBVpjQAIsHLFZo1ICAZEk-JBkSIvtUdujx8R06cBPoj-vbQs8dnZ5jf_gvu4acugWJEYcp98gu4WxqFwzKDw",
+          "GSEVersion": 3323
+        }
+      },
+      "SLG-DK-GetOverHerE": {
+        "LastUpdated": "20260521071727",
+        "Versions": {
+          "1": {
+            "InbuiltVariables": {
+              "Combat": true
+            },
+            "Actions": [
+              {
+                "Interval": "2",
+                "Type": "Repeat",
+                "macro": "/cast [help,dead] 61999\n/cast [spec:1/2/3,harm,@mouseover,nodead][spec:1/2/3,harm,nodead] 49576\n/cast [spec:1,harm,nodead] 56222\n/stopmacro",
+                "type": "macro"
+              }
+            ],
+            "Label": "Default"
+          }
+        },
+        "MetaData": {
+          "Helplink": "https://discord.gg/gseunited",
+          "Talents": [],
+          "EnforceCompatability": true,
+          "Name": "SLG-DK-GetOverHerE",
+          "Author": "ScaryLarryGames",
+          "ManualIntervention": true,
+          "HelpURL": "https://gse.tools/sequences/69e6f76b61cd20b17219943e",
+          "Default": 1,
+          "Help": "",
+          "PlatformID": "69e6f76b61cd20b17219943e",
+          "Dependencies": {
+            "Variables": [],
+            "Macros": [],
+            "Sequences": []
+          },
+          "SpecID": 6,
+          "TOC": 120007,
+          "Checksum": "v2:j06p0V-q29UqZZeZEebwh5GWE9e2KFRFuE2-69Z2_BFqtw-EAh-UdAr_uJA34V-D_GpZTFSpJZpr3OvP1Io3Cw",
+          "GSEVersion": 3323
+        }
+      },
+      "SLG-DK-Oh-!@#$": {
+        "LastUpdated": "20260530185505",
+        "Versions": {
+          "1": {
+            "Actions": [
+              {
+                "Type": "Repeat",
+                "macro": "/cast [help,dead] 61999\n/stopmacro [channeling]\n/cast [spec:1] 49028\n/cast [spec:2] 1249658\n/cast [spec:2] 279302\n/cast [spec:3] 1233448\n/petattack [harm,combat]",
+                "Interval": "2",
+                "Icon": 136143,
+                "type": "macro"
+              },
+              {
+                "Type": "Repeat",
+                "Interval": "1",
+                "macro": "/stopmacro [channeling]\n/cast [spec:1] 195182\n/cast [spec:2] 47568\n/cast [spec:3,known:42650] 42650\n/cast [combat] Berserking\n/use [combat]  13\n/use [combat]  14",
+                "Icon": 1376745,
+                "type": "macro"
+              }
+            ],
+            "InbuiltVariables": {
+              "Combat": true
+            },
+            "Label": "Default"
+          }
+        },
+        "MetaData": {
+          "Helplink": "https://discord.gg/gseunited",
+          "Talents": [],
+          "Checksum": "v2:YtuMBxjpAtIbonyqt8LSivJVsnJc_L9QMwH_oWJmXFL3gupVAS3RqDXbqPGE_ViOBwL2qgZoRqPA7n8_dBgTAQ",
+          "Default": 1,
+          "Author": "ScaryLarryGames",
+          "EnforceCompatability": true,
+          "HelpURL": "https://gse.tools/sequences/69e6f76d61cd20b172199477",
+          "Help": "REPLACE the Racial on Block 2 > Hit SAVE",
+          "Name": "SLG-DK-Oh-!@#$",
+          "PlatformID": "69e6f76d61cd20b172199477",
+          "Dependencies": {
+            "Variables": [],
+            "Macros": [],
+            "Sequences": []
+          },
+          "SpecID": 6,
+          "TOC": 120007,
+          "ManualIntervention": false,
+          "GSEVersion": 3323
+        }
+      }
+    },
+    "Macros": {},
+    "Variables": {}
+  }
+}

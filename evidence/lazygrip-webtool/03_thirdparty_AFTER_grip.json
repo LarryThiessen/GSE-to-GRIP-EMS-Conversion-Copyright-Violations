@@ -1,0 +1,243 @@
+{
+  "format": "GRIP-EMS",
+  "version": 5,
+  "type": "COLLECTION",
+  "locale": "enUS",
+  "sequences": {
+    "DRUSS_AOE_v8": {
+      "icon": 134400,
+      "author": "DrussRet",
+      "description": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+      "help": "",
+      "classID": 2,
+      "specID": 70,
+      "defaultVersion": 1,
+      "versions": [
+        {
+          "stepFunction": "Priority",
+          "actions": [
+            {
+              "type": "loop",
+              "stepFunction": "Priority",
+              "repeat": 1,
+              "children": [
+                {
+                  "type": "action",
+                  "macro": "/cast {spell:31884}\n/use {spell:343527}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [nochanneling] {spell:255937}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [nochanneling] {spell:375576}\n/cast [nochanneling] {spell:255937}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}\n/cast [nochanneling] {spell:375576}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:184575}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}\n/cast [combat] {spell:184575}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:327977}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}\n/cast [combat] {spell:327977}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:327977}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:53385}"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "(/Loop-Priority-Start)/cast Avenging Wrath",
+            "/use Execution Sentence",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [nochanneling] Wake of Ashes",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [nochanneling] Divine Toll",
+            "/cast [nochanneling] Wake of Ashes",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [nochanneling] Divine Toll",
+            "/cast [combat] Blade of Justice",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [combat] Blade of Justice",
+            "/cast [combat] Judgment",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm",
+            "/cast [combat] Judgment",
+            "/cast [combat] Judgment",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Divine Storm(/Loop-Priority-End)"
+          ],
+          "keyPress": "/targetenemy [noharm][dead]",
+          "keyRelease": "",
+          "resetOnCombat": false,
+          "resetOnTarget": false,
+          "resetOnGear": false,
+          "resetOnSpec": false,
+          "resetTimer": 0
+        }
+      ]
+    },
+    "DRUSS_NOCD": {
+      "icon": 134400,
+      "author": "DrussRet",
+      "description": "Check that the macro language matches the language of your game\nPress Ctrl. for change",
+      "help": "",
+      "classID": 2,
+      "specID": 70,
+      "defaultVersion": 1,
+      "versions": [
+        {
+          "stepFunction": "Sequential",
+          "actions": [
+            {
+              "type": "loop",
+              "stepFunction": "Sequential",
+              "repeat": 1,
+              "children": [
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:184575}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [mod:ctrl] {spell:53385}; [known: Hammer of Light] {spell:255937}; {spell:85256}",
+                  "interval": 2
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:327977}"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "(/Loop-Sequential-Start)/cast [combat] Blade of Justice",
+            "/cast [mod:ctrl] Divine Storm; [known: Hammer of Light] Wake of Ashes; Templar's Verdict",
+            "/cast [combat] Judgment(/Loop-Sequential-End)"
+          ],
+          "keyPress": "/targetenemy [noharm][dead]\n/startattack",
+          "keyRelease": "",
+          "resetOnCombat": false,
+          "resetOnTarget": false,
+          "resetOnGear": false,
+          "resetOnSpec": false,
+          "resetTimer": 0
+        }
+      ]
+    },
+    "DRUSS_ST_v8": {
+      "icon": 134400,
+      "author": "DrussRet",
+      "description": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+      "help": "",
+      "classID": 2,
+      "specID": 70,
+      "defaultVersion": 1,
+      "versions": [
+        {
+          "stepFunction": "Priority",
+          "actions": [
+            {
+              "type": "loop",
+              "stepFunction": "Priority",
+              "repeat": 1,
+              "children": [
+                {
+                  "type": "action",
+                  "macro": "/cast {spell:31884}\n/use {spell:343527}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [nochanneling] {spell:255937}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [nochanneling] {spell:375576}\n/cast [nochanneling] {spell:255937}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}\n/cast [nochanneling] {spell:375576}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:184575}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}\n/cast [combat] {spell:184575}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:327977}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}\n/cast [combat] {spell:327977}"
+                },
+                {
+                  "type": "action",
+                  "macro": "/cast [combat] {spell:327977}\n/cast [known:Hammer of Light,nomod] {spell:255937}; [nomod] {spell:85256}"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            "(/Loop-Priority-Start)/cast Avenging Wrath",
+            "/use Execution Sentence",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [nochanneling] Wake of Ashes",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [nochanneling] Divine Toll",
+            "/cast [nochanneling] Wake of Ashes",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [nochanneling] Divine Toll",
+            "/cast [combat] Blade of Justice",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [combat] Blade of Justice",
+            "/cast [combat] Judgment",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict",
+            "/cast [combat] Judgment",
+            "/cast [combat] Judgment",
+            "/cast [known:Hammer of Light,nomod] Wake of Ashes; [nomod] Templar's Verdict(/Loop-Priority-End)"
+          ],
+          "keyPress": "/targetenemy [noharm][dead]",
+          "keyRelease": "",
+          "resetOnCombat": false,
+          "resetOnTarget": false,
+          "resetOnGear": false,
+          "resetOnSpec": false,
+          "resetTimer": 0
+        }
+      ]
+    }
+  },
+  "exportMeta": {
+    "collectionName": "",
+    "author": "DrussRet",
+    "description": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n"
+  }
+}

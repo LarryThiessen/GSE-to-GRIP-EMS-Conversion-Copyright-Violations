@@ -1,0 +1,273 @@
+{
+  "type": "COLLECTION",
+  "payload": {
+    "ElementCount": 3,
+    "Sequences": {
+      "DRUSS_AOE_v8": {
+        "LastUpdated": "20260607222137",
+        "Versions": {
+          "1": {
+            "Actions": [
+              {
+                "1": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast 31884\n/use 343527",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "2": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "3": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [nochanneling] 255937\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "4": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [nochanneling] 375576\n/cast [nochanneling] 255937",
+                  "type": "macro",
+                  "Type": "Action",
+                  "Interval": "2"
+                },
+                "5": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385\n/cast [nochanneling] 375576",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "6": {
+                  "Interval": "2",
+                  "type": "macro",
+                  "Type": "Action",
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 184575\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385"
+                },
+                "7": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385\n/cast [combat] 184575",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "8": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 20271\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "9": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385\n/cast [combat] 20271",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "10": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 20271\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 53385",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "Type": "Loop",
+                "Repeat": 1,
+                "StepFunction": "Priority"
+              }
+            ],
+            "InbuiltVariables": {
+              "Trinket1": false,
+              "Trinket2": false,
+              "Combat": true,
+              "Head": true,
+              "Neck": true,
+              "Ring2": true,
+              "Belt": false,
+              "Ring1": true
+            },
+            "Label": "AOE"
+          }
+        },
+        "MetaData": {
+          "Helplink": "hhttps://wowlazymacros.com/",
+          "Talents": {
+            "V1": {
+              "TalentSet": "CYEAVg1HmQqr1Dwlv86ljju8vCAAAAAQz22MzsMGzMAAAAAAmpMMMzYbY2GmZbGjxYYGbshBAgMz02Mz2MAgNADAGzwMYmZmZDLzghxMGM",
+              "Description": ""
+            }
+          },
+          "ManualIntervention": true,
+          "TOC": 120001,
+          "Author": "DrussRet",
+          "EnforceCompatability": true,
+          "HelpURL": "https://gse.tools/sequences/6a1e0c0c61091862681b3c31",
+          "Help": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+          "Name": "DRUSS_AOE_v8",
+          "Default": 1,
+          "Dependencies": {
+            "Macros": [],
+            "Variables": [],
+            "Sequences": []
+          },
+          "SpecID": 70,
+          "Timewalking": 1,
+          "Checksum": "v2:hUaYE_03JALivIPc7yEyIF9K2IK99bQ9A3pCIiImPimxKwsK8Ui85i7MRODMDqUhNibY0Vw-qX90hAD23MvUDQ",
+          "PlatformID": "6a1e0c0c61091862681b3c31",
+          "Notes": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+          "GSEVersion": 3319
+        }
+      },
+      "DRUSS_NOCD": {
+        "LastUpdated": "20260607213129",
+        "Versions": {
+          "1": {
+            "InbuiltVariables": [],
+            "Actions": [
+              {
+                "1": {
+                  "macro": "/targetenemy [noharm][dead]\n/startattack\n/cast [combat] 184575",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "2": {
+                  "macro": "/targetenemy [noharm][dead]\n/startattack\n/cast [mod:ctrl] 53385; [known: Hammer of Light] 255937; 85256",
+                  "Type": "Repeat",
+                  "type": "macro",
+                  "Interval": 1
+                },
+                "3": {
+                  "macro": "/targetenemy [noharm][dead]\n/startattack\n/cast [combat] 20271",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "Repeat": 1,
+                "Type": "Loop",
+                "StepFunction": "Sequential"
+              }
+            ],
+            "Label": "NOCD"
+          }
+        },
+        "MetaData": {
+          "Helplink": "https://wowlazymacros.com",
+          "Notes": "Check that the macro language matches the language of your game\nPress Ctrl. for change",
+          "ManualIntervention": true,
+          "Help": "Check that the macro language matches the language of your game\nPress Ctrl. for change",
+          "Author": "DrussRet",
+          "EnforceCompatability": true,
+          "HelpURL": "https://gse.tools/sequences/6a086ed661b20f89edb6c65b",
+          "Name": "DRUSS_NOCD",
+          "Default": 1,
+          "PlatformID": "6a086ed661b20f89edb6c65b",
+          "Dependencies": {
+            "Macros": [],
+            "Variables": [],
+            "Sequences": []
+          },
+          "SpecID": 70,
+          "TOC": 120001,
+          "Checksum": "v2:Q7a_aGG1b5oIpr4eo351CEjHmLGyaazVMapZBTokIMqUSmhulMJdf8RAsXyo_AAUL9KMTPjumh3_RaRvAgMZAg",
+          "GSEVersion": 3319
+        }
+      },
+      "DRUSS_ST_v8": {
+        "LastUpdated": "20260607222121",
+        "Versions": {
+          "1": {
+            "InbuiltVariables": {
+              "Combat": true,
+              "Head": true,
+              "Trinket1": false,
+              "Trinket2": false,
+              "Neck": true,
+              "Ring2": true,
+              "Belt": false,
+              "Ring1": true
+            },
+            "Actions": [
+              {
+                "1": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast 31884\n/use 343527",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "2": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "3": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [nochanneling] 255937\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "4": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [nochanneling] 375576\n/cast [nochanneling] 255937",
+                  "type": "macro",
+                  "Interval": "2",
+                  "Type": "Action"
+                },
+                "5": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256\n/cast [nochanneling] 375576",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "6": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 184575\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256",
+                  "Type": "Action",
+                  "type": "macro",
+                  "Interval": "2"
+                },
+                "7": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256\n/cast [combat] 184575",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "8": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 20271\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "9": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256\n/cast [combat] 20271",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "10": {
+                  "macro": "/targetenemy [noharm][dead]\n/cast [combat] 20271\n/cast [known:Hammer of Light,nomod] 255937; [nomod] 85256",
+                  "Type": "Action",
+                  "type": "macro"
+                },
+                "Type": "Loop",
+                "Repeat": 0,
+                "StepFunction": "Priority"
+              }
+            ],
+            "Label": "ST"
+          }
+        },
+        "MetaData": {
+          "Helplink": "hhttps://wowlazymacros.com/",
+          "Talents": {
+            "V1": {
+              "TalentSet": "CYEAVg1HmQqr1Dwlv86ljju8vCAAAAAQz22MzsMGzMAAAAAAmpMMMzYbY2GmZbGjxYYGbshBAgMz02Mz2MAgNADAGzwMYmZmZDLzghxMGM",
+              "Description": ""
+            }
+          },
+          "Checksum": "v2:3v2_nAgJtDHqSMlYp3ZtGzMZF6zCCpEewU3Z8FEjcJ1hxqQBjWnz0_IS1dbtgSJ03iVhIyLHW2HG5oo5L3fABg",
+          "Timewalking": 1,
+          "Author": "DrussRet",
+          "ManualIntervention": true,
+          "HelpURL": "https://gse.tools/sequences/6a1e0c1b61f2f4b4f7b2d2d6",
+          "Default": 1,
+          "Name": "DRUSS_ST_v8",
+          "Help": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+          "Dependencies": {
+            "Macros": [],
+            "Variables": [],
+            "Sequences": []
+          },
+          "SpecID": 70,
+          "TOC": 120001,
+          "EnforceCompatability": true,
+          "PlatformID": "6a1e0c1b61f2f4b4f7b2d2d6",
+          "Notes": "Check that the macro language matches the language of your game\nHelp link: https://wowlazymacros.com/ > Drusset post :)\nReset the macro during rotation if the burst fails to launch correctly\n",
+          "GSEVersion": 3319
+        }
+      }
+    },
+    "Macros": {},
+    "Variables": {}
+  }
+}
