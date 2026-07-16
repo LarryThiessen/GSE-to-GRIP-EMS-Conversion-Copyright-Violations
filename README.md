@@ -14,7 +14,7 @@ Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 |---|---|
 | `curseforge-complaint-final.md` | **The complaint to file** with CurseForge/Overwolf. Code + license only. Fill address, project URLs, date before submitting. |
 | `grip-cmi-evidence-exhibit.md` | Code-cited technical exhibit — the import→export path with file/line citations, confirmed across all 64 GRIP releases, plus the SLG license (Appendix B). Attach to the complaint. |
-| `grip-1202-cmi-analysis.md` | Supporting legal memo on the DMCA §1202 / CMI theory. **Two-sided; not legal advice** — take to an IP lawyer. |
+| `grip-1202-cmi-analysis.md` | Legal memo — **DMCA §1202 (CMI removal) + *Grokster* inducement**. **Two-sided; not legal advice** — take to an IP lawyer. *Revised 2026-07: supersedes an earlier draft that rated §1202 "weak." That draft considered only `PlatformID`; the claim is materially stronger now that `HelpURL` (a link to the owner's listing — §1202(c)(5)) and `Checksum` (a real Ed25519 platform signature) are also shown stripped, and the Discord record supplies the double-scienter the draft called the fatal weakness.* |
 | `grip-vs-gse-forensic-comparison.md` | **Primary code exhibit.** Full five-subsystem source-to-source diff of both codebases. Three parts: (1) GRIP replicates GSE's non-platform-mandated signature design — the Priority `N·(N+1)/2` expansion is output-identical; (2) GRIP engineered a workaround for GSE's documented anti-scraping lock; (3) GRIP strips the owner-identifying `PlatformID`/`HelpURL`/`Checksum`. Concludes: functional/design clone, **not** source-copied; states what to plead and what not to. |
 | `grip-vs-gse-functional-identity.md` | Companion exhibit: GRIP is functionally/architecturally/format-identical to GSE (same container, data model, secure engine, advance-every-press behavior, conditional syntax), and its marketed "holds on failed cast" differentiator is **not implemented** in its engine code. Behavioral identity only — **not** a code-copying claim. |
 | `grip-lazygrip-webtool-exhibit.md` | Exhibit on LazyGrip.net's public Workshop web tools: on-demand plaintext reproduction of a submitted sequence, and server-side removal of GSE.Tools CMI (`PlatformID` + `HelpURL` gse.tools link + `Checksum`) on convert. Live before/after captured 2026-07-12. |
@@ -26,6 +26,7 @@ Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 | `data/version_scan_raw.csv` | Raw scan output (file IDs, reference). |
 | `evidence/GRIP-EMS-v1.0.4.zip` `v1.9.1.zip` `v2.3.5.zip` | The actual shipped GRIP addon builds cited in the exhibit (earliest, mid, current). |
 | `evidence/SHA256SUMS.txt` | SHA-256 hashes of the three zips (chain of evidence). |
+| `correspondence/2026-07-cf-claim-thread.md` | The CurseForge thread: claim submitted, their acknowledgement, the follow-up sent, what's awaited, and how to answer the anticipated pushback. Keep updated. |
 
 ## The core claim (what's solid)
 
@@ -34,13 +35,23 @@ Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 3. It omits the author-bound `PlatformID` — present in no GRIP release.
 4. `Import/GRIPExport.lua` + `Engine/Transmission.lua` re-encode and P2P-share the result with no license/redistribution guard.
 
-Grounds: copyright infringement (17 U.S.C. §106) + breach of the SLG-Sequences license (clauses 2(a),(b),(d),3) + CurseForge IP policy. `PlatformID` removal is a supporting §1202/CMI theory (get a lawyer's read first).
+5. **The developers documented the intent before they built it** — *"how to bypass the new GSE security system"* → *"strip the gse tools stuff from gse"* → the ARR licence named by name → *"Kind of solved it"* ~4 hours later (`evidence/discord/`). The shipped code matches the plan, in every release.
 
-## Before filing
+Grounds, in order of strength:
+- **Direct infringement + license breach (the floor)** — unauthorized reproduction/distribution (17 U.S.C. §106(1),(3)) in breach of the SLG-Sequences license (2(a),(b),(d),3). Needs no CMI theory and no scienter showing.
+- ***Grokster* inducement (likely the lead theory)** — a tool distributed with the object of promoting infringing use, shown by clear expression (the Discord) + affirmative steps (the shipped capability). Note: requires pleading the predicate user copies; capability + intent alone is not infringement.
+- **DMCA §1202 (supporting)** — removal of `HelpURL` / `Checksum` / `PlatformID`. Much stronger than first assessed, but still get a lawyer's read.
+- **CurseForge IP policy** — the platform applies its own standard, not a court's; documented intent + shipped capability suffices there.
 
-- Fill the three blanks in `curseforge-complaint-final.md` (§1 address/phone, §3 CurseForge project URLs, §7 date).
-- Attach `grip-cmi-evidence-exhibit.md` and `SLG-Sequences-LICENSE.txt`.
+## Status — FILED
+
+The CurseForge claim has been **submitted with the evidence** (see `correspondence/`). CurseForge acknowledged receipt and is reviewing; a follow-up was sent to confirm the reported infringing project is logged as **GRIP-EMS (1489414)** and to obtain a case reference — their acknowledgement quoted one of the rights holder's *own* project URLs, so the direction of the claim needed confirming.
+
+The 14 works claimed are all of the rights holder's CurseForge projects: **GSE: Tracker** plus the 13 **GSE:SLG** class sequence sets — each published All Rights Reserved.
+
+Notes for any further filing:
 - This is an IP-policy/functionality complaint (GRIP's *download* does not itself contain the sequences), so CurseForge has discretion. It is **not** a source-code-copying claim.
+- If CurseForge pushes back with *"GRIP's download doesn't contain your files,"* that is the anticipated response — answer from the code (`grip-cmi-evidence-exhibit.md`) and the intent record (`evidence/discord/`), not by re-arguing the filing.
 
 ## Explicitly out of scope
 
