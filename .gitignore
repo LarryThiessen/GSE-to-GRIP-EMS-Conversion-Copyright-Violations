@@ -1,3 +1,6 @@
 # scratch
 *.tmp
 .DS_Store
+
+# generated evidence bundle (rebuild for sending; not versioned)
+GRIP-IP-Evidence.zip
