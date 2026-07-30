@@ -105,7 +105,7 @@ Together these are the sequence's provenance: *who owns it, where it lives, and 
 
 The identifier stripping is not confined to the addon's private import. The **same operator** runs a public, on-demand web service that performs the same removal — so the conduct is repeated in a second, independently verifiable venue.
 
-**Operator nexus.** Per the rights holder, **sirsataana / "Sataana"** owns the **LazyGrip.net** site and authors **GRIP-EMS**, operating with **"Beard3d_Gamer"** and **"Slowdog"** (the Workshop tools page is titled "Tools by Beard3d_Gamer … integrated on LazyGrip by Slowdog"). *To be confirmed by counsel via CurseForge project ownership + WHOIS + the House of Lazy Macros Discord record.* The significance: the party stripping owner-IDs in the addon is the same party stripping them on the website.
+**Operator nexus.** **`sirsataana` / "Sataana" — Jesper Driessen** authors **GRIP-EMS** and runs the **LazyGrip.net** site, operating with **"Beard3d_Gamer"** and **"Slowdog"**, who built and integrated the Workshop tools (the tools page is titled "Tools by Beard3d_Gamer … integrated on LazyGrip by Slowdog", and both describe their own roles in the Discord record). **Resolved 2026-07-29 — see `OPERATOR-IDENTITY-RESOLVED.md`.** The domain's registrant of record remains privacy-redacted and a subpoena is the route to it; that is a records question, not a question of who operates the site. The significance: the party stripping owner-IDs in the addon is the same party stripping them on the website.
 
 **Vector 1 — the addon import** (documented above): `PlatformID` dropped, `HelpURL`/`Checksum` absent from the shared/exported artifact.
 

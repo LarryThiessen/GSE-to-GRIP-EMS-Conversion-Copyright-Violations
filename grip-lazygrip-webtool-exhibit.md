@@ -9,7 +9,7 @@ The README correctly excludes a **"lazygrip.net hosts redistributed copies of my
 ## Operator / nexus to GRIP-EMS
 
 - Site: `https://lazygrip.net` — self-described "community library for sequences built around" GRIP-EMS.
-- Workshop tools page (`/workshop`) is titled **"Tools by Beard3d_Gamer"**, "integrated on LazyGrip by Slowdog." "Slowdog" is a listed author on the site and, per the site's own attribution, associated with GRIP-EMS. (Operator identity to be confirmed by counsel via WHOIS / CurseForge project ownership for GRIP-EMS project 1489414.)
+- Workshop tools page (`/workshop`) is titled **"Tools by Beard3d_Gamer"**, "integrated on LazyGrip by Slowdog." Both are listed authors on the site, and both describe their own roles in the Discord record. **Operator identity resolved 2026-07-29 — see `OPERATOR-IDENTITY-RESOLVED.md`.** The domain registrant of record remains redacted at NameCheap and a subpoena is the route to it.
 - The tools accept and emit the GRIP-EMS native formats `!EMS1!` and `!GRIP1!` alongside GSE's `!GSE3!`.
 
 ## Method (reproducible; matches the package's decode recipe)
@@ -94,7 +94,7 @@ This is a direct before/after showing the Convert-to-GRIP transform removes the 
 ## Honest limits of this exhibit
 - No GRIP-format copy of the **rights holder's own** sequence with CMI removed was produced — the converter refused those sequences. Finding 3's before/after is third-party content.
 - This exhibit does **not** claim LazyGrip hosts or redistributes the rights holder's sequences (that angle remains disproven and excluded).
-- Operator identity ("Slowdog"/"Beard3d_Gamer" ↔ GRIP-EMS project ownership) is asserted from site attribution and should be confirmed by counsel.
+- Operator identity ("Slowdog"/"Beard3d_Gamer" ↔ the Workshop tools) rests on the site's own in-panel credits plus their own statements in the Discord record — resolved; see `OPERATOR-IDENTITY-RESOLVED.md`. Separately, the domain's registrant of record is redacted and requires a subpoena.
 
 ## Files (in `evidence/lazygrip-webtool/`)
 | File | Contents |
