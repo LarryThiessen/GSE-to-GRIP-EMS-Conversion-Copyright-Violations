@@ -8,8 +8,7 @@
 
 - **Name:** Larry A. Thiessen
 - **Doing business as:** ScaryLarryGames ("SLG")
-- **Email:** [contact withheld]
-- **Mailing address / phone:** __________ (required by CurseForge/DMCA)
+- **Contact:** on file with CurseForge/Overwolf — email, mailing address and phone were supplied directly on filing and are withheld from this public copy.
 - **Role:** Author and copyright owner of the works identified in §3.
 
 ## 2. The project complained about
