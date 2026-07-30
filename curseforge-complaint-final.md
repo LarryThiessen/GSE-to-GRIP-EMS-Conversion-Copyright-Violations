@@ -17,7 +17,7 @@
 - **Author (CurseForge):** Sataana (MrSataana / JesperLive)
 - **CurseForge project ID:** 1489414
 - **URL:** https://www.curseforge.com/wow/addons/grip-enhanced-macro-sequencer
-- **Scope:** all releases; the functionality complained of is present in every release from v1.0.4 (2026-03-21) through the current v2.3.5 (2026-07-03).
+- **Scope:** all releases; the functionality complained of is present in every release from v1.0.4 (2026-03-21) through the current **v2.3.16** (verified 2026-07-29, SHA-256 `5c1499cf695b1c82…`; zero `PlatformID` across its 198 Lua files) (2026-07-03).
 
 ## 3. My copyrighted works and their license
 

@@ -1,6 +1,6 @@
 # Provenance — the GRIP-EMS release archives
 
-Why three `.zip` files sit in an evidence repo, where they came from, and how a third party can check them.
+Why four `.zip` files sit in an evidence repo, where they came from, and how a third party can check them.
 
 ## What they are
 
@@ -11,28 +11,31 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v1.0.4.zip` | `7791035` | 2026-03-21 | 343,881 B | `c3f9677d27fe89c79cbd94a93abaaade47f6291a133afd94932a86285a584cbe` |
 | `GRIP-EMS-v1.9.1.zip` | `7918661` | 2026-04-12 | 946,584 B | `4fa4269a89c46c61fbd3f06bfccee21a1b6ca3df1e3f5a1604114ea153cb7602` |
 | `GRIP-EMS-v2.3.5.zip` | `8364957` | 2026-07-03 | 2,652,665 B | `b50ca92e643024fdef84477b325ba0cfaa1056967a077183634d1a8218bd8d2a` |
+| `GRIP-EMS-v2.3.16.zip` | *(to record)* | 2026-07 | 3,013,594 B | `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
 
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
 - **v2.3.5** — the version the exhibits cite as operative.
+- **v2.3.16** — the release current as at 2026-07-29, captured that day. Retained to show the conduct is ongoing rather than historical: `PlatformID`, `HelpURL` and `gse.tools` are all absent from its 198 Lua files, and it still reads GSE's internal globals. Its CurseForge file ID was not recorded at capture — add it from the project's Files page.
 
 ## Capture
 
-- Downloaded from CurseForge's own file endpoints on **2026-07-12** (file timestamps 21:23 local) and committed the same day in `8332cc4`. The archives have not been opened, repacked, or altered since — the hashes above are the bytes as received.
-- All three returned **HTTP 200** during the 2026-07-12 scan that produced `data/version_scan_raw.csv`, which records the file ID and result for all 64 releases.
+- **v1.0.4, v1.9.1, v2.3.5** — downloaded from CurseForge's own file endpoints on **2026-07-12** (file timestamps 21:23 local) and committed the same day in `8332cc4`. All three returned **HTTP 200** during that scan, which produced `data/version_scan_raw.csv` (file ID and result for all 64 releases).
+- **v2.3.16** — captured **2026-07-29** as the then-current release, to establish the conduct is ongoing. Its CurseForge file ID was not recorded at capture; add it from the project's Files page.
+- No archive has been opened, repacked, or altered — every hash above is the bytes as received.
 - Captured by Larry A. Thiessen ("ScaryLarryGames").
 
 ## Why the archives are here, and why that is not a problem
 
 **The releases remain public on CurseForge.** These copies are not a substitute for an unavailable original — anyone can still download the same files from the same project. That is a *feature* of this evidence, not a gap: a third party can re-download, hash, and confirm byte-identity with what is in this directory. Few evidence exhibits are that easy to check.
 
-**What is not available is the source.** Per the rights holder, the GRIP-EMS author's GitHub repositories are **private**, and CurseForge distributes packaged builds only. So there is no public source tree to read or diff — the only way to examine GRIP's Lua, and therefore the only way to check a single `FILE:LINE` citation in the exhibits, is to obtain a release package and unpack it. That is precisely what these three archives are, pinned to fixed hashes so the citations always resolve against the same bytes even if a future release renumbers lines.
+**What is not available is the source.** Per the rights holder, the GRIP-EMS author's GitHub repositories are **private**, and CurseForge distributes packaged builds only. So there is no public source tree to read or diff — the only way to examine GRIP's Lua, and therefore the only way to check a single `FILE:LINE` citation in the exhibits, is to obtain a release package and unpack it. That is precisely what these archives are, pinned to fixed hashes so the citations always resolve against the same bytes even if a future release renumbers lines. That is not hypothetical: between v2.3.5 and v2.3.16, `Import/LegacyImport.lua` grew from ~900 to 2,396 lines and one cited range moved, while `Engine/StepFunctions.lua:248-262` and `Import/LegacyMigrate.lua:92-99` stayed identical.
 
 Keep these apart:
 
-- **Verifiable by anyone:** that file IDs `7791035` / `7918661` / `8364957` resolve on CurseForge, that their bytes hash to the values above, and that `data/version_scan_raw.csv` records all three returning HTTP 200 on 2026-07-12.
+- **Verifiable by anyone:** that file IDs `7791035` / `7918661` / `8364957` resolve on CurseForge, that their bytes hash to the values above, that `data/version_scan_raw.csv` records all three returning HTTP 200 on 2026-07-12, and that the current release on the project page hashes to the v2.3.16 value.
 - **On the rights holder's account:** that the author's GitHub repositories are private. Checkable, but not evidenced in this package.
 - **Not claimed at all:** any motive for the repositories being private. This package does not allege one, and nothing here should be read as establishing it.
 

@@ -287,3 +287,38 @@ grep -ric "PlatformID" grip235/ | grep -v ':0$' || echo "PlatformID: zero occurr
 ```
 
 Confirmed on 2026-07-29 against the hashed archive. `PlatformID`, `HelpURL` and `gse.tools` each returned zero across all 182 Lua files.
+
+### Re-verified against the current release, v2.3.16 (2026-07-29)
+
+The analysis above pins to **v2.3.5**. The claims were re-run against the current release to confirm the complaint is about live behaviour, not a fixed historical build.
+
+**`GRIP-EMS-v2.3.16.zip` — SHA-256 `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e`, 3,013,594 bytes, 244 entries, 198 `.lua` files, `.toc` reports `v2.3.16`.**
+
+| Check | v2.3.5 | v2.3.16 |
+|---|---|---|
+| `PlatformID` occurrences | 0 | **0** |
+| `HelpURL` occurrences | 0 | **0** |
+| `gse.tools` occurrences | 0 | **0** |
+| Reads GSE's internal globals | yes | **yes** — `GSESequences` ×9, `GSE.Library` ×1 |
+
+**Two citations land on identical line numbers in both releases**, eleven versions apart — so the exhibit's references are current, not stale:
+
+- `Engine/StepFunctions.lua:248-262` — `SF:ExpandPriority`, the nested `for i / for j` double loop, character-for-character the same code at the same lines (file is 505 lines in both).
+- `Import/LegacyMigrate.lua:92-99` — the documented lock workaround (*"newer source builds keep the runtime table private … otherwise migrate straight from SavedVariables"*), same lines, same wording, still reading `_G.GSE`, `_G.GSE.Library` and `_G.GSESequences` by name.
+
+**One citation moved and should be renumbered when quoting v2.3.16.** `Import/LegacyImport.lua` grew from ~900 to **2,396** lines. The GSE-legacy identity blanking previously cited at `857-872` is now at **`921-927`**, and it is unchanged in substance:
+
+```lua
+921|         seqData.originalAuthor = seqData.author or "Unknown (GSE legacy)"
+922|         seqData.originalAuthorIdentity = ""
+923|         seqData.originalAuthorRealm = ""
+924|         seqData.originalAuthorBattleTag = nil
+925|         seqData.originalCreatedAt = 0
+926|         seqData.originalSignature = ""
+927|         seqData.modifierChain = {}
+```
+
+The same file now also carries `LI.ApplyForgeProvenance` (line 117), which blanks the identical identity fields for "GRIP Forge" content — i.e. the blanking pattern has been generalised, not withdrawn. `provenanceSource = "gse-legacy"` is still stamped at line 928.
+
+**Bottom line:** every element of the claim is present in the release currently being distributed. Nothing here has been remediated in the eleven versions since v2.3.5.
+
