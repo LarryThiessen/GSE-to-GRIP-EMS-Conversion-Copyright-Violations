@@ -6,12 +6,12 @@ Record of the CurseForge/Overwolf thread. Keep this updated as the case progress
 
 ## 1. Claim submitted — Larry A. Thiessen → CurseForge
 
-Copyright claim filed via CurseForge's copyright form, **with the supporting evidence attached** (code-cited exhibit + Discord record).
+**On or shortly before Mon 2026-07-13** (acknowledged that day). Copyright claim filed via CurseForge's copyright form, **with the supporting evidence attached** (code-cited exhibit + Discord record).
 
 - **Works claimed (14, all All Rights Reserved):** GSE: Tracker (`gse-tracker`, project 1445627) and the 13 GSE:SLG class sequence sets — Death Knight, Demon Hunter, Druid, Evoker, Hunter, Mage, Monk, Paladin, Priest, Rogue, Shaman, Warlock, Warrior.
 - **Reported infringing project:** GRIP – Enhanced Macro Sequencer ("GRIP-EMS"), project ID **1489414**.
 
-## 2. CurseForge → Larry (acknowledgement)
+## 2. CurseForge → Larry (acknowledgement) — Mon 2026-07-13, 5:36 PM
 
 > Hey Larry Thiessen,
 >
@@ -24,7 +24,7 @@ Copyright claim filed via CurseForge's copyright form, **with the supporting evi
 
 **Concern raised by this reply:** the URL quoted (`gse-slg-death-knight-sequences-set`) is one of the **rights holder's own projects**, not the reported infringing project. This is likely just the form echoing the claimed work — but if the direction were mis-logged, a takedown could land on the rights holder's own 14 projects. Hence the follow-up below.
 
-## 3. Larry → CurseForge (follow-up sent)
+## 3. Larry → CurseForge (follow-up) — Thu 2026-07-16, 1:52 PM
 
 > **Subject: Re: Copyright claim — confirming reported project + case reference**
 >
@@ -46,10 +46,40 @@ Copyright claim filed via CurseForge's copyright form, **with the supporting evi
 
 **Why kept short:** the claim was already filed with evidence. Re-arguing the basis after filing invites re-opening settled questions. This does only the two things with value — kills the ambiguity about which side is the infringer, and obtains a ticket reference so "high volume" doesn't become a black hole.
 
-## 4. Awaiting
+## 4. Larry → CurseForge (second bump) — Thu 2026-07-30, 4:44 AM
+
+Sent after **14 days of silence** following the 07-16 follow-up. Single ask, no re-arguing:
+
+> **Subject: Re: Copyright claim — case reference still needed (project 1489414)**
+>
+> Hi CurseForge Team,
+>
+> Following up on my claim (acknowledged by your team, follow-up sent [date]). I still have no case or ticket reference, which means I have no way to track this or confirm it was logged correctly.
+>
+> Could you reply with just the ticket number, and confirm the reported infringing project is recorded as **1489414 (GRIP – Enhanced Macro Sequencer)**? Nothing further needed at this stage.
+>
+> Larry A. Thiessen ("ScaryLarryGames")
+
+*(Transcription note: the message went out with the literal placeholder "[date]" unfilled — the intended date was 2026-07-16. Recorded verbatim as sent; no correction email issued, the ask is unaffected.)*
+
+## 5. Awaiting
 
 - [ ] Case/ticket reference from CurseForge
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
+
+**Escalation cadence if silence continues:**
+- **~2026-08-06** (one week after the second bump): open a parallel ticket at support.curseforge.com referencing this email thread, asking only that the claim be assigned a reference — the copyright inbox and the support desk may be different queues.
+- **Beyond that:** a formal §512 notice to Overwolf's registered DMCA agent is the bigger stick, but **do not send one without an IP lawyer's review** — this claim is deliberately framed as an IP-policy/functionality complaint (GRIP's download does not contain the sequences), and forcing that into a §512 notice sloppily invites a §512(f) misrepresentation problem.
+
+**Timeline at a glance:**
+
+| Date | Event |
+|---|---|
+| ≤ 2026-07-13 | Claim filed with evidence |
+| 2026-07-13 5:36 PM | CurseForge acknowledgement (quotes rights holder's own project URL) |
+| 2026-07-16 1:52 PM | Follow-up: confirm direction + request ticket ref |
+| 2026-07-16 → 07-30 | **14 days, no response** |
+| 2026-07-30 4:44 AM | Second bump: ticket ref only |
 
 ### Anticipated pushback and how to answer it
 
