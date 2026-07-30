@@ -6,7 +6,7 @@ Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 
 ## ★ Start here — the chain of events
 
-### → **[Read it in your browser, right now](https://larrythiessen.github.io/-GSE-GRIP-EMS-Conversion-Copyright-Violations/)** ←
+### → **[Read it in your browser, right now](https://larrythiessen.github.io/GSE-to-GRIP-EMS-Conversion-Copyright-Violations/)** ←
 
 No download, no setup — that link opens the whole walkthrough as a web page.
 

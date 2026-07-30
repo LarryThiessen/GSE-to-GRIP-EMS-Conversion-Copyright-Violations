@@ -9,7 +9,7 @@ I'm continuing work on a local git repo. Start by reading it:
 
   C:\Git\GRIP-IP-Complaint
 
-(Also published at https://github.com/LarryThiessen/-GSE-GRIP-EMS-Conversion-Copyright-Violations
+(Also published at https://github.com/LarryThiessen/GSE-to-GRIP-EMS-Conversion-Copyright-Violations
 Read README.md first, then the exhibits it lists.)
 
 WHAT THIS IS
