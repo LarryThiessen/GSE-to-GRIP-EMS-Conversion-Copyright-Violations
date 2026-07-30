@@ -105,6 +105,31 @@ Sataana is saying, out loud, that a creator's content got shared around, the cre
 He states, plainly, that he knows a stripped, mass-released version would violate the license — and pre-writes his own denial for the day it shows up.
 
 **One day apart. Two different people. Two different servers. Same subject.** This isn't a single bad moment in April — it's a pattern that was still alive and being talked about in June, in more than one place.
+### 2026-05 → 2026-07-29 — the campaign leaves Discord and goes public
+
+The Discord record above ends in June. What follows is the same names carrying the same argument onto Reddit and YouTube under *different* handles, ending in a mainstream WoW channel calling GSE malware.
+
+**Handles and IDs below are as supplied by the rights holder.** Confirm each Discord ID via "Copy User ID" on the profile before any filing. **Dates are derived** from the relative ages Reddit/YouTube displayed on **2026-07-29** ("2mo ago", "23 days ago", …) — the day-counted ones are ±1, the "2mo" ones are approximate only. Pull exact UTC from each post's `.json` before citing.
+
+- **~2026-05-29** *(Reddit: "2mo ago")* — **r/wow**, by `Zulubyte` = **CzarTheMad** (Discord `212047896282005505`): [*"GSE is breaking WoW EULA and banning paying…"*](https://www.reddit.com/r/wow/comments/1u25ulq/gse_is_breaking_wow_eula_and_banning_paying/).
+  → Same person who on 2026-04-30 offered to *"strip the gse tools stuff from gse"* and who named SLG's exact paid-member count. The EULA/banning framing is the same one the record shows him workshopping in-channel.
+
+- **~2026-05-29** *(Reddit: "2mo ago")* — **r/wowaddons**, by `JesperLive` = **Sataana** (Discord `77674000083324928`; CurseForge [`sirsataana`](https://www.curseforge.com/members/sirsataana/projects)): [*"GSE Companion App able to edit / delete other addon…"*](https://www.reddit.com/r/wowaddons/comments/1u3z5j7/gse_companion_app_able_to_edit_delete_other_addon/).
+  → **Significant.** This is the companion-app "disclosure" going public under his own Reddit handle, and it matches the GitHub repo `JesperLive/gse-companion-disclosure` already examined in Part A (`../companion-app/COMPANION-FORENSIC-FINDINGS.md`). So the author of GRIP-EMS is personally the publisher of the disclosure Part A rebuts — corroborated across CurseForge, GitHub, and Reddit, not inferred.
+
+- **2026-07-06** *(YouTube: "23 days ago")* — **TheKephas** (Discord `152017697767555072`): [*"We Need to Talk About the GSE Addon Community | World of Warcraft Addon"*](https://www.youtube.com/watch?v=2Lwqu93TiFY&t=1s).
+  → ⚠ **Video-ID conflict to reconcile:** `captures.md` (the 2026-06-18 GRIP-Discord entry) transcribed this link off a screenshot as `v=2LwqvfDTiFY`; the ID supplied here is `v=2Lwqu93TiFY`. One of the two is a transcription slip — settle which before either is cited anywhere.
+
+- **2026-07-08** *(Reddit: "21 days ago")* — **r/wow**, `Zulubyte`/**CzarTheMad** again: [*"We Need to Talk About the GSE Addon Community"*](https://www.reddit.com/r/wow/comments/1urdvdj/we_need_to_talk_about_the_gse_addon_community/) — reposting the Kephas video under its own title.
+  → Second time the same House of Macros moderator carries the same video to r/wow. Note this is a *separate, later* post from the r/wow thread he shared in-channel earlier (`captures.md`, "gse" search page 1) — don't merge them.
+
+- **2026-07-16** *(Reddit: "13 days ago")* — **r/wow**, by `KKthx` = **bearded_dad_bod** (Discord `937123324822175775`) — the handle credited in-panel for LazyGrip's Workshop decode/convert tools: [*"GSE is gone from CurseForge, they did the right…"*](https://www.reddit.com/r/wow/comments/1uy32qn/gse_is_gone_from_curseforge_they_did_the_right/). **The main post has since been deleted.**
+  → Two things this needs, now: **(a)** archive whatever survives — comments, Google cache, archive.today — before that goes too; **(b)** independently confirm whether GSE was in fact delisted from CurseForge on or around that date. That is a material fact for both cases and **it is not established anywhere else in this record** — a deleted Reddit title is not proof of it.
+
+- **2026-07-29 (today)** — **YouTube, Bellular** (mainstream WoW channel): [*"A Huge WoW Addon Put Malware On Players' PCs"*](https://www.youtube.com/watch?v=u37h_2yliyY).
+  → The accusation has escalated from "invasive" to **"malware"**, on a channel with far more reach than any of the above. **Unverified whether GSE is the addon meant** — establish that first, from the video itself. If it is, Part A stops being time-sensitive and starts being overdue: the two facts only Tim can confirm (see `README.md` → "Before publishing Part A") are now the critical path, and the "don't harass anyone" line in the announcement draft matters more, not less.
+
+**What this adds to the record:** the conduct didn't stay inside House of Macros. Two named participants (CzarTheMad, bearded_dad_bod) and the video's author moved the same narrative onto public platforms under handles that don't visibly connect to their Discord identities — which is why the handle↔ID mapping above is worth locking down properly.
 
 ---
 
