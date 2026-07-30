@@ -33,6 +33,13 @@ It's a self-contained page (no internet needed) that walks anyone — no technic
 | `evidence/GRIP-EMS-v1.0.4.zip` `v1.9.1.zip` `v2.3.5.zip` | The actual shipped GRIP addon builds cited in the exhibit (earliest, mid, current). |
 | `evidence/SHA256SUMS.txt` | SHA-256 hashes of the three zips (chain of evidence). |
 | `correspondence/2026-07-cf-claim-thread.md` | The CurseForge thread: claim submitted, their acknowledgement, the follow-up sent, what's awaited, and how to answer the anticipated pushback. Keep updated. |
+| `RESPONSE-to-companion-disclosure.html` | **The public answer to the "GSE Companion is malware" claim.** Point by point, checked against the shipped build. |
+| `RESPONSE-brief-for-Tim.html` | The same material as a short brief for GSE's author. |
+| `evidence/companion-app/COMPANION-FORENSIC-FINDINGS.md` | **The audit behind that response.** Hash-anchored to the exact `app.asar` the discloser examined, so his own evidence tests his own conclusions. Finding: the destructive routine ran only under `restricted && enforce`; the discloser's own captures record `enforce: false` on all three dates he sampled; it is absent from the shipping build. Concedes a real unsigned diagnostic-upload residual rather than clearing everything. |
+| `evidence/companion-app/OPERATOR-STATEMENT-2026-07-29.md` | GSE's author — who runs the server — settling the two facts the audit said only the operator could confirm: there was **no server-side enforce capable of being set true**, and all diagnostic uploads are now tied to a user-initiated request. Testimony, not artifact; flagged as such. |
+| `evidence/companion-app/COMPANION-APP-FIX.md` | The remediation the audit recommends (per-request ed25519 signing on the diagnostic path). |
+| `evidence/companion-app/discloser-own-evidence/` | The discloser's **own** committed files — `hashes.txt` and the three `live_access_policy_*.json` captures. The `enforce: false` finding rests on his evidence, not ours. |
+| `evidence/companion-app/claim-screenshots/` | Screenshots behind the claims and rebuttals, incl. `02_tim-reply-canary.png` (GSE's author on the canary, and on not being asked first) and `01_kephas-video-page.png`. |
 
 ## The core claim (what's solid)
 
