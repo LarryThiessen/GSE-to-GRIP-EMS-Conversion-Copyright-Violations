@@ -156,3 +156,134 @@ The rights holder contends that GRIP's authors took GSE's code and regenerated s
 4. **Intent/non-consent conduct** — GRIP's engineered workaround around GSE's documented anti-scraping lock.
 
 **Do NOT plead:** source-code copying, or the AI-transpilation method as established fact. Both are unsupported by the shipped code and both hand GRIP an easy, credibility-damaging rebuttal.
+
+---
+
+# Appendix A — Verbatim extracts, so every claim above can be checked without unpacking anything
+
+Every citation in this exhibit is `FILE:LINE`. This appendix reproduces the cited code on **both** sides so a reader — counsel, a platform reviewer, or the opposing party — can verify the findings from this document alone. Quoted for criticism and analysis; no derivative or modified build is distributed.
+
+**Exactly what was read:**
+
+| Side | Source | Version / anchor |
+|---|---|---|
+| GRIP-EMS | `GRIP-EMS-v2.3.5.zip` — the author's own CurseForge release package (project 1489414, file ID `8364957`, uploaded 2026-07-03) | SHA-256 `b50ca92e643024fdef84477b325ba0cfaa1056967a077183634d1a8218bd8d2a` · 272 entries, 182 `.lua` files |
+| GSE | `github.com/TimothyLuke/GSE-Advanced-Macro-Compiler` working tree | commit `23c9cd97` (2026-07-17) |
+
+Line numbers below were re-derived from those exact artifacts on 2026-07-29, not carried over from earlier drafts.
+
+## A1 — The Priority expansion: different code, identical output
+
+The single most probative point in this exhibit. Priority is not platform-mandated; it is GSE's design choice, and has been for over a decade.
+
+**GSE** — `GSE/API/Storage.lua:2155-2171`. A stateful `limit`/`step` walk over a triangular `looplimit`:
+
+```lua
+2155|                 local looplimit = 0
+2156|                 for x = 1, #actionList do
+2157|                     looplimit = looplimit + x
+2158|                 end
+2159|                 if action.StepFunction == Statics.Priority then
+2160|                     for _ = 1, looplimit do
+2161|                         table.insert(returnActions, actionList[step])
+2162|                         if step == limit then
+2163|                             limit = limit % #actionList + 1
+2164|                             step = 1
+2168|                         else
+2169|                             step = step + 1
+2170|                         end
+2171|                     end
+```
+
+**GRIP** — `Engine/StepFunctions.lua:248-262`. A clean nested double loop:
+
+```lua
+248| function SF:ExpandPriority(stepTexts)
+...
+252|     local expanded = {}
+253|     for i = 1, #stepTexts do
+254|         for j = 1, i do
+255|             expanded[#expanded + 1] = {
+256|                 type = D.ATTR_TYPE_MACRO,
+257|                 macrotext = stepTexts[j],
+258|             }
+259|         end
+260|     end
+261|     return expanded
+```
+
+Structurally unrelated implementations. Both emit `Σ(1..N)` entries in concatenated increasing prefixes — for N=3, `[1, 1, 2, 1, 2, 3]`. Independent code, identical observable behavior: behavior/design replication, not text copying, which is exactly the claim this exhibit makes.
+
+## A2 — The lock, and the workaround written around it
+
+**GSE states the protective intent in a comment** — `GSE/API/Storage.lua:9`:
+
+```lua
+9| -- internals exposed, to deny in-memory scraping by third-party addons. But user
+```
+
+**GRIP documents routing around it** — `Import/LegacyMigrate.lua:92-99`:
+
+```lua
+ 92|     -- Source access: newer source builds keep the runtime table private
+ 93|     -- (file-local addon table, no global). Bind the runtime library when
+ 94|     -- the global exists; otherwise migrate straight from SavedVariables,
+ 95|     -- which the source keeps in sync on every storage write.
+ 96|     local lib = _G.GSE and _G.GSE.Library or nil
+ 97|     if not lib and not _G.GSESequences then
+ 98|         return false, L["GEMS_MIGRATE_EMPTY"]
+ 99|     end
+```
+
+Three things this shows on its face:
+
+1. **Knowledge.** "newer source builds keep the runtime table private" is a description of GSE's privatisation — GRIP's author knew the table had been closed.
+2. **The fallback exists because of it.** When the private-table path is unavailable, GRIP reads GSE's raw SavedVariables instead. The workaround is conditioned on the lock.
+3. **The comment avoids naming GSE while the code names it explicitly.** The prose says "the source"; line 96–97 reads `_G.GSE`, `_G.GSE.Library` and `_G.GSESequences` by name. The euphemism in the comment is not matched by the code.
+
+*(For counsel: SavedVariables are plaintext on the user's own disk, so this is not classic DRM circumvention and no §1201 theory is advanced. The relevance is knowledge and non-consent — GSE said "no scraping," GRIP built the bypass.)*
+
+## A3 — Owner identity: GSE binds it, GRIP blanks it
+
+**GSE clears `PlatformID` deliberately on copy, and says why** — `GSE/API/Storage.lua:704-745`:
+
+```lua
+704| -- brand-new sequence: it is given a fresh GSE.Tools identity (PlatformID is
+705| -- cleared) so the copy and the original never resolve to the same server
+706| -- record.
+...
+743|     -- PlatformID; otherwise the copy and the original would share one server
+745|     clone.MetaData.PlatformID = nil
+```
+
+That is the point of the field: it ties a sequence to one creator's server record, and GSE goes out of its way to keep a duplicate from inheriting it.
+
+**GRIP blanks the origin identity on GSE-legacy import** — `Import/LegacyImport.lua:870-874`:
+
+```lua
+870|         seqData.originalAuthor = seqData.author or "Unknown (GSE legacy)"
+871|         seqData.originalAuthorIdentity = ""
+872|         seqData.originalAuthorRealm = ""
+873|         seqData.originalAuthorBattleTag = nil
+874|         seqData.originalCreatedAt = 0
+```
+
+## A4 — Mechanical checks anyone can rerun
+
+Run against the v2.3.5 archive hashed above (unpack it, or grep the archive directly):
+
+| Token | Occurrences in GRIP v2.3.5 | Reading |
+|---|---|---|
+| `PlatformID` | **0** | GSE's owner-identity field does not exist anywhere in GRIP's 182 Lua files. |
+| `HelpURL` | **0** | GSE's `gse.tools` owner link is absent. |
+| `gse.tools` | **0** | No reference to the owner-listing domain survives anywhere in the tree. |
+| `Checksum` | 30 | **Not zero, and the claim is not that it is.** GRIP has its own checksum concept. The finding is narrower: GSE's *Ed25519 server-signed* `Checksum` is not carried into what GRIP exports or shares. Do not overstate this row. |
+
+```bash
+# verify the artifact first, then the counts
+sha256sum -c SHA256SUMS.txt
+unzip -o GRIP-EMS-v2.3.5.zip -d grip235
+grep -ric "PlatformID" grip235/ | grep -v ':0$' || echo "PlatformID: zero occurrences"
+```
+
+Confirmed on 2026-07-29 against the hashed archive. `PlatformID`, `HelpURL` and `gse.tools` each returned zero across all 182 Lua files.
