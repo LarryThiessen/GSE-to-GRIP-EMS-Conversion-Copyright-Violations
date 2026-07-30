@@ -1,4 +1,4 @@
-# GRIP-EMS — IP / Copyright Complaint Package
+# GSE to GRIP-EMS Copyright Complaint Package
 
 Evidence and filing package re: **GRIP – Enhanced Macro Sequencer** (CurseForge project 1489414) reproducing and enabling redistribution of ScaryLarryGames / SLG-Sequences All-Rights-Reserved macro sequences, and removing the author-bound `PlatformID` identifier on import.
 
