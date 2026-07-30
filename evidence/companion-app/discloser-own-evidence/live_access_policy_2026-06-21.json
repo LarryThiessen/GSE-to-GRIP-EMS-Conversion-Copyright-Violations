@@ -1,0 +1,7 @@
+{
+  "captured": "2026-06-21",
+  "request": "GET https://api.gse.tools/settings/access-policy",
+  "authenticated_client_response": { "enforce": false, "updatedAt": null, "integrity": "verified" },
+  "anonymous_cloud_response": { "enforce": false, "updatedAt": null },
+  "note": "enforce=false: the deletion path is gated off. No detection pattern (integrityRef) value was sent. The server returns a field named 'integrity'; the 0.4.16 client reads a field named 'integrityRef', so this field is inert in the client. Polled 5 times during a ~31-minute instrumented run on 2026-06-21; identical every time. No signed plan/directive arrived over the event stream during that window."
+}

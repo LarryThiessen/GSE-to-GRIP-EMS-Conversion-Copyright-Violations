@@ -1,0 +1,79 @@
+<title>GSE Companion — Response Brief (for Timothy Luke)</title>
+<style>
+  @page{ size:letter; margin:0.55in; }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:#eceae4;color:#17150f;font:11.5px/1.42 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  .page{max-width:7.5in;margin:0 auto;background:#fff;padding:0.5in;box-shadow:0 1px 8px rgba(0,0,0,.12)}
+  @media print{ body{background:#fff} .page{box-shadow:none;padding:0;max-width:none} .noprint{display:none} }
+  h1{font-size:17px;margin:0 0 2px;letter-spacing:-.01em}
+  .meta{font:10px/1.4 ui-monospace,monospace;color:#5a5548;margin-bottom:8px}
+  .rule{height:2px;background:#1f6f43;margin:6px 0 10px;border:0}
+  .bl{background:#f1efe8;border-left:3px solid #1f6f43;padding:7px 10px;margin:0 0 11px;border-radius:0 5px 5px 0}
+  .bl b{color:#12351f}
+  h2{font-size:12px;margin:11px 0 3px;color:#12351f}
+  h2 .n{font:700 10px/1 ui-monospace,monospace;color:#1f6f43;margin-right:5px}
+  p{margin:3px 0}
+  ul{margin:3px 0;padding-left:16px}
+  li{margin:1.5px 0}
+  code,.m{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .hash{font-family:ui-monospace,monospace;font-size:9.5px;color:#5a5548;word-break:break-all}
+  pre{background:#f1efe8;border:1px solid #ddd8cc;border-radius:5px;padding:5px 8px;margin:4px 0;font-size:9.5px;line-height:1.4;overflow-x:auto;white-space:pre-wrap;word-break:break-all}
+  .cap{background:#f6f1f1;border:1px solid #e2c9c9;border-radius:5px;padding:7px 10px;margin:9px 0 4px}
+  .cap b{color:#8b1e1e}
+  .tag{display:inline-block;font:700 8.5px/1 ui-monospace,monospace;padding:2px 5px;border-radius:4px;vertical-align:middle}
+  .no{background:#f3dede;color:#8b1e1e}
+  .fix{background:#dcefe4;color:#1f6f43}
+  .foot{margin-top:12px;border-top:1px solid #ddd8cc;padding-top:6px;font-size:9.5px;color:#7a7566}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+</style>
+
+<div class="page">
+  <h1>GSE Companion &mdash; Response Brief</h1>
+  <div class="meta">FOR: Timothy Luke (GSE) &nbsp;&middot;&nbsp; RE: the &ldquo;gse-companion-disclosure&rdquo; &amp; Kephas video &nbsp;&middot;&nbsp; FROM: ScaryLarryGames &nbsp;&middot;&nbsp; CONFIDENTIAL DRAFT</div>
+  <hr class="rule">
+
+  <div class="bl"><b>Bottom line:</b> The headline claim &mdash; &ldquo;GSE Companion deletes your data&rdquo; &mdash; is refuted by the discloser&rsquo;s <b>own evidence</b>. The &ldquo;paywall&rdquo; and &ldquo;bans&rdquo; claims are misframed. <b>One</b> item is a legitimate fix (an unsigned diagnostic upload). The technical analysis is competent, so we win on <b>facts</b>, not denial.</div>
+
+  <h2><span class="n">1</span>The delete never executed &nbsp;<span class="tag no">DID NOT HAPPEN</span></h2>
+  <p>The cleanup routine ran only under <code>restricted &amp;&amp; enforce</code>. <code>enforce</code> is served by <code>GET api.gse.tools/settings/access-policy</code>. The discloser captured that endpoint himself and committed the results:</p>
+  <pre>evidence/live_access_policy_*.json  →  "enforce": false   on 2026-06-20, 2026-06-21, 2026-07-09</pre>
+  <ul>
+    <li>The arming flag was <b>off on every date he recorded</b> &mdash; the routine never ran against anyone.</li>
+    <li>In the <b>current build (0.4.22)</b> the hardcoded cleanup is <b>removed</b>; <code>enforce</code> now only feeds the app&rsquo;s status display.</li>
+    <li>Same bytes everyone has &mdash; installed <code>app.asar</code> SHA-256 <span class="hash">27716e71c29d9403e0e225cec97f03995a864bf3f4855024e255ec21454cd6e1</span> matches his own <code>hashes.txt</code> entry for 0.4.22.</li>
+  </ul>
+
+  <div class="two">
+    <div>
+      <h2><span class="n">2</span>&ldquo;Paywall / EULA&rdquo; &nbsp;<span class="tag no">MISFRAMED</span></h2>
+      <ul>
+        <li>GSE addon is <b>100% free</b> (CurseForge); no addon feature is sold.</li>
+        <li>GSE.Tools takes <b>no money</b>, runs no Patreon.</li>
+        <li>Creators <i>optionally</i> link their <i>own</i> Patreon for their own extras; class <b>sets are public/free</b>.</li>
+      </ul>
+    </div>
+    <div>
+      <h2><span class="n">3</span>&ldquo;Surveils &amp; bans&rdquo; &nbsp;<span class="tag no">MISFRAMED</span></h2>
+      <ul>
+        <li>No automated detect-and-ban.</li>
+        <li>Admins removed <b>specific people</b> for organized scraping, converting, ID-stripping, and redistribution of All-Rights-Reserved sequences &mdash; documented conduct, not surveillance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2><span class="n">4</span>The one fair point &mdash; mostly shipped, one item open &nbsp;<span class="tag fix">STATUS</span></h2>
+  <p>In <b>0.4.22</b> (the build the disclosure is about) an <b>unsigned</b> diagnostic gather/upload (SSE <code>companion:request</code> &rarr; <code>zo()</code> &rarr; <code>/diagnostic/upload</code>) read WoW-folder files, including addon error logs, and was <b>not</b> behind <code>enforce</code>. No evidence of misuse was found. <b>Re-checked in 0.4.26 on 2026-07-29:</b></p>
+  <ul>
+    <li><b>(a) Sign every request &mdash; NOT done.</b> Still gated on an authenticated session plus a freshly-refreshed bearer token rather than a per-request ed25519 signature. <i>&larr; this is the remaining item.</i></li>
+    <li><b>(b) Opt-in &mdash; partly.</b> A <code>requestFiles</code> flag now raises a user-visible desktop notification; the <code>kinds</code> gather still runs on a server request.</li>
+    <li><b>(c) Scope it down &mdash; largely done.</b> The gather now force-drops the <code>errorlogs</code> kind before collecting, so the BugGrabber/BugSack reader is unreachable from a server request; <code>settings</code> ships with <code>accessToken</code> and <code>userSession</code> deleted; the always-on portion is a GSE-only gather.</li>
+  </ul>
+  <p><b>Hash anchored (2026-07-29).</b> Extracted from a clean <code>GSE Companion Setup 0.4.26.exe</code> (installer SHA-256 <code>c720ec821818fa2b&hellip;</code>): <code>resources/app.asar</code> = <code>c5e569a768acf03bfbe7fe8aa9a9d6a9c4a52f534fa913cc374f90534a57ac21</code>, 6,210,073 bytes, <code>package.json</code> version <code>0.4.26</code>. All three findings above were re-confirmed in those shipped bytes, not in a working tree. <i>Note: the error-log regex is still present in the binary &mdash; it is unreachable, not absent. Say that plainly rather than letting someone present it as a catch.</i></p>
+
+  <div class="cap"><b>Confirm before anything goes public (only you can):</b> (1) <code>enforce</code> was <b>never</b> set true, and (2) the diagnostic upload was <b>never</b> used to pull a user&rsquo;s files. The code and his captures point that way, but you are the authority and he has the source. The winnable fight is the <b>facts above</b> (and, separately, the IP case re: scraping/redistribution) &mdash; not a general denial.</div>
+
+  <div class="foot">
+    Anyone can verify: &nbsp;<code>certutil -hashfile "%LOCALAPPDATA%\Programs\gse-companion\resources\app.asar" SHA256</code> &nbsp;vs. the discloser&rsquo;s public <code>hashes.txt</code>. &nbsp; Full write-up + Discord draft available alongside this brief.
+  </div>
+</div>

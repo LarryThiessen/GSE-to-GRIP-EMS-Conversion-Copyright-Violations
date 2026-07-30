@@ -1,0 +1,8 @@
+{
+  "note": "Live capture of the GSE access-policy endpoint that gates the GRIP-EMS deletion in the Companion. When 'enforce' is true (and GRIP-EMS is present and WoW is closed), the Companion deletes matching sequences from GRIP-EMS.lua. This flag is server-controlled by GSE and is not observable beyond its current value.",
+  "captured_utc_date": "2026-06-20",
+  "request": "GET https://api.gse.tools/settings/access-policy",
+  "authentication": "none required",
+  "response": { "enforce": false, "updatedAt": null },
+  "how_to_reproduce": "curl https://api.gse.tools/settings/access-policy"
+}

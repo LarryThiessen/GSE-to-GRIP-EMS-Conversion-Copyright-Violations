@@ -1,0 +1,90 @@
+SHA-256 hashes — GSE Companion + GSE addon builds
+Recomputed and verified 2026-06-12 against files on disk.
+
+706742b44f5ea9056f67df2e8cae771cd909dd0b882a0d4c3bf87a7639d0043f  GSE Companion Setup 0.4.12.exe        (81,299,552 bytes)
+209adedde7905179832038661b5d279a95831a155d963da3190871d502f36b0f  app.asar (installed Companion logic)  (6,068,792 bytes)
+789753305d33dc21732b67948ef839f4b058fcc15e095b8be8fcb855e28d9c85  GSE-3.3.20-9-gd5e65ce.zip (public)    (2,514,665 bytes)
+7ea11bd7dbe6bb64eb1867462197c7ac52e795a0e7a528eeba77d62be475f5a0  GSE-3.3.20-9-gd5e65ce-PatronBuild.zip (2,522,115 bytes)
+
+How to reproduce:
+  certutil -hashfile "<file>" SHA256          (Windows)
+  sha256sum "<file>"                           (Linux/macOS)
+app.asar path after install:
+  %LOCALAPPDATA%\Programs\gse-companion\resources\app.asar
+
+--- 0.4.14 (acquired 2026-06-20) -------------------------------------------------
+24b64bc72d9c56095c7c92b331842a205be6dd3f23830dddab4a850f9f58dbd0  GSE Companion Setup 0.4.14.exe        (81,296,884 bytes)
+217ff61e074d421ed418f12d47f7f342c09eba9d8c15c4a5bc59fc746ff7229e  app.asar (0.4.14, extracted statically)  (file)
+9c8c9588f7a749c81fb710de73e98899ca516f56cdb004fa82547315b5f0239d  out/main/index.js (0.4.14 app logic)
+
+Native modules shipped (unchanged, stock packages):
+36c2d44b9d7b284f393dd9cc425da5ca90511d90717914f7af5d432b2d3ff5dd  cbor-extract node.napi.node
+d1a71f9ac1728082c1b276392725c3e010b98714888579b99152e401abedbf11  ps-list fastlist-0.3.0-x64.exe
+017411f3b0b5c0402cc3b2cb87c32c6fc71abd82e5b17ea6108990096c75a65d  ps-list fastlist-0.3.0-x86.exe
+
+Live server capture 2026-06-20:
+GET https://api.gse.tools/settings/access-policy  ->  {"enforce":false,"updatedAt":null}
+
+
+--- 0.4.15 (acquired 2026-06-20) -------------------------------------------------
+d516415c9b1ff83c8d1796b071581ef76763511576999018de16076649224a02  GSE Companion Setup 0.4.15.exe        (81,322,606 bytes)
+2e734950eea97015bbf2e69f601da128f28e42de01735f1382033625add3b5e2  app.asar (0.4.15, extracted statically)
+6b13343b4ab4218a37f68080f1bd1a0e0d37dc5c355b68c5dd21a408b806ffc4  out/main/index.js (0.4.15 app logic) (128,949 bytes)
+
+--- 0.4.16 (acquired 2026-06-20) -------------------------------------------------
+264013e8d6508a2cb5b04ac92f22ed5498a8dd38804b91e342ca7fadd1981026  GSE Companion Setup 0.4.16.exe        (81,322,563 bytes)
+84a72f8636c07f1821cba22ff85aae65c530442ae197bc6149922482c8131b70  app.asar (0.4.16, extracted statically)
+5271373bd3de213973282172aa339002dc71c2c88fed39efb13249fbcb078cc2  out/main/index.js (0.4.16 app logic) (128,766 bytes)
+
+New dependency since 0.4.14: tweetnacl (ed25519 directive verification).
+Embedded ed25519 public key (unchanged 0.4.15 -> 0.4.16):
+b531cb8b505ae9752b5b789f26085853b0ba5da5d7e7e244975f0545430d683a
+
+Live server capture 2026-06-21:
+GET https://api.gse.tools/settings/access-policy  ->  {"enforce":false,"updatedAt":null,"integrity":"verified"}
+
+
+--- in-game GSE addon 3.3.22-12-gfb1946e-PatronBuild (files dated 2026-06-20) ----
+fc6eea938f36222feb577f220108e55a01bbb9e29f1edc18300662c492fea748  GSE/API/Codec.lua (ChaCha20 cipher + DecodePackedMessage)  (2,925 bytes)
+6aaad9964db4d0af0194496bf05d90680288990fbb7d992b5212f488b1e81fb6  GSE/API/Plugins.lua (locked-proxy block)                  (5,490 bytes)
+ac2dffe2becbc9b44aa704c8f9655cc95c5a6b07b6e22e71d4eb6700ece5fce8  GSE/API/Serialisation.lua (!GSE3! / !GSE3!+ dispatch)     (18,971 bytes)
+
+The encrypted !GSE3!+ format is decoded by the addon (key embedded in Codec.lua) but
+never encoded on the client; the Companion app rejects it. No !GSE3!+ data was present
+in the captured GSE SavedVariables on 2026-06-21.
+
+
+--- 0.4.20 (acquired 2026-06-28) -------------------------------------------------
+805d34d8ff6e3a54360546241935d24b21ca81484ff9feae97d91b40f917b274  GSE Companion Setup 0.4.20.exe        (81,326,173 bytes)
+41e427a5eca7c68f7f1e97b8475de9b8f67b6ae1dc7888e7019de731b2c9e43b  app.asar (0.4.20, extracted statically)  (6,202,665 bytes)
+9d5d897585b7b85d6cd6befb70a2990a58dcf7ba4dd07e06bd02aa4e7f2492c9  out/main/index.js (0.4.20 app logic) (136,601 bytes)
+
+0.4.20 generalized the unsigned diagnostic upload: it now reads server-specified
+arbitrary files under Interface\AddOns and WTF (any file, 4 MB cap, no "..") and POSTs
+their content to api.gse.tools/diagnostic/upload, triggered by a companion:request SSE push.
+
+--- 0.4.21 (acquired 2026-06-29) -------------------------------------------------
+341fb6212bb950e5d88f92112ede41dbaa06e84e44e4ada12fe76f85408fff73  GSE Companion Setup 0.4.21.exe        (81,326,335 bytes)
+23803e849fe6aaf0373c7c40a416b631ae14520c1627ce050fdd0270c41968f7  app.asar (0.4.21, extracted statically)  (6,202,921 bytes)
+12f5bd5231889ad6f9863b9c0f20aa3a327f14074c9a024d28dc1db8eee60e30  out/main/index.js (0.4.21 app logic) (136,857 bytes)
+
+0.4.21 is a sync-notification dedup only.
+
+--- 0.4.22 (acquired 2026-07-01) -------------------------------------------------
+61015247508dc209ff3118cbd8842216ccd1c31c19dd94f9f80788c6ee1b665d  GSE Companion Setup 0.4.22.exe        (81,326,397 bytes)
+27716e71c29d9403e0e225cec97f03995a864bf3f4855024e255ec21454cd6e1  app.asar (0.4.22)                        (6,203,376 bytes; = the INSTALLED app.asar, verified 2026-07-09)
+56598af576046dc7c96ddcd401d96549032a3824d03f9a28aa19f86b78923a2b  out/main/index.js (0.4.22 app logic) (137,312 bytes)
+
+0.4.22 adds a BugGrabber/BugSack SavedVariables reader to the always-on gather, so their
+error-log content is attached to every diagnostic upload. The embedded ed25519 public key
+is unchanged (b531cb8b505ae9752b5b789f26085853b0ba5da5d7e7e244975f0545430d683a).
+The four GRIP-EMS identifiers are absent from 0.4.20/0.4.21/0.4.22 in 18 encodings tested.
+
+Live server capture 2026-07-09 (authenticated with the account token, and anonymous):
+GET https://api.gse.tools/settings/access-policy  ->  {"enforce":false,"updatedAt":null,"integrity":"verified"}
+A ~30-minute decrypted TLS capture on 2026-07-09 (WoW closed, GRIP-EMS present, two manual
+syncs) showed only GSE content sync: no companion:request directive, no PATCH/PUT/DELETE, no
+/diagnostic upload, restrictedAccount read-only, and no change to GRIP-EMS.lua on disk.
+
+Evidence file added 2026-07-09:
+2e549b9ed5057936c1de2f1ff3f58fbba4d50004a6f54c36f7bbcd43bc017138  evidence/companion_0.4.22_main_beautified.js  (178,366 bytes; js-beautify formatted copy of the 0.4.22 out/main/index.js, whose authoritative minified hash is 56598af5...b78923a2b above)
