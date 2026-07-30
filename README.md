@@ -10,7 +10,7 @@ Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 
 No download, no setup — that link opens the whole walkthrough as a web page.
 
-Prefer it offline? Click the green **Code** button at the top of this repo → **Download ZIP**, unzip, and double-click **`START HERE.html`**. The whole repo comes with it, so every screenshot and exhibit works with no internet. (Clicking [`START HERE.html`](<START HERE.html>) *inside GitHub* just shows raw source — GitHub doesn't render HTML files. Use the link above instead.)
+Prefer it offline? Click the green **Code** button at the top of this repo → **Download ZIP**, unzip, and double-click **`START HERE.html`**. The whole repo comes with it, so every screenshot and exhibit works with no internet. (Clicking `START HERE.html` *inside GitHub* shows a blank page saying it's too big to display — the file is 2.28 MB and GitHub won't render HTML anyway. Nothing is wrong with it; use the browser link above.)
 
 It's a self-contained page (no internet needed) that walks anyone — no technical background required — through the entire story in order, with every Discord message shown as an embedded screenshot and linked to its live permalink, plus a plain-English "what GRIP's code does" and an honest "proven vs. not proven" section. To make a shareable file, open it and **Print → Save as PDF** (it's print-formatted). Everything else in this repo is the underlying evidence and the formal complaint that this page summarizes.
 
