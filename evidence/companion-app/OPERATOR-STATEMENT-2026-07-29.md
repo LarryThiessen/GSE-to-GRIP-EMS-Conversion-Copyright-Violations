@@ -3,7 +3,22 @@
 **Who:** Timothy Luke, author of GSE and operator of the GSE.Tools server.
 **Why this exists:** `COMPANION-FORENSIC-FINDINGS.md` opens with two honesty caveats stating that two facts *"require the GSE author's authoritative confirmation before any public use"* — that the access-policy `enforce` flag was never set true server-side, and that the diagnostic upload was never used to pull a user's files. Client-side code and the discloser's own captures pointed that way, but only the **server operator** can settle it. This is that confirmation.
 
-**Provenance:** posted by **TimothyLuke** in Discord at **10:30 PM on 2026-07-29**, captured in `claim-screenshots/11_tim-operator-statement.png`. **Verbatim below, including original typos.**
+**Provenance:** posted by **TimothyLuke** in Discord, captured in `claim-screenshots/11_tim-operator-statement.png`. **Verbatim below, including original typos.**
+
+| Message ID | UTC (decoded from the snowflake) | Content |
+|---|---|---|
+| `1532228792528015480` | **2026-07-30 03:30:11.573 UTC** | the two main paragraphs |
+| `1532229212893741196` | **2026-07-30 03:31:51.796 UTC** | *"All the diag uploads have been tied to a user initiated request."* |
+
+The screenshot renders these as **10:30 PM** in the rights holder's local time (UTC−5); the authoritative UTC date is therefore **2026-07-30**, the day after the local date this file is named for. Both timestamps are decoded from the message IDs themselves, to the same standard as `../discord/captures.md`.
+
+> **These are direct messages, not a public channel.** The permalinks are
+> `https://discord.com/channels/@me/788975881678618644/1532228792528015480` and
+> `…/1532229212893741196`. The `@me` segment means a DM between the rights holder and GSE's
+> author — **a third party cannot open these links**, unlike every server permalink in
+> `../discord/captures.md`, which anyone in the server can verify. The screenshot and the
+> decoded IDs are the verifiable parts; the links are for the rights holder's own records.
+> State this plainly wherever this statement is relied on.
 
 **Disclosed for completeness:** the second paragraph carries Discord's **"(edited)"** marker — it was modified after posting. The text below is the message as it stands in the capture. This package flags edited and deleted messages wherever they appear on either side, and does not make an exception here.
 
@@ -36,7 +51,7 @@ On the diagnostic path, the operator's account **narrows** the audit's finding r
 ## Standing caveats — do not drop these
 
 1. **This is a statement, not an artifact.** It is the operator's own account. It is authoritative as to server behaviour in a way no client-side analysis can be, and it is the confirmation the audit asked for — but it is testimony, and should be presented as such rather than as reproducible evidence.
-2. **The capture is partial.** A screenshot exists (`claim-screenshots/11_tim-operator-statement.png`), showing the author, the 10:30 PM timestamp and the "(edited)" marker. Still missing, and needed to match the standard every other message in `../discord/captures.md` is held to: the **message permalink** and a **UTC timestamp decoded from the message-ID snowflake**. "10:30 PM" is a local-time render, not an authoritative timestamp. Add both, and log the message in `captures.md` alongside the rest.
+2. **Captured, but DM-sourced.** Screenshot, both message IDs and snowflake-decoded UTC are all recorded above — the same standard as `../discord/captures.md`. The one irreducible difference: these are **DMs**, so no third party can open the permalinks. Verification rests on the screenshot and the decoded IDs, not on a link a reader can click. If this statement ever needs to carry weight with an outside party, ask GSE's author to restate it somewhere publicly checkable, or to confirm it directly to them.
 3. **The residual is narrowed, not formally closed.** The audit's concern was a *server-triggered*, unsigned upload able to request arbitrary paths. The operator states all diagnostic uploads are now **tied to a user-initiated request** — which removes the server-push vector, the substance of the concern. What remains open is the mechanism: `COMPANION-FORENSIC-FINDINGS.md` §3 and `COMPANION-APP-FIX.md` recommend a **per-request ed25519 signature**, and the operator describes scope and user initiation rather than signing. Verify the user-initiation gate against the shipped build before treating this as closed in writing.
 
 ## Sync note
