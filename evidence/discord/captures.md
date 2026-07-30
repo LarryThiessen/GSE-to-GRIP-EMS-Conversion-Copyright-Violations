@@ -465,7 +465,8 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 ### "gse" search — 2 results in GRIP/Temptation/Sataana
 
 **DrahgunFyre (#public-chat, date TBD):**
-> "hey guys have you seen the new thekephas vid on youtube https://www.youtube.com/watch?v=2LwqvfDTiFY&t=301s"
+> "hey guys have you seen the new thekephas vid on youtube https://www.youtube.com/watch?v=2Lwqu93TiFY&t=301s"
+- **Transcription correction (2026-07-29).** The video ID in the quote above was originally logged as `v=2LwqvfDTiFY`. No screenshot was saved for this message, so it cannot be re-read at source; the ID is corrected here to `v=2Lwqu93TiFY`, which is the ID plainly legible in an archived capture of the same video/title/channel being shared — `evidence/companion-app/claim-screenshots/02_tim-reply-canary.png` (posted by "Raymon - Ravencrest" on 2026-07-08, a different person and a different message). The `&t=301s` fragment is left exactly as first transcribed. The channel name renders **TheKephas** in both that capture and `01_kephas-video-page.png` (28.3K subscribers), so that spelling is the canonical one.
 - Links a YouTube video by **"TheKephas"** titled **"We Need to Talk About the GSE Addon Community | World of Warcraft A..."** with thumbnail "What's Going On WITH GSE?" — **this is the SAME video/content already identified via the Reddit hit-piece CzarTheMad shared in House of Macros.** Confirms "TheKephas" as the identified author of the anti-GSE video, and shows it circulated in BOTH House of Macros and GRIP/Temptation/Sataana — cross-server promotion of the same hostile narrative.
 
 **Sataana·Arthas (#grip-ems, forwarded message, ~5/26/2026 per visible date):**
