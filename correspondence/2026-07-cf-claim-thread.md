@@ -62,13 +62,33 @@ Sent after **14 days of silence** following the 07-16 follow-up. Single ask, no 
 
 *(Transcription note: the message went out with the literal placeholder "[date]" unfilled — the intended date was 2026-07-16. Recorded verbatim as sent; no correction email issued, the ask is unaffected.)*
 
-## 5. Awaiting
+## 5. Refile from the rights holder's account email — Thu 2026-07-30
 
+The original claim and both follow-ups went from a personal email **not associated with the
+rights holder's CurseForge author account** — the likely reason the claim could not be linked
+to the owner of the 14 claimed works, and so sat unactioned. Refiled via
+support.curseforge.com → new ticket, from the email on the CurseForge account that owns all
+14 projects (address withheld from this public copy).
+
+- **Category:** Authors related → Reports, Appeals and Bans
+- **CF – Project link field:** the infringing project (1489414) — deliberately, after the
+  direction confusion in §2; the body states explicitly which projects are the claimant's works.
+- **Attachment:** the code-cited exhibit (`grip-cmi-evidence-exhibit.md`), which carries the
+  full SLG-Sequences license verbatim as its Appendix B (form allowed one attachment;
+  verified identical to the standalone license before submitting).
+- **Body asks (3):** link/supersede the earlier thread; confirm 1489414 is recorded as the
+  reported infringing project — naming the mis-quoted URL from the 07-13 acknowledgement;
+  provide a case/ticket reference.
+
+## 6. Awaiting
+
+- [ ] Acknowledgement of the 07-30 refile to the account email
 - [ ] Case/ticket reference from CurseForge
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
 
 **Escalation cadence if silence continues:**
-- **~2026-08-06** (one week after the second bump): open a parallel ticket at support.curseforge.com referencing this email thread, asking only that the claim be assigned a reference — the copyright inbox and the support desk may be different queues.
+- **~2026-08-06** (one week after the refile): bump the refile ticket once, single ask. The
+  earlier plan to open a parallel support ticket is superseded — the refile *is* that ticket.
 - **Beyond that:** a formal §512 notice to Overwolf's registered DMCA agent is the bigger stick, but **do not send one without an IP lawyer's review** — this claim is deliberately framed as an IP-policy/functionality complaint (GRIP's download does not contain the sequences), and forcing that into a §512 notice sloppily invites a §512(f) misrepresentation problem.
 
 **Timeline at a glance:**
@@ -80,6 +100,7 @@ Sent after **14 days of silence** following the 07-16 follow-up. Single ask, no 
 | 2026-07-16 1:52 PM | Follow-up: confirm direction + request ticket ref |
 | 2026-07-16 → 07-30 | **14 days, no response** |
 | 2026-07-30 4:44 AM | Second bump: ticket ref only |
+| 2026-07-30 | **Refile** via support ticket from the CurseForge account email; exhibit attached |
 
 ### Anticipated pushback and how to answer it
 
