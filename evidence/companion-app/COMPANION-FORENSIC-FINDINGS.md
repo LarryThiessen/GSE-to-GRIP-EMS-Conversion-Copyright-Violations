@@ -57,6 +57,14 @@ Per the disclosed 0.4.14 code, it flagged only sequences tagged **`provenanceSou
 
 The discloser accurately documents GSE's defensive features (see `discloser-own-evidence/hashes.txt`, and independently verified in the GSE addon source): ChaCha20 codec (`GSE/API/Codec.lua`), locked runtime namespace to deny in-memory scraping (`GSE/API/Plugins.lua`, `Storage.lua`), and ed25519 checksum verification (`GSE/API/Checksum.lua`). These protect GSE's All-Rights-Reserved content from the exact scraping at issue — they are defensive, not offensive.
 
+> **Where to verify (added 2026-08-01).** `GSE/API/Codec.lua` is in the **GSE source repository**,
+> not in the packaged CurseForge release — it is absent from `../GSE-3.3.22.zip`. Checking this
+> claim against a downloaded release will appear to disprove it; check the source tree. Re-verified
+> in source 2026-08-01: `Codec.lua` implements ChaCha20 (sigma constants, 16/12/8/7 quarter-round
+> rotations, ten double-rounds). GSE additionally gates protected content with a `MetaData.noExport`
+> flag enforced at 13 call sites (`Serialisation.lua:39,265`, `Storage.lua:1949`, `Transmission.lua:80`,
+> `Export.lua:203,210,223`, `Editor.lua:2737`, `Editor_Tree.lua:620,622,699,923`).
+
 ---
 
 ## Verdict summary

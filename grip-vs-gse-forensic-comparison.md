@@ -126,6 +126,14 @@ Being honest here is what lets the rest stand up. If GRIP had copied then merely
 
 - GSE encrypts protected/subscriber content with a **ChaCha20 cipher + embedded key** (`GSE/API/Codec.lua`). GRIP has **no decryptor** and refuses that content outright. A copy would carry the cipher.
 - GSE's most distinctive engineered artifact — the **CBOR delta/diff sync engine** (`GSE/API/SequenceDelta.lua`) — is **entirely absent** from GRIP.
+
+> **Note on verifying these two bullets (added 2026-08-01).** `GSE/API/Codec.lua` and
+> `GSE/API/SequenceDelta.lua` live in the **GSE source repository**, not in the packaged
+> CurseForge release — neither file is present in `evidence/GSE-3.3.22.zip`. Checking these
+> claims against a downloaded release will therefore appear to disprove them; check the source
+> tree. Both were re-verified in source on 2026-08-01: `Codec.lua` implements ChaCha20 (sigma
+> constants `1634760805, 857760878, 2036477234, 1797285236`; quarter-round rotations 16/12/8/7;
+> ten double-rounds), and `SequenceDelta.lua` is 352 lines of CBOR delta/diff code.
 - GRIP's **ReversePriority and Random modes diverge** from GSE's; a line copy would have inherited them unchanged.
 - Every field is systematically renamed and every structure reorganized; GSE's signature interleaved-numbered-key block layout is discarded for a clean `children[]` array.
 

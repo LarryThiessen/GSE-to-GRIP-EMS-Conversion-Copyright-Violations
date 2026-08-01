@@ -11,14 +11,16 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v1.0.4.zip` | `7791035` | 2026-03-21 | 343,881 B | `c3f9677d27fe89c79cbd94a93abaaade47f6291a133afd94932a86285a584cbe` |
 | `GRIP-EMS-v1.9.1.zip` | `7918661` | 2026-04-12 | 946,584 B | `4fa4269a89c46c61fbd3f06bfccee21a1b6ca3df1e3f5a1604114ea153cb7602` |
 | `GRIP-EMS-v2.3.5.zip` | `8364957` | 2026-07-03 | 2,652,665 B | `b50ca92e643024fdef84477b325ba0cfaa1056967a077183634d1a8218bd8d2a` |
-| `GRIP-EMS-v2.3.16.zip` | *(to record)* | 2026-07 | 3,013,594 B | `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e` |
+| `GRIP-EMS-v2.3.16.zip` | `8537834` | 2026-07-30 | 3,013,594 B | `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e` |
+| `GSE-3.3.22.zip` | *(GSE project, not GRIP)* | — | 2,553,456 B | `24a12424632f1a6e2e1298af1871308e0ef36675a98462fc01a200106e52dae9` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
 
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
 - **v2.3.5** — the version the exhibits cite as operative.
-- **v2.3.16** — the release current as at 2026-07-29, captured that day. Retained to show the conduct is ongoing rather than historical: `PlatformID`, `HelpURL` and `gse.tools` are all absent from its 198 Lua files, and it still reads GSE's internal globals. Its CurseForge file ID was not recorded at capture — add it from the project's Files page.
+- **v2.3.16** — the release current as at 2026-07-29, captured that day. Retained to show the conduct is ongoing rather than historical: `PlatformID`, `HelpURL` and `gse.tools` are all absent from its 198 Lua files, and it still reads GSE's internal globals. **File ID `8537834` recorded 2026-07-31** from the file's own CurseForge page (`/files/8537834`), which lists it as `GRIP-EMS-v2.3.16.zip`, uploaded by `sirsataana` on 2026-07-30.
+- **`GSE-3.3.22.zip`** — **GSE**, not GRIP. Added 2026-07-31 so that the GSE-side FILE:LINE citations in `grip-vs-gse-forensic-comparison.md` and `grip-cmi-evidence-exhibit.md` can be checked from this repository rather than requiring a separate download. This is Timothy Luke's addon, retained unmodified for evidentiary comparison only.
 
 ## Capture
 

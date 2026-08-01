@@ -28,7 +28,7 @@ The net effect is that licensed, author-locked, often private creative work is c
 ## 2. The works and their license
 
 - **Works:** original GSE macro sequences authored by me under the "SLG-Sequences" name (macro step logic, ordering, variables, metadata).
-- **Distribution:** ~80% distributed **privately** to supporters/subscribers, not published openly.
+- **Distribution / permissions:** **100% of the rights holder's sequences are flagged Private on GSE.Tools, without exception** — this applies to every supporter and every downloader. A Private sequence may sit in a Public Collection (others may **import** it) and another user may **store** it in their own library, but the **Export and Install controls are withheld** from them unless the rights holder **approves a fork request**. The `PlatformID` is the token by which the platform identifies the work and enforces that. *(Corrected 2026-08-01: an earlier version read "~80% distributed privately to supporters/subscribers," which described distribution reach and was misleading as to permissions — the Private flag is universal, not partial.)*
 - **License:** custom personal-use license — **no redistribution, no commercial use** (full text at Appendix B).
 - **Public notice:** every one of my sequence projects on CurseForge is published with its **Project License set to "All Rights Reserved,"** whose "View full license" is the SLG-Sequences license (Appendix B). The no-redistribution terms are therefore publicly posted on each project page — constructive notice to anyone building an import/conversion tool against them.
   - *Note on the separate CurseForge "Project distribution → Allow distribution to 3rd party" toggle:* that setting governs whether third-party **download clients/launchers** (e.g. app managers) may serve the addon **zip**; it is not a copyright license and does not authorize any party to extract, convert, re-encode, or redistribute the **sequence content** contrary to the All-Rights-Reserved license above.
@@ -271,7 +271,7 @@ Copyright (c) 2026 Larry A. Thiessen ("ScaryLarryGames"). All Rights Reserved.
 - **2(a)** — no redistribution/re-upload of the Work or any part → GRIP's export + P2P sharing of imported sequences.
 - **2(b)** — no distribution of modified/derivative versions → GRIP re-encodes the sequence into its own `!GRIP1!` format and shares it.
 - **2(d)** — no removal/alteration of author or attribution notices → GRIP drops the `PlatformID` author-identifier (the §1202 CMI point).
-- **3** — subscriber/paid content remains the author's and may not be shared → the ~80% privately-distributed sequences.
+- **3** — subscriber/paid content remains the author's and may not be shared → **all** of the rights holder's sequences, every one flagged Private on GSE.Tools.
 
 ## Appendix C — (optional) captured proof artifact
 

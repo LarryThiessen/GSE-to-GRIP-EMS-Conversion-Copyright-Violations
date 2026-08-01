@@ -23,7 +23,7 @@
   - Registrar **NameCheap**, registrant **privacy-redacted**, domain created **2026-05-03** (three days after the 2026-04-30 bypass thread). Generic contact `admin@lazygrip.net`. Hosting: Vercel + Supabase.
   - ToS (`/tos`), Privacy (`/privacy`), and About name **no** operator ("we" / "our operators" only) and **repeatedly disclaim** "affiliation with … the GRIP-EMS addon developer."
   - GitHub org `github.com/lazygrip` has **no public members**.
-  - BUT LazyGrip.net is the official GRIP-EMS companion sequence site, and **Sataana is personally active across `forum.lazygrip.net`** (Slowdog posts the release notes). The site's decode/convert tools were credited in-panel to "Beard3d_Gamer" (BeardBd_Gamer / bearded_dad_bod).
+  - BUT LazyGrip.net is the official GRIP-EMS companion sequence site, and **Sataana is personally active across `forum.lazygrip.net`** (Slowdog posts the release notes). The site's decode/convert tools were credited in-panel to "Beard3d_Gamer" (Discord: `BeardBd_Gamer`). **Correction, 2026-08-01:** an earlier version of this line read "(BeardBd_Gamer / bearded_dad_bod)", treating those as one account. **They are separate accounts.** `bearded_dad_bod` is a different person and is not credited with the Workshop tools by the site or by anything in this package. The similar handles are the source of the error; it propagated into `THE-STORY.md` and is corrected there too.
   - **Assessment:** the site is the official GRIP-EMS companion, Sataana is personally active on its forum, it was registered three days after the 2026-04-30 bypass thread, and the Workshop tools are credited in-panel to Beard3d_Gamer and Slowdog — who then describe their own roles in their own words (see the entries at "its up by @Slowdog and @BeardBd_Gamer" and BeardBd_Gamer's reply). Operators: established. **The registrant of record remains redacted, and that still requires a subpoena to pierce:** NameCheap / Vercel / Supabase, the site's Discord-OAuth app owner, or a paid reverse-WHOIS on `admin@lazygrip.net`. Note also that the site's repeated disclaimer of "affiliation with … the GRIP-EMS addon developer" is contradicted by its own credits and by the Discord record.
   - **The anonymization + the affiliation-disclaimer are themselves relevant** — consistent with an operator keeping legal separation between the ARR addon and the website that decodes/reproduces GSE strings.
 
@@ -49,13 +49,19 @@ Search results below are scoped to House of Macros #general (channel ID 12092205
 - **SIGNIFICANT — narrative-building.** This is a hostile Reddit post about GSE shared in-channel, in immediate proximity (same page of search results, adjacent timestamps) to Sataana's forwarded "security report" to Timothy. Suggests coordinated messaging against GSE around the same period. Need to pull the actual Reddit thread content and confirm exact date/authorship of that post separately (it may not be by anyone in this server, but its sharing here is the relevant fact).
 - Screenshot saved.
 
-**bearded_dad_bod — (same page, date TBD)** (#general):
+**bearded_dad_bod — 2026-07-06 3:40 PM** (#general):
 > "ahh i dont use gse anymore so no worries to watch lol"
 
-**Pershizzle — (same page)** (#general):
+**Pershizzle — 2026-07-06 3:39 PM / 3:35 PM** (#general):
 > "that video kephas put out on gse"
 > "yea he was using it back in gse 2 days and even earlier"
-- Note: references a third party "kephas" and a video about GSE — needs follow-up (search "kephas").
+
+**Sataana — 2026-07-06 3:34 PM** (#general), opening the same exchange:
+> "Im actually surprised a video came out so long after the initial drama"
+
+- **Dates resolved 2026-08-01** (previously logged "(same page, date TBD)"). Re-read at source in Discord; the whole exchange runs 3:34–3:46 PM on **2026-07-06**, five participants.
+- **Why the date matters more than the quotes.** The TheKephas video is carried elsewhere in this package as **≈2026-07-06**, derived from YouTube's relative "23 days ago" label read on 2026-07-29 — the weakest class of date here. This exchange is an independent, exactly-timestamped, in-channel discussion of that video on **2026-07-06**, which anchors the estimate to something a reader can check rather than to a rounded relative label.
+- Sataana's line also supplies the "initial drama" reference. No screenshot retained: the quotes are low-value on their own and the date is the evidentiary point.
 
 > Screenshot saved: zoom of "gse" search results page 1 (CzarTheMad Reddit post + bearded_dad_bod + Pershizzle) — re-file as `gse-search-p1-reddit-hitpiece.png`.
 

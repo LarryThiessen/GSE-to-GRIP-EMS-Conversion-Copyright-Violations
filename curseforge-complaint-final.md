@@ -22,8 +22,16 @@
 ## 3. My copyrighted works and their license
 
 - **Works:** original World of Warcraft macro **sequences** I authored under the "SLG-Sequences" name — the macro step logic, step ordering, variables, and associated metadata are original creative expression fixed in a tangible medium.
-- **Publication:** on my CurseForge sequence projects (URLs): __________ . Additionally, roughly 80% of my sequences are distributed **privately** to supporters/subscribers and are not published openly.
+- **Publication:** on my CurseForge sequence projects (URLs): __________ .
+
+- **Every one of my sequences is flagged Private on GSE.Tools, and always has been — 100%, without exception.** This applies to every supporter and every person who downloads them. A Private sequence may be placed in a Public Collection, which allows others to **import** it, and another user may **store** it in their own GSE.Tools library. What they cannot do is **export or install it** — those controls are not available to them — unless they submit a **fork request that I approve**. I have never approved such a request for any GRIP-EMS-related party.
+
+  The **`PlatformID`** is the token by which GSE.Tools identifies a sequence as mine and enforces that restriction. Its removal does not merely strip attribution: it removes the work from the system that was withholding the export and install controls, and eliminates the fork-approval step through which my permission would otherwise have been sought. *(This paragraph replaces an earlier statement that "roughly 80% of my sequences are distributed privately." That figure described distribution reach and was misleading as to permissions: the Private flag is not partial, it is universal. Corrected 2026-08-01.)*
 - **License:** each of my sequence projects is published with its Project License set to **"All Rights Reserved,"** whose full text is the SLG-Sequences License (attached; also at `github.com/LarryThiessen/SLG-Sequences`). It **prohibits** redistribution, re-hosting, distribution of derivative versions, and removal/alteration of author or attribution notices, and reserves all rights (clauses 2(a), 2(b), 2(d), 3, 4). The no-redistribution terms are therefore publicly posted on every project page.
+
+- **What the license does permit — stated so the claim is not overstated.** Clause 1 grants each user a personal, non-exclusive, non-transferable, revocable license to download and use the Work for their **own personal, non-commercial use in World of Warcraft, including modifying it for their own personal use**. I do not claim that a user converting a sequence for their own private use breaches that grant. **My claim concerns clauses 2(a) and 2(b)** — redistribution, re-hosting or publishing the Work on any website, platform or service, and distributing or sharing modified or **derivative versions** of it. A sequence of mine re-encoded into another addon's native format is a derivative version; distributing that derivative is what the license forbids, whether or not my name survives the conversion.
+
+- **No permission has been granted, and none has been sought.** *(Recorded 2026-08-01. This statement is added as of that date; earlier versions of this complaint carried only the good-faith belief statement at §7 and did not state the point affirmatively.)* I have never granted permission — written or otherwise — to the GRIP-EMS project, to its developer, to LazyGrip.net or its operators, or to any other person or service, to reproduce, convert, re-encode, redistribute, re-host, publish or prepare derivative versions of my SLG-Sequences works. **No such permission has ever been requested of me.** The prior written permission required by clause 2 has therefore never existed at any point.
 
 ## 4. The infringing conduct
 
@@ -57,6 +65,7 @@ Under CurseForge's IP/moderation policy, I request that CurseForge require GRIP-
 ## 7. Required statements
 
 - I have a good-faith belief that the use of my copyrighted works in the manner described is not authorized by me, my agent, or the law.
+- **Affirmatively, and not merely as a belief:** I have never granted permission to the GRIP-EMS project, its developer, LazyGrip.net or its operators, or any other person or service, to reproduce, convert, re-encode, redistribute, re-host, publish or prepare derivative versions of my works. No such permission has ever been requested of me. My works are authored for and published to the GSE ecosystem; I have not licensed them for use in, conversion to, or distribution through any other addon or platform.
 - The information in this notification is accurate, and **under penalty of perjury**, I am the owner, or authorized to act on behalf of the owner, of the copyright(s) that are allegedly infringed.
 - I request that CurseForge take action in accordance with its policies and applicable law.
 

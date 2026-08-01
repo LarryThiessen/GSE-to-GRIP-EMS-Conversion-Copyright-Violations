@@ -62,7 +62,7 @@ Sent after **14 days of silence** following the 07-16 follow-up. Single ask, no 
 
 *(Transcription note: the message went out with the literal placeholder "[date]" unfilled — the intended date was 2026-07-16. Recorded verbatim as sent; no correction email issued, the ask is unaffected.)*
 
-## 5. Refile from the rights holder's account email — Thu 2026-07-30
+## 5. Refile from the rights holder's account email — Fri 2026-07-31, 3:50 AM — **Ticket #386456**
 
 The original claim and both follow-ups went from a personal email **not associated with the
 rights holder's CurseForge author account** — the likely reason the claim could not be linked
@@ -70,7 +70,7 @@ to the owner of the 14 claimed works, and so sat unactioned. Refiled via
 support.curseforge.com → new ticket, from the email on the CurseForge account that owns all
 14 projects (address withheld from this public copy).
 
-- **Category:** Authors related → Reports, Appeals and Bans
+- **Category:** Authors related → Reports, Appeals and Bans → Reports
 - **CF – Project link field:** the infringing project (1489414) — deliberately, after the
   direction confusion in §2; the body states explicitly which projects are the claimant's works.
 - **Attachment:** the code-cited exhibit (`grip-cmi-evidence-exhibit.md`), which carries the
@@ -80,15 +80,19 @@ support.curseforge.com → new ticket, from the email on the CurseForge account 
   reported infringing project — naming the mis-quoted URL from the 07-13 acknowledgement;
   provide a case/ticket reference.
 
+**Result, immediate:** the portal assigned **Ticket #386456**, status **"Being Processed"**
+(created Fri, 31 Jul at 3:50 AM, portal time). This is the trackable case reference the
+original email thread never produced across 17 days and two follow-ups.
+
 ## 6. Awaiting
 
-- [ ] Acknowledgement of the 07-30 refile to the account email
-- [ ] Case/ticket reference from CurseForge
+- [x] Case/ticket reference — **#386456** (refile ticket, 2026-07-31)
+- [ ] Human response on ticket #386456
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
+- [ ] The old email thread linked/superseded
 
 **Escalation cadence if silence continues:**
-- **~2026-08-06** (one week after the refile): bump the refile ticket once, single ask. The
-  earlier plan to open a parallel support ticket is superseded — the refile *is* that ticket.
+- **~2026-08-07** (one week after the refile): bump ticket #386456 once, single ask.
 - **Beyond that:** a formal §512 notice to Overwolf's registered DMCA agent is the bigger stick, but **do not send one without an IP lawyer's review** — this claim is deliberately framed as an IP-policy/functionality complaint (GRIP's download does not contain the sequences), and forcing that into a §512 notice sloppily invites a §512(f) misrepresentation problem.
 
 **Timeline at a glance:**
