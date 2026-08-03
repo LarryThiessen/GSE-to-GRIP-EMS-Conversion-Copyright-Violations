@@ -73,9 +73,11 @@ support.curseforge.com → new ticket, from the email on the CurseForge account 
 - **Category:** Authors related → Reports, Appeals and Bans → Reports
 - **CF – Project link field:** the infringing project (1489414) — deliberately, after the
   direction confusion in §2; the body states explicitly which projects are the claimant's works.
-- **Attachment:** the code-cited exhibit (`grip-cmi-evidence-exhibit.md`), which carries the
-  full SLG-Sequences license verbatim as its Appendix B (form allowed one attachment;
-  verified identical to the standalone license before submitting).
+- **Attachment (portal form):** the code-cited exhibit (`grip-cmi-evidence-exhibit.md`),
+  which carries the full SLG-Sequences license verbatim as its Appendix B (the portal form
+  allowed one attachment; verified identical to the standalone license before submitting).
+  *(Corrected 2026-08-01: the accompanying **email** thread carried **two** files —
+  `GRIP-EMS-code-evidence-exhibit.md` and `SLG-Sequences-LICENSE.txt`.)*
 - **Body asks (3):** link/supersede the earlier thread; confirm 1489414 is recorded as the
   reported infringing project — naming the mis-quoted URL from the 07-13 acknowledgement;
   provide a case/ticket reference.
@@ -84,15 +86,101 @@ support.curseforge.com → new ticket, from the email on the CurseForge account 
 (created Fri, 31 Jul at 3:50 AM, portal time). This is the trackable case reference the
 original email thread never produced across 17 days and two follow-ups.
 
+## 6a. Overwolf's reply and the same-night response — 2026-07-30
+
+**Overwolf support, Thu 2026-07-30 9:28 PM:**
+
+> Hey Larry Thiessen, Thank you for submitting this report, please verify the ticket has
+> the following information: - A link to the user profile / project reporte[d] …
+
+**Rights holder's reply, Thu 2026-07-30 11:11 PM**, from the CurseForge account email.
+Supplied **both public repositories** and **two attachments**:
+
+- `https://github.com/LarryThiessen/GSE-to-GRIP-EMS-Conversion-Copyright-Violations`
+- `https://larrythiessen.github.io/GSE-Addon-vs-GRIP-EMS-Addon-Copyright-Violations`
+- Attachments: `SLG-Sequences-LICENSE.txt`, `GRIP-EMS-code-evidence-exhibit.md`
+
+The message disclosed that the package was compiled with AI assistance across roughly
+30 hours of review of every GRIP release against GSE. It also contains one typo,
+"GRIM-EMS" for GRIP-EMS, in a paragraph where the correct name appears in the links
+immediately below; recorded verbatim, no correction issued, the asks are unaffected.
+
+## 6b. #386456 dead-ends — wrong team — 2026-08-01
+
+CurseForge's reply on ticket #386456, in full:
+
+> Hey Larry Thiessen!
+> Thank you very much for contacting us, I will do my best to assist you with CurseForge :)
+> Copyright claims are handled by a different team. Please submit the claim via this form:
+> CurseForge Copyright Claims
+> Not an NPC,
+
+**#386456 is therefore misrouted and closed out as a copyright matter.** It went to general
+support because the portal category chosen was *Authors related → Reports, Appeals and Bans
+→ Reports*. There is a dedicated form, and it is not reachable from that category tree.
+
+**Do not reply to #386456.** Do not re-file there.
+
+**The correct channel:** `https://forms.monday.com/forms/904d2c9fe157aca216d6a5bfaba85f7f`
+(linked from *Submitting a Copyright Claim on CurseForge*,
+`support.curseforge.com/en/support/solutions/articles/9000222335`).
+
+**Three routing failures now, all procedural, none on the merits:** original claim from a
+personal email not tied to the author account; refile into the wrong portal category; and
+throughout, no dedicated copyright channel used. Roughly 19 days lost.
+
+## 6c. Filed on the copyright claims form — 2026-08-01
+
+Submitted via the dedicated CurseForge Copyright Claims form. **Ticket number: __________**
+*(record it here.)*
+
+| Field | Submitted |
+|---|---|
+| Your Project Name | GSE SLG Death Knight Sequences Set |
+| CurseForge Username | ScaryLarryGames |
+| Full Name / Email | Larry A. Thiessen / the CurseForge account email |
+| Reported Copyrighted Project | the DK set + ARR license + the 100%-Private permission model; notes 13 further projects to be filed separately if required |
+| Reported Infringing Projects | GRIP-EMS 1489414, all releases v1.0.4 → v2.3.16, plus all three evidence URLs |
+| Infringing Content | the four findings — reproduction / knowledge of origin / `PlatformID` removal / redistribution — trimmed to the form's **2,000-character cap** (1,991 used) |
+| Action required *(dropdown)* | **Adjust the project to better follow the license**, with *Take down the reported project* as the fallback |
+| Attachments | `GRIP-EMS-code-evidence-exhibit.md`, `SLG-Sequences-LICENSE.txt` |
+| Sworn statement | ticked — good faith, owner/author, all information true |
+
+**Corrections made to the attachment before filing**, so the sworn statement was accurate:
+
+1. **"~80% distributed privately" → 100% Private**, in §1, §2 and Appendix B of the exhibit.
+   The figure described distribution reach and was misleading as to permissions.
+2. **v2.3.5 → v2.3.16 as the current and operative release.** The exhibit still named a
+   release superseded on 2026-07-29. Header, timeline, version table, Appendix A and
+   Appendix D updated; the line-numbered v2.3.5 citations marked as re-checked against
+   v2.3.16, behaviour unchanged.
+3. Added that v2.3.16 has **zero references to `HelpURL`** as well as to `PlatformID`.
+
+Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments\`.
+
+**Rules from CurseForge's own article, which govern what happens next:**
+
+- **One project per form.** The other 13 projects need separate submissions — file them only
+  if asked, so the first claim is not diluted.
+- **No duplicate claims for the same project.** Do not file again on 1489414.
+- **Up to 10 business days** for an initial response — i.e. not before **~2026-08-14**.
+- CurseForge treats the **CurseForge license as controlling** over any conflicting external
+  license. The DK set is All Rights Reserved there, which is the favourable side of that rule.
+- They recommend contacting the other party first; the submission states why that was not
+  realistic (the developer has blocked the rights holder).
+
 ## 6. Awaiting
 
-- [x] Case/ticket reference — **#386456** (refile ticket, 2026-07-31)
-- [ ] Human response on ticket #386456
+- [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
+- [x] Human response — received 2026-07-30 (§6a) and 2026-08-01 (§6b); neither engaged the merits
+- [x] Filed through the correct channel — the Copyright Claims form, 2026-08-01 (§6c)
+- [ ] **Ticket number for the copyright claim** — record it in §6c
+- [ ] Initial response on the copyright claim
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
-- [ ] The old email thread linked/superseded
 
 **Escalation cadence if silence continues:**
-- **~2026-08-07** (one week after the refile): bump ticket #386456 once, single ask.
+- **~2026-08-14** (10 business days after the copyright-form filing, per their own stated
+  turnaround): bump once, single ask, on that ticket — **not** on #386456.
 - **Beyond that:** a formal §512 notice to Overwolf's registered DMCA agent is the bigger stick, but **do not send one without an IP lawyer's review** — this claim is deliberately framed as an IP-policy/functionality complaint (GRIP's download does not contain the sequences), and forcing that into a §512 notice sloppily invites a §512(f) misrepresentation problem.
 
 **Timeline at a glance:**
@@ -105,6 +193,11 @@ original email thread never produced across 17 days and two follow-ups.
 | 2026-07-16 → 07-30 | **14 days, no response** |
 | 2026-07-30 4:44 AM | Second bump: ticket ref only |
 | 2026-07-30 | **Refile** via support ticket from the CurseForge account email; exhibit attached |
+| 2026-07-30 9:28 PM | Overwolf asks the ticket be verified to carry the profile/project link |
+| 2026-07-30 11:11 PM | Answered same night: both repositories + two attachments |
+| 2026-08-01 | **#386456 dead-ends** — "Copyright claims are handled by a different team" |
+| 2026-08-01 | Exhibit corrected (100% Private; v2.3.16 as operative) and **filed on the Copyright Claims form** |
+| ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
 
