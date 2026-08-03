@@ -131,8 +131,33 @@ throughout, no dedicated copyright channel used. Roughly 19 days lost.
 
 ## 6c. Filed on the copyright claims form — 2026-08-01
 
-Submitted via the dedicated CurseForge Copyright Claims form. **Ticket number: __________**
-*(record it here.)*
+Submitted via the dedicated CurseForge Copyright Claims form.
+
+**No ticket or case reference was issued.** The acknowledgement carries none, and the form
+returns none on submission. This is the same tracking gap that let the original claim drift
+for 17 days, so the anchor for this claim is the acknowledgement email itself:
+
+> Hey Larry A. Thiessen,
+>
+> Thank you for submitting your copyright claim on CurseForge. We've received your request
+> regarding **GSE:SLG - Death Knight Sequences Set** and are currently reviewing the details
+> provided.
+>
+> Due to a high volume of submissions, the review process may take some time. We'll keep you
+> updated as soon as we've completed processing your claim.
+>
+> Best regards,
+> CurseForge Team
+
+Received **2026-08-01**, from the **CurseForge Team** (not general support). **Keep that email
+and bump by replying to it**, so the thread stays intact — it is the only handle on this claim.
+
+Note what it names: **GSE:SLG - Death Knight Sequences Set**, i.e. the rights holder's own
+project, read back from the form's *Your Project Name* field. On 2026-07-13 the same project
+name appearing in an acknowledgement was ambiguous and caused the direction confusion in §2;
+here it is not, because the form records the claimant's project and the reported project in
+separate fields. *(The colon-and-dash spelling above is CurseForge's; it differs from the
+"GSE SLG Death Knight Sequences Set" form of the name used in the submission drafts.)*
 
 | Field | Submitted |
 |---|---|
@@ -174,7 +199,7 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
 - [x] Human response — received 2026-07-30 (§6a) and 2026-08-01 (§6b); neither engaged the merits
 - [x] Filed through the correct channel — the Copyright Claims form, 2026-08-01 (§6c)
-- [ ] **Ticket number for the copyright claim** — record it in §6c
+- [x] **Ticket number for the copyright claim** — **none issued.** Tracked by the acknowledgement email of 2026-08-01 from the CurseForge Team; bump by replying to that thread (§6c)
 - [ ] Initial response on the copyright claim
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
 
@@ -197,6 +222,7 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 | 2026-07-30 11:11 PM | Answered same night: both repositories + two attachments |
 | 2026-08-01 | **#386456 dead-ends** — "Copyright claims are handled by a different team" |
 | 2026-08-01 | Exhibit corrected (100% Private; v2.3.16 as operative) and **filed on the Copyright Claims form** |
+| 2026-08-01 | Acknowledged by the **CurseForge Team** — correct project named, **no reference number issued** |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
