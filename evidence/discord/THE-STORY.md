@@ -69,7 +69,7 @@ Clean-room reverse engineering is a real, defined process — one team studies t
 
 > *"Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏"*
 
-— with a video attached, showing his own screen.
+— with two images attached, showing his own screen.
 
 **9:17 PM (21:17:21 UTC), same day.** The conversation turns to money, and CzarTheMad names the rights holder specifically, with a number attached:
 

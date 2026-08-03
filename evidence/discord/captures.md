@@ -1,5 +1,7 @@
 # House of Macros — Discord capture log
 
+**Note added 2026-08-01.** Lines below reading "Screenshot saved … re-file as `<name>.png`" record screenshots that were **reviewed on screen during the session but never written to disk**; no file of that name exists in this repository. They are working notes, not evidence references, and the proposed filenames were never created. The curated captures that *do* exist are the 16 held in the rights holder's image vault (`grip-evidence/`), listed in §"Curated captures" below. Nothing in the findings depends on an unwritten screenshot: every message cited here carries a Discord permalink and a snowflake-decoded UTC timestamp, both independently checkable.
+
 **Server:** House of Macros (aka "House of Lazy Macros")
 **Channel(s):** #general (primary), + class channels as relevant
 **Captured by:** ScaryLarryGames, via assisted review — starting 2026-02-10, moving forward.
@@ -44,10 +46,10 @@ Search results below are scoped to House of Macros #general (channel ID 12092205
 
 ### Search term: "gse" in #general — 267 results. Page 1 notable hits:
 
-**CzarTheMad — ~1/16 (exact time TBD, blurred)** (#general):
-> Posted https://www.reddit.com/r/wow/s/orGoemOnMs — r/wow thread **"We Need to Talk About the GSE Addon Community"**, preview text: *"More bad acting from GSE as confirmation of the GSE Tools addon invasively reading and having a kill switch to corrupt..."* — with a thumbnail image titled **"What's Going On WITH GSE?"**
+**CzarTheMad — 2026-07-09, 6:42 PM** (#general):
+> Posted https://www.reddit.com/r/wow/s/orGxwmOmkv — r/wow thread **"We Need to Talk About the GSE Addon Community"**, preview text: *"More bad acting from GSE as confirmation of the GSE Tools addon invasively reading and having a kill switch to corrupt..."* — with a thumbnail image titled **"What's Going On WITH GSE?"**
 - **SIGNIFICANT — narrative-building.** This is a hostile Reddit post about GSE shared in-channel, in immediate proximity (same page of search results, adjacent timestamps) to Sataana's forwarded "security report" to Timothy. Suggests coordinated messaging against GSE around the same period. Need to pull the actual Reddit thread content and confirm exact date/authorship of that post separately (it may not be by anyone in this server, but its sharing here is the relevant fact).
-- Screenshot saved.
+- *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)*
 
 **bearded_dad_bod — 2026-07-06 3:40 PM** (#general):
 > "ahh i dont use gse anymore so no worries to watch lol"
@@ -63,7 +65,7 @@ Search results below are scoped to House of Macros #general (channel ID 12092205
 - **Why the date matters more than the quotes.** The TheKephas video is carried elsewhere in this package as **≈2026-07-06**, derived from YouTube's relative "23 days ago" label read on 2026-07-29 — the weakest class of date here. This exchange is an independent, exactly-timestamped, in-channel discussion of that video on **2026-07-06**, which anchors the estimate to something a reader can check rather than to a rounded relative label.
 - Sataana's line also supplies the "initial drama" reference. No screenshot retained: the quotes are low-value on their own and the date is the evidentiary point.
 
-> Screenshot saved: zoom of "gse" search results page 1 (CzarTheMad Reddit post + bearded_dad_bod + Pershizzle) — re-file as `gse-search-p1-reddit-hitpiece.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: zoom of "gse" search results page 1 (CzarTheMad Reddit post + bearded_dad_bod + Pershizzle).
 
 ### "gse" search — page 2 (#general)
 
@@ -84,7 +86,7 @@ Search results below are scoped to House of Macros #general (channel ID 12092205
 
 Two "Message could not be loaded" markers appear near Sataana's messages — **deleted/edited messages**. Flag: content is gone but the gap itself (right before/after his admissions) is worth noting for the record.
 
-> Screenshot saved: zoom of "gse" search results page 2 (Sataana admissions + CzarTheMad "GSE drama") — re-file as `gse-search-p2-sataana-admission.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: zoom of "gse" search results page 2 (Sataana admissions + CzarTheMad "GSE drama").
 
 ### "gse" search — page 3 (#general)
 
@@ -102,7 +104,7 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 > "i hated that transition from gse 2 to gse 3 so much because i finally started to understand it and then everything changed lol"
 - Confirms Pershizzle has hands-on, extended history using GSE (2 and 3) directly, alongside developing/using GRIP.
 
-> Screenshot saved: zoom of "gse" search results page 3 (Sataana "imported/migrated a GSE version...edited by a not original user" + Pershizzle) — re-file as `gse-search-p3-sataana-import-flag.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: zoom of "gse" search results page 3 (Sataana "imported/migrated a GSE version...edited by a not original user" + Pershizzle).
 
 ### "gse" search — page 4 (#general) — **HIGH VALUE PAGE**
 
@@ -135,7 +137,7 @@ Two "Message could not be loaded" markers appear near Sataana's messages — **d
 
 **Action items:** (1) get full untruncated text of every message above via "Copy Message Link" / hover, (2) get exact timestamps, (3) identify "WLM" and "peytonjo" fully, (4) pull the full GitHub link Sataana referenced.
 
-> Screenshot saved: zoom of "gse" search results page 4 (Sataana "competitor"/ARR/GitHub + CzarTheMad "gse United...paywall" + peytonjo "copying") — re-file as `gse-search-p4-competitor-agpl-copying.png`. **This is the single most evidentially important page captured so far.**
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: zoom of "gse" search results page 4 (Sataana "competitor"/ARR/GitHub + CzarTheMad "gse United...paywall" + peytonjo "copying"). **This is the single most evidentially important page captured so far.**
 
 ---
 
@@ -158,9 +160,9 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 | 7 | 2026-04-30 12:43:13 | Sataana | "Importing GSE to EMS has 2 different options. Either migrate… or 'import'… encode/decode/figure out how the string is made, and then 'unstring' it" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499390670283079793 |
 | 8 | 2026-04-30 12:54:22 | Sataana | "So, to solve the first problem… In theory (ARR Licence) you can look at what TL has committed… (Maybe some good AI can do it)… Disclaimer: …thinking out loud" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499393478285856838 |
 | 9 | 2026-04-30 14:54:20 | Sataana | "You could always 'Clean-Room' something" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275 |
-| 10 | 2026-04-30 16:24:57 | Sataana | "Kind of solved it, not 100% happy though…" (+ video attachment) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697 |
+| 10 | 2026-04-30 16:24:57 | Sataana | "Kind of solved it, not 100% happy though…" (+ **two image attachments**) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697 |
 
-**The whole arc — from "worried TL's obfuscation will make this time-prohibited" to "kind of solved it" with a video attached — spans under 4 hours on a single day (12:39–16:24 UTC, 2026-04-30).** That speed is itself notable: it is consistent with using an automated/AI-assisted method to work through TL's commit history rather than manual weeks-long study, corroborating Sataana's own suggestion in message #2 that "some good AI can do it."
+**The whole arc — from "worried TL's obfuscation will make this time-prohibited" to "kind of solved it" with two images attached — spans under 4 hours on a single day (12:39–16:24 UTC, 2026-04-30).** That speed is itself notable: it is consistent with using an automated/AI-assisted method to work through TL's commit history rather than manual weeks-long study, corroborating Sataana's own suggestion in message #2 that "some good AI can do it."
 
 **Sataana (11:25:17 UTC — the origin message, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896)):**
 > "The challenge is to convert every single option, field, data, text etc etc that GSE / EMS has and make it compatible with each other, as well as be included properly within the strings 🙃
@@ -200,9 +202,13 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 **Sataana (14:54:20 UTC, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275)):**
 > "You could always 'Clean-Room' something"
 
-**Sataana (final, 16:24:57 UTC, with an attached video/clip showing dev footage, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697)):**
+**Sataana (final, 16:24:57 UTC, with **two attached images**, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697)):**
 > "Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏"
-> [video attachment — screen recording, appears to show addon UI/dev work — capture separately]
+> [**two image attachments** — screenshots of the working result. **Correction, 2026-08-01:** earlier
+> versions of this file described a single *video* attachment. The message carries **two images**,
+> confirmed by the rights holder against the live message and corroborated by MFDOOM's reply in
+> the same thread, *"the ideal result is the screenshot on the left lmao"* — which only makes sense
+> of two side-by-side images. No video was ever attached to this message.]
 
 ### Why this is the central exhibit
 
@@ -210,7 +216,7 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 2. **Explicit knowledge of GSE's ARR license**, stated twice ("I cant advise it since the GitHub is under ARR Licence" / "Again, legally I cant advice it") — proves knowing engagement with, and conscious legal hedging around, GSE's license terms while planning to study/derive from GSE's source.
 3. **"Clean-Room" invoked by name** — a real legal term of art (clean-room reverse engineering) — immediately after describing a process that is the OPPOSITE of clean-room (reading TL's actual source commits with AI assistance). Using the term this way, right after describing a non-clean-room method, suggests either misunderstanding of what clean-room requires or an attempt to retroactively characterize the process using the term without following its actual discipline (a clean-room process requires a firewall between the team studying the original and the team writing new code — nothing here suggests that separation existed).
 4. **The disclaimer itself** ("I take no responsibility for anything that happens as a result of my out loud thinking") is worth preserving verbatim — it shows Sataana's own awareness that what he was describing carried legal risk.
-5. **"Kind of solved it"** — follow-up message with a video attachment, suggesting the plan was acted on shortly after.
+5. **"Kind of solved it"** — follow-up message with **two image attachments** showing the working result, suggesting the plan was acted on shortly after.
 
 ### Corroborating evidence — Sataana's routine use of Claude (AI) for exactly this kind of "parse and figure out the system" work
 
@@ -233,7 +239,7 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 
 **Why this matters:** this is NOT the GSE-parsing conversation itself, but it is Sataana, in his own words and on the same day, describing his standard working method as "tell Claude to parse [a data source] and figure out how it works, feeding it reference material so it can pretend it understands the domain." This is a direct behavioral pattern match to what he proposed doing with TL's GitHub commits ("Maybe some good AI can do it") earlier the same day — corroborating that the AI-assisted method wasn't just a hypothetical he floated, it is demonstrably how he actually works.
 
-> Screenshot saved: "claude" search results (Sataana "made Claude parse it" / combat log method / Anthropic tweet) — re-file as `claude-search-sataana-ai-method.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "claude" search results (Sataana "made Claude parse it" / combat log method / Anthropic tweet).
 
 ### ★★★ DIRECT HIT — "patreon" search, naming ScaryLarryGames ("Slg") specifically
 
@@ -262,7 +268,7 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 - **CONFIRMED: 2026-04-30 21:17:21 UTC.** Permalink: https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499520058752372977
 - **★★★ THIS IS THE SAME DAY as the "Clean-Room"/AI/ARR/GitHub reverse-engineering conversation (12:39–16:24 UTC) and the Claude-usage discussion.** On 2026-04-30, House of Macros discussed: (1) using AI to reverse-engineer TL's GitHub commits, (2) Sataana's routine practice of using Claude to parse data sources, and (3) ScaryLarryGames' Patreon by name with an exact paid-member count — all within roughly a 9-hour window (12:39–21:17 UTC). This single day is the strongest evidentiary anchor in the entire record and should be the spine of any timeline exhibit.
 
-> Screenshot saved: "patreon" search results (Sataana rationalization + CzarTheMad naming "Slg"/84 paid members) — re-file as `patreon-search-slg-named.png`. **Second most evidentially important find, and the most directly on-point for the ScaryLarryGames personal case specifically.**
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "patreon" search results (Sataana rationalization + CzarTheMad naming "Slg"/84 paid members). **Second most evidentially important find, and the most directly on-point for the ScaryLarryGames personal case specifically.**
 
 ### ★★★★ DIRECT HIT — "strip" search: explicit knowledge that stripping violates licensing + "how to bypass"
 
@@ -317,13 +323,13 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 1. Sataana states the goal: bypass GSE's security system that blocks import without GSE.Tools-encoded "secret stuff."
 2. CzarTheMad proposes: strip the GSE.Tools stuff out.
 3. Sataana reframes it as a "basic goal" exercise, then proposes reading TL's ARR-licensed GitHub commits "with AI" to reverse-engineer the system, invoking "Clean-Room" — while disclaiming legal advice/responsibility twice.
-4. Same day, Sataana reports "kind of solved it" with a video.
+4. Same day, Sataana reports "kind of solved it" with two images.
 5. Same day (later), CzarTheMad states outright that a "stripped" mass-distributable version would be "against licensing" and pre-denies future involvement.
 6. Same day, CzarTheMad separately names "Slg" (ScaryLarryGames) by handle with an exact Patreon paid-member count, in a thread about the pay-Patreon-then-import-to-EMS workflow.
 
 **All of the above occurred within House of Macros #general on 2026-04-30, primarily within the 12:39–21:17 UTC window already anchored by permalinks above.**
 
-> Screenshots saved: full "strip"/"bypass" thread context (Sataana "how to bypass the new GSE security system" + CzarTheMad "strip the gse tools stuff from gse" + "against licensing...wasnt me") — re-file as `strip-search-bypass-origin-full-context.png`. **This is now the centerpiece exhibit of the entire Discord record — supersedes the earlier partial capture as the fuller, more damaging version of the same conversation.**
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: full "strip"/"bypass" thread context (Sataana "how to bypass the new GSE security system" + CzarTheMad "strip the gse tools stuff from gse" + "against licensing...wasnt me"). **This is now the centerpiece exhibit of the entire Discord record — supersedes the earlier partial capture as the fuller, more damaging version of the same conversation.**
 
 ### Routine dev/testing activity — bearded_dad_bod, MFDOOM (lower priority, logged for completeness)
 
@@ -419,7 +425,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 3. **GSE's own commits are AI-co-authored (Claude Sonnet 4.6), per Sataana's own research of GSE's public git history** — noted for completeness. This is a fact about GSE's own development process, not a defense to the specific allegations against GRIP (bypassing GSE's security system, stripping PlatformID, studying TL's commits "with AI" to reverse-engineer). Using AI to write one's own original code is not equivalent to using AI to study and reverse-engineer someone else's proprietary system — the rights holder's case is about the latter, and this message does not address that distinction.
 4. **Confirms prior, pre-existing public conflict** (bans, Reddit complaints) as of 3/21/2026, which frames the later 4/30/2026 "bypass" conversation as occurring within an already-adversarial relationship — relevant to intent/knowledge, not incidental interoperability.
 
-> Screenshot saved: "checksum" search result — full Sataana message to "SLG" + HomeTeemo reply — re-file as `checksum-search-sataana-to-SLG-direct.png`. **Confirmed and fully transcribed.**
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "checksum" search result — full Sataana message to "SLG" + HomeTeemo reply. **Confirmed and fully transcribed.**
 
 ### Corroboration of the rights holder's GSE United ban action — "banned" search
 
@@ -450,7 +456,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 
 - **Net effect: this fully corroborates the rights holder's account.** The banned parties themselves confirm bans from GSE United and allied servers ("OAK discord"), attribute it correctly to "SLG," and reference the same Reddit thread already captured as a hostile narrative vehicle. New name to track: **Tony_Hronik**, and a referenced third party **"rtx."**
 
-> Screenshot saved: "banned" search results (Sataana ban attribution + Tony_Hronik + MFDOOM + CzarTheMad "rtx") — re-file as `banned-search-corroboration.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "banned" search results (Sataana ban attribution + Tony_Hronik + MFDOOM + CzarTheMad "rtx").
 
 ---
 
@@ -523,7 +529,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 
 **Why this matters:** across both servers, in Sataana's own words, AI (specifically Claude, at the $200/mo tier) is his primary and heavily-used development tool ("All my shit is Claude"). Combined with the 2026-04-30 House of Macros conversation where he specifically proposed using AI to read Timothy Luke's licensed GitHub commits to "figure out the system," this establishes both **capability and demonstrated habitual practice** — he had the tool, used it constantly, and proposed using it for exactly the reverse-engineering task at issue.
 
-> Screenshot saved: "claude" search results in GRIP/Temptation/Sataana (Sataana "All my shit is Claude" + $200/mo plan + Tony_Hronik) — re-file as `claude-search-temptation-all-my-shit-is-claude.png`.
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "claude" search results in GRIP/Temptation/Sataana (Sataana "All my shit is Claude" + $200/mo plan + Tony_Hronik).
 
 ### ★★★★★ "patreon" search in GRIP/Temptation/Sataana — MFDOOM admits sharing Patreon-locked content, describes creator's reaction
 
@@ -571,15 +577,45 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 
 - **Open item:** identify which creator "he" refers to in MFDOOM's message — not yet confirmed as the rights holder specifically (could be the rights holder or another GSE creator). The "$5 patreon" question earlier on the same page (Gofx: "Are your macros in the $5 patreon the same thing as sequence imports?") may or may not be about the same creator — needs a read of the full unbroken thread to link them definitively.
 
-> Screenshot saved: "patreon" search results + full thread context in GRIP/Temptation/Sataana (MFDOOM "shared the patreon edition... he spazzed out on us" + Sataana "never a paid version of EMS... Drama voided") — re-file as `patreon-search-temptation-mfdoom-admission.png`. **Confirmed, dated, and cross-referenced with the House of Macros 06-18 admission.**
+> *(Screenshot reviewed on screen, not written to disk — see the note at the top of this file.)* Content: "patreon" search results + full thread context in GRIP/Temptation/Sataana (MFDOOM "shared the patreon edition... he spazzed out on us" + Sataana "never a paid version of EMS... Drama voided"). **Confirmed, dated, and cross-referenced with the House of Macros 06-18 admission.**
 
 ### Action items for this thread
 - [x] Get exact date/time for each key message — DONE, decoded from message-ID snowflakes, see table above (authoritative — independent of client display/timezone).
 - [x] Get "Copy Message Link" permalink for the 4 key messages — DONE, see table above.
-- [x] Get permalinks for the remaining messages in the thread — DONE (2026-07-13). All 10 messages in the 4/30 thread now individually right-click→"Copy Message Link"'d and snowflake-decoded; see the 10-row table above. Includes "how to bypass" (1499371059013750896), strip reply (1499389371697336340), "Well, lets take it back to basics" (1499389655408447699), "Yes I'm worried" (1499389764921724940), "Want to still be able to use GSE" (1499389964071469108), "2 separate problems" pt1 (1499390399255678977) + pt2 (1499390670283079793), "So, to solve the first problem / ARR / good AI" (1499393478285856838), "Clean-Room" (1499423669997277275), "Kind of solved it + video" (1499446471840239697).
-- [ ] Download/save the video attachment on Sataana's final message (16:24:57 UTC) — needs a save-video action, not yet performed.
+- [x] Get permalinks for the remaining messages in the thread — DONE (2026-07-13). All 10 messages in the 4/30 thread now individually right-click→"Copy Message Link"'d and snowflake-decoded; see the 10-row table above. Includes "how to bypass" (1499371059013750896), strip reply (1499389371697336340), "Well, lets take it back to basics" (1499389655408447699), "Yes I'm worried" (1499389764921724940), "Want to still be able to use GSE" (1499389964071469108), "2 separate problems" pt1 (1499390399255678977) + pt2 (1499390670283079793), "So, to solve the first problem / ARR / good AI" (1499393478285856838), "Clean-Room" (1499423669997277275), "Kind of solved it + two images" (1499446471840239697).
+- [x] ~~Download/save the video attachment on Sataana's final message (16:24:57 UTC)~~ — **CLOSED, 2026-08-01: there is no video.** The message carries two images, not a screen recording; see the correction at the 16:24:57 entry above. The task was based on a misreading of the attachment type.
 - [ ] Capture the full, non-truncated GitHub link Sataana posted ("HERE" hyperlink) in message #2 — likely `github.com/TimothyLuke/...`. Attempted via click (opened externally, URL not captured this pass) — retry via right-click→"Copy Link" on the hyperlink itself, or view page source / message JSON via Discord's API using the permalink above.
 - [x] CzarTheMad confirmed to carry a "MOD" badge in House of Macros (visible in every search-result screenshot) — he is a moderator of the server, which is relevant to server-level visibility/tolerance of this conversation, not just an ordinary member's idle chat.
+
+
+---
+
+## Curated captures — the 16 images that exist
+
+Held in the rights holder's image vault at `grip-evidence/`, cropped so that no server list, channel list or account name of the rights holder's own is visible. These are the only screenshots from this work that were written to disk; every other "screenshot" note in this file was a working note (see the note at the top).
+
+Each is a native-resolution capture of the Discord message pane, reached by searching for the message and using **Jump to message**, so the message is shown in its own channel context rather than as a search-result row. Every one corresponds to a message that also carries a permalink and a snowflake-decoded UTC timestamp in the sections above — **the images corroborate the record, they are not the sole basis for any finding.**
+
+| # | File | Message | What it shows |
+|---|---|---|---|
+| 1 | `02_search-paywall_false-premise-cluster.png` | House of Macros — search: "paywall" | The false-premise cluster: the crew reasoning about a paywall on SLG's sequences that never existed. |
+| 2 | `03_search-checksum_sataana-to-SLG-direct.png` | House of Macros — search: "checksum" | Sataana addressing the rights holder ("SLG") directly about the checksum, with HomeTeemo's reply. |
+| 3 | `05_date-2026-04-30_p1.png` | House of Macros #general — 2026-04-30 | Page 1 of the 4/30 thread in situ, establishing the date and the run of messages. |
+| 4 | `12_sataana_2026-04-30_migrate-reads-gse-data.png` | Sataana — 2026-04-30 | Migrate reads GSE's data off a running copy — the method, in his words. |
+| 5 | `13_2026-05-28_provenance-flag-pseudonym-recreate-and-dismissed.png` | 2026-05-28 — provenance-flag exchange | The provenance flag raised, the pseudonym/recreate workaround discussed, and the concern dismissed. Analysed in `2026-05-28-provenance-flag-exchange.md`. |
+| 6 | `15_czarthemad_2026-04-30_strip-the-gse-tools-stuff.png` | CzarTheMad — 2026-04-30 | "strip the gse tools stuff from gse" — the method named by a server moderator. |
+| 7 | `16_czarthemad_2026-06-18_stripped-masses-against-licensing.png` | CzarTheMad — 2026-06-18 | Knowing that a stripped, mass-released version breaks the licence — and pre-writing the denial. |
+| 8 | `17_sataana_2026-04-30_how-to-bypass-gse-security.png` | Sataana — 2026-04-30 11:25:17 UTC | "how to bypass the new GSE security system" — the origin message of the 4/30 thread. |
+| 9 | `18_sataana_2026-04-30_ARR-licence-maybe-good-AI-can-do-it.png` | Sataana — 2026-04-30 12:54:22 UTC | The ARR licence named, and "Maybe some good AI can do it" — the method, with the legal hedge attached. |
+| 10 | `19_sataana_2026-04-30_kind-of-solved-it-two-images.png` | Sataana — 2026-04-30 16:24:57 UTC | "Kind of solved it" — under four hours after "how to bypass". **Shows the two image attachments**, the primary source for the correction recorded at that entry above. |
+| 11 | `21_sataana_2026-03-21_i-use-ai-tim-uses-ai-to-SLG.png` | Sataana — 2026-03-21 | Accused of building GRIP with AI, he answers by citing the GSE author's own use of it — addressed to SLG. |
+| 12 | `22_czarthemad_2026-04-30_import-gse-strings-into-ems.png` | CzarTheMad — 2026-04-30 | Importing GSE strings into EMS — the second of the two routes in. |
+| 13 | `24_czarthemad_reddit-thread-gse-addon-community.png` | CzarTheMad — 2026-07-09 6:42 PM | Sharing the r/wow thread "We Need to Talk About the GSE Addon Community" into the channel. **He shared it; who wrote it is not established** (see the note at that entry). |
+| 14 | `26_grip-provenance-edited-by-not-original-user.png` | Sataana — GRIP provenance | "imported/migrated a GSE version … edited by a not original user" — GRIP's own handling of third-party provenance, described by its author. |
+| 15 | `27_sataana_2026-07-08_all-my-shit-is-claude_TEMPTATION.png` | Sataana — 2026-07-08 (Temptation) | "All my shit is Claude" — and the $200/month tier. |
+| 16 | `28_mfdoom_2026-06-17_shared-the-patreon-edition_TEMPTATION.png` | MFDOOM — 2026-06-17 (Temptation) | The owner of House of Macros stating plainly that the Patreon edition was shared, and why the rights holder was upset. |
+
+**Not in this set, deliberately:** captures 10 and 11 (a reply of the rights holder's own being mocked to friends — not probative), the German blog pair, and captures 13 and 14 of the original numbering, all excluded on the rights holder's instruction. The numbering above is sequential for this table; the filenames retain their original capture numbers, which is why the sequence has gaps.
 
 <!-- entries appended below as found -->
 
@@ -612,7 +648,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 - **BETA Tester:** bearded_dad_bod, CzarTheMad, Pershizzle
 - **Supporter:** Sqbeer
 - Note: this is an organized team with named roles (Operations/Developer/BETA Tester), not a loose fan chat — relevant to showing coordinated conduct rather than isolated individuals. Slowdog not seen in visible member list yet — check offline/other roles.
-- Screenshot saved (role-list zoom).
+- *(Role-list zoom reviewed on screen, not written to disk — see the note at the top of this file.)*
 
 ### Channel access / #unknown flag
 Full "Browse Channels" list for this account: Lounge (welcome, general, support), macros category (death-knight, demon-hunter, druid, hunter, mage, evoker, monk, paladin, priest, rogue, shaman, warlock, warrior), Voice (general, streams). **No private/staff-only channels are visible or discoverable from this account.**
