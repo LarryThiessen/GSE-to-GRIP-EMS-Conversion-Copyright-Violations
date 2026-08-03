@@ -4,7 +4,7 @@
 
 **Why this exists:** the complaint turns on what the removal of `PlatformID` actually *does*. Every other exhibit in this package establishes the removal itself — from GRIP's own shipped Lua, checkable line by line by anyone. What no amount of code reading can establish is what that identifier was holding in place on the platform side. Only the rights holder can state how his own works are configured, and what he has and has not permitted. This is that statement.
 
-**Status of this document:** it is **testimony, not an artifact.** It is authoritative as to what I did with my own works, in a way no third party can verify by inspection, and it is offered as such. Where it describes how the GSE.Tools *platform behaves*, that is my account as a user of it and is marked below as requiring independent confirmation.
+**Status of this document:** it is **testimony, not an artifact.** It is authoritative as to what I did with my own works, in a way no third party can verify by inspection, and it is offered as such. Where it describes how the GSE.Tools *platform behaves*, that is **not the impression of an outside user — I was involved in setting up this permission model on the platform**, and I am describing a system I helped establish and have used as an author ever since. It remains testimony, and independent confirmation is still recorded below as worth having, but the basis is participation, not inference.
 
 ---
 
@@ -32,15 +32,15 @@
 |---|---|---|
 | All my sequences are Private | My own configuration of my own account | **Only by me** — no third party can inspect my settings. This is testimony. |
 | I have never approved a fork request for any GRIP-EMS-related party | My own record of my own approvals | **Only by me.** Testimony. |
-| A Public Collection controls reach, not redistribution | My use of the platform | **Needs confirmation** — see below |
-| A stored Private sequence shows no Export or Install control | My use of the platform | **Needs confirmation** — see below |
-| A fork request routes to the original author for approval | My use of the platform | **Needs confirmation** — see below |
+| A Public Collection controls reach, not redistribution | **Involvement in setting up the model**, and use as an author since | **Needs confirmation** — see below |
+| A stored Private sequence shows no Export or Install control | **Involvement in setting up the model**, and use as an author since | **Needs confirmation** — see below |
+| A fork request routes to the original author for approval | **Involvement in setting up the model**, and use as an author since | **Needs confirmation** — see below |
 | `PlatformID` is the identity GSE.Tools resolves a sequence by | GSE's own shipped source, cited in `../grip-cmi-evidence-exhibit.md` §3 | **Yes** — `GSE/API/Storage.lua`, `GSE/API/SequenceDelta.lua` |
 | GRIP omits `PlatformID` on import and never carries it | GRIP's own shipped source | **Yes** — zero references across v1.0.4, v1.9.1, v2.3.5 and v2.3.16 |
 
 ## Open — do not present the platform behaviour as verified until one of these exists
 
-Points 2, 3 and 4 describe how **GSE.Tools behaves**, not what I did. My word is good for my own conduct; it is not the best evidence for a platform's mechanics — that is a distinction about *evidence*, not about whether the description is right. Any one of the following would settle it, and until then this document should be relied on for the conduct points and cited as a rights-holder account for the mechanics:
+Points 2, 3 and 4 describe how **GSE.Tools behaves**, not what I did. I was involved in setting that model up, so this is not guesswork — but for an outside reader a platform's mechanics land harder from the operator, or from a screenshot of the controls, than from any statement however well founded. **That is a point about who is reading it, not about whether the description is right.** Any one of the following would settle it, and until then this document should be relied on for the conduct points and cited as a rights-holder account for the mechanics:
 
 1. **A statement from Timothy Luke**, who operates GSE.Tools — the same standing as `companion-app/OPERATOR-STATEMENT-2026-07-29.md`, which is the precedent for this in the package. He is the only authority on how the platform actually gates Export, Install and forks.
 2. **A screen capture** of one of my Private sequences held in another user's library, showing the Export and Install controls absent or disabled — the mechanism visible rather than described.
