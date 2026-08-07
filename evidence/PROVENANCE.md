@@ -12,10 +12,14 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v1.9.1.zip` | `7918661` | 2026-04-12 | 946,584 B | `4fa4269a89c46c61fbd3f06bfccee21a1b6ca3df1e3f5a1604114ea153cb7602` |
 | `GRIP-EMS-v2.3.5.zip` | `8364957` | 2026-07-03 | 2,652,665 B | `b50ca92e643024fdef84477b325ba0cfaa1056967a077183634d1a8218bd8d2a` |
 | `GRIP-EMS-v2.3.16.zip` | `8537834` | 2026-07-30 | 3,013,594 B | `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e` |
+| `GRIP-EMS-v2.3.17.zip` | `8557810` | 2026-08-01 | 3,047,613 B | `35299aa686e3d7cc3b45b7360db466f88b90bfec5127e5b3ccbd1c902ad26d37` |
+| `GRIP-EMS-v2.3.18.zip` | `8578923` | 2026-08-04 | 3,092,514 B | `ec590cc0f78db732739d600578b2d9dbd1fd8564fcdf9a4fc54c3c75dfcbfac9` |
 | `GSE-3.3.22.zip` | *(GSE project, not GRIP)* | — | 2,553,456 B | `24a12424632f1a6e2e1298af1871308e0ef36675a98462fc01a200106e52dae9` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
 
+- **v2.3.17** — published 2026-08-01, the day the copyright claim was filed. **The release that introduced the do-not-share refusal** (`LI.ResolveNoRedistribute`, enforced at nine sites). Retained because it dates that change.
+- **v2.3.18** — published 2026-08-04, **the current release**. Retained to show the conduct is ongoing: `PlatformID` and `HelpURL` still appear zero times, and the migrate path is unchanged.
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
 - **v2.3.5** — the version the exhibits cite as operative.
