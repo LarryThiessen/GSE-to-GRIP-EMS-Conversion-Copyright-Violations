@@ -129,6 +129,32 @@ support because the portal category chosen was *Authors related → Reports, App
 personal email not tied to the author account; refile into the wrong portal category; and
 throughout, no dedicated copyright channel used. Roughly 19 days lost.
 
+## 6b-i. #386456 formally closed — 2026-08-05
+
+**Overwolf Support, Wed 2026-08-05 6:34 AM:**
+
+> Dear Larry Thiessen,
+>
+> Your ticket – Copyright claim — GRIP-EMS (project 1489414) — refiling from rights holder's
+> account email – has been closed. We hope to hear back from you in the future if you ever
+> need assistance with Overwolf.
+>
+> Yours, Overwolf Support Team — `https://support.overwolf.com/helpdesk/tickets/386456`
+
+**Closed as a support ticket. Never adjudicated.** #386456 ran from 2026-07-30 to 2026-08-05
+and was disposed of on routing, not on the merits: general support does not handle copyright
+claims and said so before closing it. Nothing in it was decided, conceded or rejected.
+
+**Consequence:** the copyright-form claim acknowledged on 2026-08-02 is now the **only live
+matter**, and it has **no reference number** (§6c). The acknowledgement email is the single
+handle on it. Do not let that email be lost, and reply into that thread rather than starting
+anything new.
+
+*(Sequence note: the redirect message telling the rights holder to use the copyright form was
+supplied to this file from the ticket view without its own header date. It necessarily
+precedes the 2026-08-02 acknowledgement and the 2026-08-05 closure. If an exact timestamp is
+needed, take it from the ticket itself.)*
+
 ## 6c. Filed on the copyright claims form — 2026-08-01
 
 Submitted via the dedicated CurseForge Copyright Claims form.
@@ -236,7 +262,8 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 | 2026-08-01 | **#386456 dead-ends** — "Copyright claims are handled by a different team" |
 | 2026-08-01 | Exhibit corrected (100% Private; v2.3.16 as operative) and **filed on the Copyright Claims form** |
 | 2026-08-02 21:57 | Acknowledged from **`copyright@curseforge.com`** — correct project named, **no reference number issued** |
-| 2026-08-07 | Five days elapsed, no update. Inside their stated window. |
+| 2026-08-05 06:34 | **#386456 formally closed** by Overwolf Support — on routing, never adjudicated |
+| 2026-08-07 | Five days elapsed on the live claim, no update. Inside their stated window. |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
