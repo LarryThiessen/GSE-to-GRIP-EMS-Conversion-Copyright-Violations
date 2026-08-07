@@ -149,8 +149,12 @@ for 17 days, so the anchor for this claim is the acknowledgement email itself:
 > Best regards,
 > CurseForge Team
 
-Received **2026-08-01**, from the **CurseForge Team** (not general support). **Keep that email
-and bump by replying to it**, so the thread stays intact — it is the only handle on this claim.
+Received **Sunday 2026-08-02 at 9:57 PM**, from **`copyright@curseforge.com`** — a dedicated
+copyright address, not general support, which confirms the claim reached the right team this
+time. *(Corrected 2026-08-07: an earlier version of this file dated the acknowledgement
+2026-08-01 from "the CurseForge Team"; the email header gives 2026-08-02 21:57 and the
+copyright@ address.)* **Keep that email and bump by replying to it**, so the thread stays
+intact — it is the only handle on this claim.
 
 Note what it names: **GSE:SLG - Death Knight Sequences Set**, i.e. the rights holder's own
 project, read back from the form's *Your Project Name* field. On 2026-07-13 the same project
@@ -204,8 +208,17 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 - [ ] Confirmation that project **1489414** is recorded as the reported infringing project
 
 **Escalation cadence if silence continues:**
-- **~2026-08-14** (10 business days after the copyright-form filing, per their own stated
-  turnaround): bump once, single ask, on that ticket — **not** on #386456.
+- **2026-08-14 (Friday)** — exactly 10 business days from the 2026-08-02 acknowledgement,
+  which is their own stated maximum. Bump once, on that email thread, **not** on #386456.
+  As at 2026-08-07 five days have passed with no update; that is inside their window and
+  chasing before the 14th would be premature.
+
+  **When the bump goes, it carries new evidence rather than a reminder.** Since filing,
+  GRIP has shipped v2.3.17 and v2.3.18, the addon has gained a do-not-share refusal that
+  their own website's converter defeats, and the current release still carries zero
+  references to `PlatformID`, `HelpURL` or any licence check. See
+  `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md`. A single message with a material update
+  is a different thing from asking whether anyone has looked yet.
 - **Beyond that:** a formal §512 notice to Overwolf's registered DMCA agent is the bigger stick, but **do not send one without an IP lawyer's review** — this claim is deliberately framed as an IP-policy/functionality complaint (GRIP's download does not contain the sequences), and forcing that into a §512 notice sloppily invites a §512(f) misrepresentation problem.
 
 **Timeline at a glance:**
@@ -222,7 +235,8 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 | 2026-07-30 11:11 PM | Answered same night: both repositories + two attachments |
 | 2026-08-01 | **#386456 dead-ends** — "Copyright claims are handled by a different team" |
 | 2026-08-01 | Exhibit corrected (100% Private; v2.3.16 as operative) and **filed on the Copyright Claims form** |
-| 2026-08-01 | Acknowledged by the **CurseForge Team** — correct project named, **no reference number issued** |
+| 2026-08-02 21:57 | Acknowledged from **`copyright@curseforge.com`** — correct project named, **no reference number issued** |
+| 2026-08-07 | Five days elapsed, no update. Inside their stated window. |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
