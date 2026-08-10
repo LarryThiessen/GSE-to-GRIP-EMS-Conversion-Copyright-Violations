@@ -1,6 +1,6 @@
 # Provenance — the GRIP-EMS release archives
 
-Why four `.zip` files sit in an evidence repo, where they came from, and how a third party can check them.
+Why seven `.zip` files sit in an evidence repo, where they came from, and how a third party can check them. Six are GRIP-EMS releases; one is GSE itself, so the GSE-side citations can be checked here too.
 
 ## What they are
 
@@ -29,7 +29,8 @@ Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **148941
 ## Capture
 
 - **v1.0.4, v1.9.1, v2.3.5** — downloaded from CurseForge's own file endpoints on **2026-07-12** (file timestamps 21:23 local) and committed the same day in `8332cc4`. All three returned **HTTP 200** during that scan, which produced `data/version_scan_raw.csv` (file ID and result for all 64 releases).
-- **v2.3.16** — captured **2026-07-29** as the then-current release, to establish the conduct is ongoing. Its CurseForge file ID was not recorded at capture; add it from the project's Files page.
+- **v2.3.16** — captured **2026-07-29** as the then-current release. File ID `8537834` was recorded afterwards, on 2026-07-31, from the file's own CurseForge page.
+- **v2.3.17, v2.3.18, GSE-3.3.22** — captured **2026-08-01 → 2026-08-04** as each was published, so the record tracks the project release-by-release rather than sampling it once.
 - No archive has been opened, repacked, or altered — every hash above is the bytes as received.
 - Captured by Larry A. Thiessen ("ScaryLarryGames").
 
@@ -41,7 +42,7 @@ Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **148941
 
 Keep these apart:
 
-- **Verifiable by anyone:** that file IDs `7791035` / `7918661` / `8364957` resolve on CurseForge, that their bytes hash to the values above, that `data/version_scan_raw.csv` records all three returning HTTP 200 on 2026-07-12, and that the current release on the project page hashes to the v2.3.16 value.
+- **Verifiable by anyone:** that file IDs `7791035` / `7918661` / `8364957` resolve on CurseForge, that their bytes hash to the values above, that `data/version_scan_raw.csv` records all three returning HTTP 200 on 2026-07-12, and that the release currently on the project page hashes to the **v2.3.18** value (`ec590cc0…`, verified 2026-08-07).
 - **On the rights holder's account:** that the author's GitHub repositories are private. Checkable, but not evidenced in this package.
 - **Not claimed at all:** any motive for the repositories being private. This package does not allege one, and nothing here should be read as establishing it.
 
@@ -51,6 +52,16 @@ Keep these apart:
 2. **Re-download the same files from CurseForge** (project 1489414, the file IDs above), hash them, and compare. The values must match exactly — this is the check that matters, and it is available to anyone.
 3. `data/version_scan_raw.csv` records the file ID and HTTP result for all 64 releases as fetched on 2026-07-12, if the comparison needs a wider baseline.
 4. Any archive that fails step 1 or 2 should be treated as unreliable, not argued around.
+
+## On browser malware warnings
+
+A browser may flag one of these archives as malicious on download — `evidence/companion-app/claim-screenshots/12_sataana-virus-claim-reads-repo.png` captures exactly that happening to `GRIP-EMS-v2.3.5.zip`. Expect it, and read it correctly:
+
+- **These archives are byte-identical to the author's own CurseForge releases.** Every hash in this document was taken from the package as CurseForge served it, and `sha256sum -c SHA256SUMS.txt` proves the bytes here match. Nothing was added, repacked, or modified. Whatever a scanner objects to, it objects to in the file **as its author distributes it** — the same bytes any user of the addon already has.
+- **A heuristic flag on a WoW addon zip is unremarkable.** Obfuscated or packed Lua, bundled binaries and unusual archive structure all trigger generic heuristics. This package draws **no** conclusion from it: it is **not** alleged that GRIP-EMS contains malware, and nothing here should be read that way.
+- **The hash is the authority, not the download.** If a browser blocks the download, verify from the copies in this repository instead. Any file that hashes to the value listed here is the correct evidence, whatever a scanner says about it.
+
+Recorded because it affects the verification route this document recommends, and because it is better stated plainly than discovered mid-review.
 
 ## Scope note
 

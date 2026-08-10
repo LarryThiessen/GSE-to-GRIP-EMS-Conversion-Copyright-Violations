@@ -7,7 +7,7 @@
 > | Recommendation below | Status in 0.4.26 |
 > |---|---|
 > | 1. Sign every request (ed25519) | **Not done.** Gated on an authenticated session + freshly-refreshed bearer token instead of a per-request signature. |
-> | 2. Make it opt-in | **Partly.** A `requestFiles` flag now raises a user-visible desktop notification; the `kinds` gather still runs on a server request. |
+> | 2. Make it opt-in | **Per the author, done:** all diagnostic uploads are now tied to a user-initiated request (2026-07-29). Client-side in 0.4.26 a `requestFiles` flag raises a user-visible notification, but the handler will still service a server-sent `kinds` request — so this is an operational/server-side assurance, or a change later than 0.4.26. State it as the operator's assurance, not as something the shipped client enforces. |
 > | 3. Scope it down | **Largely done.** `Ho()` runs `n.delete("errorlogs")` before gathering, making the BugGrabber/BugSack reader `Co()` unreachable from a server request; `settings` is sent with `accessToken`/`userSession` deleted; the always-on portion is a GSE-only mandatory gather (`Po()`). |
 >
 > **Do not describe this path publicly as removed.** The capability the video showcased is gated off and the arbitrary-read concern is materially reduced, but the endpoint exists and item 1 is still open.
