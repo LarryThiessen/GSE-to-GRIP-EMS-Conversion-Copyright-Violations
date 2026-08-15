@@ -150,10 +150,11 @@ matter**, and it has **no reference number** (§6c). The acknowledgement email i
 handle on it. Do not let that email be lost, and reply into that thread rather than starting
 anything new.
 
-*(Sequence note: the redirect message telling the rights holder to use the copyright form was
-supplied to this file from the ticket view without its own header date. It necessarily
-precedes the 2026-08-02 acknowledgement and the 2026-08-05 closure. If an exact timestamp is
-needed, take it from the ticket itself.)*
+*(Sequence resolved 2026-08-14 from the mail thread itself: the redirect was sent by
+**Noam V, Sunday 2026-08-02 at 8:21 AM**. The rights holder replied at **9:40 PM** — "Thank
+you very much submitting now" — and the copyright-form acknowledgement arrived at **9:57 PM**
+the same evening, seventeen minutes later. An earlier version of this file recorded the
+redirect date as unknown and the filing as 2026-08-01.)*
 
 ## 6c. Filed on the copyright claims form — 2026-08-01
 
@@ -224,6 +225,42 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 - They recommend contacting the other party first; the submission states why that was not
   realistic (the developer has blocked the rights holder).
 
+## 6d. Bump sent — 2026-08-14
+
+Ten business days from the 2026-08-02 acknowledgement expired today with no response. Sent
+**2026-08-14 9:24 PM**, as a reply inside the `copyright@curseforge.com` acknowledgement
+thread, from `scarylarrygames@gmail.com` — the account email — **not** a new submission and
+**not** on the closed ticket.
+
+*(A first attempt was composed in the wrong mailbox: the browser was signed into the rights
+holder's personal address, which is the exact defect that stalled the original claim. Caught
+before anything was sent; switched accounts and sent from the correct one.)*
+
+Contents, in order:
+
+1. Their published turnaround of 10 business days has passed. **One ask only:** has the claim
+   been assigned to a reviewer, and is there a reference number to quote — explicitly *not* a
+   request to expedite the decision.
+2. **A material update, volunteered.** GRIP has published v2.3.17 (2026-08-01) and v2.3.18
+   (2026-08-04). v2.3.17 added a do-not-share refusal that blocks export and player-to-player
+   sharing — **stated to CurseForge as a genuine improvement that partly addresses the
+   remedy asked for**, because conceding it is what makes the rest credible.
+3. **And what defeats it:** the same operators' LazyGrip.net converter does not carry the
+   do-not-share marker, so a sequence the addon would refuse to redistribute becomes
+   redistributable once passed through their website. On 2026-07-30 that converter was
+   amended to carry four other GSE fields; this one was not, and still is not.
+4. In v2.3.18 the author-binding identifier and the link to the owner's listing still appear
+   **zero times**, and there is **no licence check anywhere** in the import or export path.
+5. Pointer to `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md` rather than a re-send of the
+   dossier.
+6. Notes #386456 closed on routing 2026-08-05, so this is the only live matter.
+
+**Next checkpoint: 2026-08-28** (two weeks). If there is still no substantive response by
+then, the next step is **not** a third email. It is an IP lawyer's review of whether to convert
+this into a formal §512 notice to Overwolf's registered agent — with the standing warning
+below still in force. **Also unverified:** whether Overwolf has a DMCA agent registered with
+the U.S. Copyright Office. Confirm that before anyone drafts a formal notice.
+
 ## 6. Awaiting
 
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
@@ -264,6 +301,8 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 | 2026-08-02 21:57 | Acknowledged from **`copyright@curseforge.com`** — correct project named, **no reference number issued** |
 | 2026-08-05 06:34 | **#386456 formally closed** by Overwolf Support — on routing, never adjudicated |
 | 2026-08-07 | Five days elapsed on the live claim, no update. Inside their stated window. |
+| **2026-08-14 21:24** | **10 business days expired. Bump sent** in the copyright@ thread from the account email — status ask + the v2.3.17/18 findings |
+| 2026-08-28 | Next checkpoint. Silence by then → lawyer review, not a third email. |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
