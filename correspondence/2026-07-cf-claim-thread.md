@@ -321,6 +321,70 @@ review. Consequences:
 *(Received in the rights holder's personal mailbox as well as the account address; the message
 header reads "to scarylarrygames", the address the claim was filed from.)*
 
+## 6f. Second platform — Wago Addons — DMCA notice filed 2026-08-20
+
+**Why there is a second filing.** The CurseForge takedown removes the addon from CurseForge and
+nowhere else. GRIP-EMS is also published on **Wago Addons**, an unrelated platform with its own
+process, at `https://addons.wago.io/addons/grip-ems`. It remained live and was still being
+updated after the CurseForge removal.
+
+**The route, and why it differs from CurseForge.** CurseForge took an IP-policy complaint on a
+web form. Wago's Terms of Service §7 require a **formal notice under 17 U.S.C. §512(c)** sent to
+**`dmca@wago.io`**, with the six statutory elements including a statement **under penalty of
+perjury**. There is no policy-complaint alternative published for addon content.
+
+**Risk raised before filing, and the decision.** A §512 notice identifies infringing material
+*hosted by the service*. The GRIP-EMS download does not contain the rights holder's sequences —
+it contains code that copies them on a user's machine. Filing a notice that asserted otherwise
+would be the §512(f) misrepresentation problem this file has flagged since July. The concern was
+put to the rights holder, together with a non-DMCA alternative (a Terms-violation report to
+`contact@wago.io`). **He elected to file the formal notice.** It was drafted to be accurate
+rather than maximal.
+
+**The paragraph that does the work**, in §2 of the notice as sent:
+
+> To be precise about what I am and am not asserting, so that this notice is not misread: I do
+> not claim that the GRIP-EMS download hosted by Wago contains copies of my sequences. It does
+> not. I identify it under the second limb of section 512(c)(3)(A)(iii) as material that is the
+> subject of infringing activity.
+
+The statute — and Wago's own quoted text — covers material "claimed to be infringing **or to be
+the subject of infringing activity**." Volunteering the limit up front means there is nothing for
+a reviewer to discover, and every remaining assertion is checkable. **If this notice is ever
+revised, do not soften that paragraph.**
+
+**Sent:** 2026-08-20, from `scarylarrygames@gmail.com` to `dmca@wago.io`. Contents:
+
+| § | Content |
+|---|---|
+| 1 | The works, All Rights Reserved, licence linked, clauses 2(a)/2(b)/2(d) named |
+| 2 | The addon, v2.4.6, archive SHA-256, and the "subject of infringing activity" framing above |
+| 3 | Five findings: the migrate bulk-copy (quoting Wago's own listing, *"It brings everything over"*), knowledge of origin, the identifier removal, redistribution with no licence check, and the 2026-04-30 Discord planning |
+| 4 | CurseForge's action of 2026-08-20 on the same evidence, framed as context not substitute |
+| 5–7 | Contact, good-faith statement, penalty-of-perjury statement, electronic signature |
+
+**One argument used here that was not available to the CurseForge filing.** Between v2.3.16 and
+v2.4.6 the developer *added and then extended* a do-not-share refusal — now enforced at thirteen
+points — while continuing to discard the owner identifier. He is demonstrably willing and able to
+gate redistribution. Over those same eight releases he changed **8,193 lines across 152 files**
+and added 13 new ones, and touched `LegacyMigrate.lua`, `GRIPExport.lua`, `Transmission.lua` and
+`Engine/Identity.lua` **only to bump a date and a patch string — zero non-header lines in any of
+the four.** Full audit: `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md` and the v2.4.6 archive.
+
+**What can come back, and what to do:**
+
+1. **They act** — listing removed or disabled.
+2. **They ask for clarification**, most likely on §2, since a notice saying "the file does not
+   contain my work" is unusual. Answer with the statutory language, not more evidence.
+3. **A counter-notice under §512(g).** This is the fork that does not exist on the CurseForge
+   side: it obliges Wago to restore the material within 10–14 business days **unless the rights
+   holder has filed a court action**. If a counter-notice arrives, **do not reply personally —
+   that is the point at which an IP lawyer is needed, on a deadline.**
+
+**Note on timing.** §512(c) requires a provider to act "expeditiously" on a compliant notice to
+keep its safe harbour. No fixed period is defined. No arbitrary chase date is set here; a single
+follow-up is reasonable if there is no acknowledgement within a fortnight.
+
 ## 6. Awaiting
 
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
@@ -364,6 +428,7 @@ header reads "to scarylarrygames", the address the claim was filed from.)*
 | **2026-08-14 21:24** | **10 business days expired. Bump sent** in the copyright@ thread from the account email — status ask + the v2.3.17/18 findings |
 | **2026-08-20 09:31** | **CLAIM ACTIONED — project 1489414 removed from CurseForge.** Verified: 404, empty files API, gone from the author's listing |
 | — | Counter-claim window open. Nothing in the package altered. Archives retained. |
+| **2026-08-20** | **DMCA §512(c) notice filed with Wago Addons** — second platform, addon still live there |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
