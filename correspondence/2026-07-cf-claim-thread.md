@@ -261,6 +261,66 @@ this into a formal §512 notice to Overwolf's registered agent — with the stan
 below still in force. **Also unverified:** whether Overwolf has a DMCA agent registered with
 the U.S. Copyright Office. Confirm that before anyone drafts a formal notice.
 
+## 6e. RESOLVED — claim actioned, project removed — 2026-08-20
+
+**CurseForge, `copyright@curseforge.com`, 2026-08-20 09:31 AM**, in reply to the claim
+acknowledged 2026-08-02:
+
+> Hey Larry A. Thiessen,
+>
+> Thank you for bringing to our attention the copyright claim you submitted regarding the
+> content hosted on CurseForge. We have completed our review of the reported content and have
+> taken the necessary actions as per your request.
+>
+> Please note that if the owner of the reported content has not yet submitted a counter claim,
+> they may still do so. In the event that they do, this matter will be brought into review
+> again, and we will take appropriate action based on the outcome of that review.
+>
+> Thank you for bringing this matter to our attention, and please let us know if you have any
+> further concerns or questions.
+>
+> Happy Modding!
+>
+> CurseForge Team
+
+**Independently verified the same day**, not taken on the email alone:
+
+| Check | Result |
+|---|---|
+| `curseforge.com/wow/addons/grip-enhanced-macro-sequencer` | **404** |
+| Files API, mod 1489414 | `{"data":[],"pagination":{}}` — **empty**; returned six releases on 2026-08-07 |
+| Download of file 8578923 (v2.3.18), pulled 2026-08-07 | **404** |
+| `curseforge.com/members/sirsataana/projects` | **200**, loads normally |
+| GRIP-EMS on that listing | **absent** — zero references |
+| Author's other projects | **GRIP - CORE** and **GRIP - Guild Recruitment** still listed |
+
+The last two rows are what make it conclusive rather than an outage: the author's page serves
+fine and still lists his other addons; only the reported project is gone. Captured pages, the
+API response and SHA-256 hashes: `evidence/takedown-2026-08-20/`.
+
+**Elapsed:** first claim acknowledged 2026-07-13 → actioned 2026-08-20. Thirty-eight days, of
+which roughly nineteen were lost to routing — a personal email not tied to the author account,
+then the wrong portal category, then a support queue that does not handle copyright.
+
+**NOT FINAL.** The reported party may still file a counter claim, which returns the matter to
+review. Consequences:
+
+1. **Change nothing in the package.** No edits in light of the outcome. Every dated
+   correction, withdrawn claim and concession stays exactly where it is — that discipline is
+   what made the filing survive scrutiny, and it is what a second review would test.
+2. **Keep the archives.** v1.0.4, v1.9.1, v2.3.5, v2.3.16, v2.3.17 and v2.3.18 can no longer be
+   downloaded from CurseForge. `evidence/` is now the only durable copy, with hashes and
+   provenance in `PROVENANCE.md`. Do not delete them.
+3. **If a counter claim lands**, do not answer it in anger or at length. The material is
+   already filed and checkable; point to it and let the review run.
+4. **The LazyGrip.net website is untouched by this.** It is not a CurseForge property and was
+   never within the scope of this claim. The converter, the Build-tool route and the published
+   MIT-licensed source all remain as recorded in
+   `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md`.
+
+*(Received in the rights holder's personal mailbox as well as the account address; the message
+header reads "to scarylarrygames", the address the claim was filed from.)*
+
 ## 6. Awaiting
 
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
@@ -302,7 +362,8 @@ the U.S. Copyright Office. Confirm that before anyone drafts a formal notice.
 | 2026-08-05 06:34 | **#386456 formally closed** by Overwolf Support — on routing, never adjudicated |
 | 2026-08-07 | Five days elapsed on the live claim, no update. Inside their stated window. |
 | **2026-08-14 21:24** | **10 business days expired. Bump sent** in the copyright@ thread from the account email — status ask + the v2.3.17/18 findings |
-| 2026-08-28 | Next checkpoint. Silence by then → lawyer review, not a third email. |
+| **2026-08-20 09:31** | **CLAIM ACTIONED — project 1489414 removed from CurseForge.** Verified: 404, empty files API, gone from the author's listing |
+| — | Counter-claim window open. Nothing in the package altered. Archives retained. |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it

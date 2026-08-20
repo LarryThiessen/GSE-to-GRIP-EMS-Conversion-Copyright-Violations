@@ -4,6 +4,23 @@ Evidence and filing package re: **GRIP – Enhanced Macro Sequencer** (CurseForg
 
 Prepared 2026-07-08. Rights holder: Larry A. Thiessen ("ScaryLarryGames").
 
+## Outcome — 2026-08-20
+
+**CurseForge has actioned this claim. GRIP – Enhanced Macro Sequencer (project 1489414) is no longer hosted on CurseForge.**
+
+> "We have completed our review of the reported content and have taken the necessary actions as per your request."
+> — CurseForge copyright team, `copyright@curseforge.com`, 2026-08-20 09:31
+
+Verified independently the same day: the project page returns **404**, the files API for mod 1489414 returns an **empty list** where it returned six releases on 2026-08-07, the v2.3.18 download captured on 2026-08-07 is gone, and the project no longer appears on the author's own project listing — while his other projects (GRIP - CORE, GRIP - Guild Recruitment) still do. Captured pages, the API response and SHA-256 hashes are in `evidence/takedown-2026-08-20/`.
+
+**This is not a verdict, and this repository is not a victory lap.** CurseForge state that the reported party may still file a counter claim, in which case the matter returns to review. **Nothing in this package has been softened, removed or rewritten in light of the outcome.** It stands as it stood — including every dated correction, every withdrawn claim, and every point conceded to the other side. Those concessions are why it held up.
+
+**What this record is for.** It documents what was done, how it was done, and — from the developers' own messages — that it was planned before it was built. A platform applied its own policy to evidence anyone can check for themselves. That is the system working as intended.
+
+**Note on the archives.** The addon releases cited throughout (v1.0.4, v1.9.1, v2.3.5, v2.3.16, v2.3.17, v2.3.18) are retained here with hashes and provenance. They can no longer be downloaded from CurseForge. This package is now the durable record of what that code did — do not delete them.
+
+---
+
 ## ★ Start here — the chain of events
 
 ### → **[Read it in your browser, right now](https://larrythiessen.github.io/GSE-to-GRIP-EMS-Conversion-Copyright-Violations/)** ←
