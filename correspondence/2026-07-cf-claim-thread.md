@@ -156,7 +156,7 @@ you very much submitting now" — and the copyright-form acknowledgement arrived
 the same evening, seventeen minutes later. An earlier version of this file recorded the
 redirect date as unknown and the filing as 2026-08-01.)*
 
-## 6c. Filed on the copyright claims form — 2026-08-01
+## 6c. Filed on the copyright claims form — 2026-08-02
 
 Submitted via the dedicated CurseForge Copyright Claims form.
 
