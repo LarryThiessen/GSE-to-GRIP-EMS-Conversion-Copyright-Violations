@@ -6,3 +6,19 @@
 GRIP-IP-Evidence.zip
 
 HANDOFF.md
+
+# Unverified third-party builds - DO NOT COMMIT.
+# A copy of the addon passed along by an individual has no provenance and must
+# not enter the evidence tree. Only builds downloaded directly by the rights
+# holder from a distribution platform - CurseForge, or Wago Addons since the
+# CurseForge listing was removed on 2026-08-20 - and recorded in
+# evidence/PROVENANCE.md with a SHA-256 belong there. The tracked
+# GRIP-EMS-v*.zip files are those; these patterns match only the unversioned
+# filename a hand-passed copy arrives under.
+GRIP-EMS.zip
+**/GRIP-EMS.zip
+GRIP-EMS-unverified*
+**/unverified/
+
+# machine-local working state
+.claude/

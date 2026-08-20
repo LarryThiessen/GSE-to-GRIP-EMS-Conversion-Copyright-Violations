@@ -14,12 +14,31 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v2.3.16.zip` | `8537834` | 2026-07-30 | 3,013,594 B | `5c1499cf695b1c82710177566b9ae5eab7c8ccd2edb802378d21d0feff39464e` |
 | `GRIP-EMS-v2.3.17.zip` | `8557810` | 2026-08-01 | 3,047,613 B | `35299aa686e3d7cc3b45b7360db466f88b90bfec5127e5b3ccbd1c902ad26d37` |
 | `GRIP-EMS-v2.3.18.zip` | `8578923` | 2026-08-04 | 3,092,514 B | `ec590cc0f78db732739d600578b2d9dbd1fd8564fcdf9a4fc54c3c75dfcbfac9` |
+| `GRIP-EMS-v2.4.6.zip` | *(not a CurseForge file - see note)* | 2026-08-17 | 3,338,043 B | `56a02b2b6138c030bed24a2bdf5ddc3192fe63daa670ad1c2d5432b9f22ea004` |
 | `GSE-3.3.22.zip` | *(GSE project, not GRIP)* | — | 2,553,456 B | `24a12424632f1a6e2e1298af1871308e0ef36675a98462fc01a200106e52dae9` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
 
 - **v2.3.17** — published 2026-08-01, the day the copyright claim was filed. **The release that introduced the do-not-share refusal** (`LI.ResolveNoRedistribute`, enforced at nine sites). Retained because it dates that change.
 - **v2.3.18** — published 2026-08-04, **the current release**. Retained to show the conduct is ongoing: `PlatformID` and `HelpURL` still appear zero times, and the migrate path is unchanged.
+- **v2.4.6** — **the only archive here not sourced from CurseForge.** CurseForge removed the
+  project on 2026-08-20 (see `takedown-2026-08-20/`), so this build was downloaded by the rights
+  holder from **Wago Addons**, `https://addons.wago.io/addons/grip-ems`, on **2026-08-20**. Its
+  internal file dates are 2026-08-17.
+
+  **Provenance is corroborated, not assumed.** A copy of the same build reached the rights holder
+  separately, from an individual rather than a platform. The two were compared: a full recursive
+  diff returned **zero differing entries** across all 260 files, and the packaging-independent
+  content hash of both is `b2dc61d0e28be6e0e6df88723c01b8c91f885d988865143dd83093fca0ac3d25`. The
+  outer zip hashes differ only because the hand-passed copy was re-zipped (different timestamps
+  and entry order). **The archive retained here is the one downloaded from Wago Addons**; the
+  hand-passed copy was deleted and never entered this tree.
+
+  Retained because it is the build cited in the Wago DMCA notice of 2026-08-20 and in
+  `POST-COMPLAINT-CHANGES-2026-08-07.md`: it shows the conduct continuing eight releases and two
+  weeks after the do-not-share gate was added, with `PlatformID` and `HelpURL` still at zero
+  references and `LegacyMigrate.lua` re-dated but functionally unchanged.
+
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
 - **v2.3.5** — the version the exhibits cite as operative.
