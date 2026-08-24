@@ -15,6 +15,7 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v2.3.17.zip` | `8557810` | 2026-08-01 | 3,047,613 B | `35299aa686e3d7cc3b45b7360db466f88b90bfec5127e5b3ccbd1c902ad26d37` |
 | `GRIP-EMS-v2.3.18.zip` | `8578923` | 2026-08-04 | 3,092,514 B | `ec590cc0f78db732739d600578b2d9dbd1fd8564fcdf9a4fc54c3c75dfcbfac9` |
 | `GRIP-EMS-v2.4.6.zip` | *(not a CurseForge file - see note)* | 2026-08-17 | 3,338,043 B | `56a02b2b6138c030bed24a2bdf5ddc3192fe63daa670ad1c2d5432b9f22ea004` |
+| `GRIP-EMS-v2.4.7.zip` | *(not a CurseForge file - see note)* | 2026-08 | 3,338,245 B | `93bdbe66555665476bcfee7ade1e60975e2d5d3eab140db27394766fb936cf72` |
 | `GSE-3.3.22.zip` | *(GSE project, not GRIP)* | — | 2,553,456 B | `24a12424632f1a6e2e1298af1871308e0ef36675a98462fc01a200106e52dae9` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
@@ -38,6 +39,21 @@ Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **148941
   `POST-COMPLAINT-CHANGES-2026-08-07.md`: it shows the conduct continuing eight releases and two
   weeks after the do-not-share gate was added, with `PlatformID` and `HelpURL` still at zero
   references and `LegacyMigrate.lua` re-dated but functionally unchanged.
+
+- **v2.4.7** — downloaded by the rights holder **directly from Wago Addons**
+  (`https://addons.wago.io/addons/grip-ems`). Like v2.4.6, not a CurseForge file: the CurseForge
+  listing was removed on 2026-08-20.
+
+  **Retained because of what it does not contain.** Against v2.4.6 it changes **78 lines across
+  exactly two files** — 69 in the bundled third-party library `Libs/LibSharedMedia-3.0` and 9 in
+  `UI/WhatsNew.lua`, the in-game changelog popup. **`Import/LegacyMigrate.lua`,
+  `Import/LegacyImport.lua`, `Import/GRIPExport.lua`, `Engine/Transmission.lua` and
+  `Engine/Identity.lua` are byte-identical — zero changed lines, not even a header date.**
+
+  `PlatformID` and `HelpURL` remain at **zero references**; licence and copyright references
+  across `Import/` and `Engine/` remain at **zero**; every protective mechanism is unchanged with
+  **zero deletions**. This release shipped after the CurseForge removal and after the Wago DMCA
+  notice of 2026-08-20, and the identifier handling was not revisited.
 
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
