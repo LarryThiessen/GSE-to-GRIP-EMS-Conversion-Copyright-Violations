@@ -90,6 +90,46 @@ Four things are true at the same time, each verifiable:
 willingness all exist, and the identifier is still discarded. **What is not claimed:** any motive.
 No inference about intent is drawn or needed. The counts are the record.
 
+## 3a. The v2.4.8 licence says the restriction must be observed
+
+v2.4.8 ships a completely rewritten `LICENSE` at the archive root — 6,119 bytes, against the
+978-byte file that was byte-identical across all eight prior releases (verified: SHA-256
+`17c6f6cf6d34721ef0cca4f3e9ce16d3494946065e2bba102c2390938cb3cf19` for v1.0.4 through v2.4.7,
+`dd9ee62740bf7a8b25ac17ca1b3a5db392932f48e4f9f58ae8aaf6293b63c8a2` for v2.4.8). The developer
+raised the rewrite himself, unprompted, in correspondence of 2026-08-26.
+
+Its **section 6**, in full:
+
+> **6. CONTENT YOU IMPORT, CREATE OR SHARE**
+>
+> The Work is a tool. Sequences, macros and other content that you create with it, import into
+> it, or share through it are not part of the Work and are not covered by this licence. Rights in
+> that content belong to whoever holds them.
+>
+> You are responsible for holding the necessary rights in any content you import into the Work or
+> share through it, and **for observing any restriction the author of that content has placed on
+> it.**
+
+Three things this establishes, from the developer's own current, binding licence:
+
+1. **Imported sequences are not his and he says so.** *"Rights in that content belong to whoever
+   holds them."* The works this claim concerns are outside his licence entirely, by his own terms.
+2. **He states that the author's restrictions must be observed.** Not that they may be, or that
+   users should check — that observing them is the user's responsibility.
+3. **The addon shipped in the same archive discards the field that carries the restriction.** In
+   that same v2.4.8 build, `PlatformID` and `HelpURL` appear **zero** times, and there is no
+   licence or copyright check anywhere in `Import/` or `Engine/`. The migrate path copies a
+   sequence out of GSE and drops the identifier that resolves it to its owner's account and to the
+   permissions attached there.
+
+The tension is between two files in one zip, not between his position and the rights holder's.
+The licence tells the **user** to observe the author's restrictions; the addon removes the thing
+that communicates them, and asks the user nothing about licence at any point.
+
+*Nothing here is offered as an admission of infringement, and none is claimed. It is a quotation
+from a licence the developer wrote and published, set beside a verifiable property of the code
+published alongside it. No motive is asserted.*
+
 ## 4. Method
 
 ```bash
