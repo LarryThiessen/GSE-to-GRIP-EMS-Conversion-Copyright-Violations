@@ -22,3 +22,24 @@ GRIP-EMS-unverified*
 
 # machine-local working state
 .claude/
+
+# Working screenshot, kept local
+evidence/Redditpost ScreenShot.png
+
+# Full installable GRIP-EMS packages for versions no longer available from any
+# distribution channel (CurseForge, Wago, WoWInterface all now serve only the
+# current release). Kept locally for the ongoing investigation; not published,
+# per the request from the addon's developer and PROVENANCE.md's own stated
+# rule that archiving a full package is justified only while a third party can
+# independently re-download the same file elsewhere. The cited source files
+# these exhibits actually reference are preserved and published in
+# evidence/cited-source/. Hashes of the withdrawn packages remain in
+# evidence/SHA256SUMS.txt and evidence/PROVENANCE.md.
+evidence/GRIP-EMS-v1.0.4.zip
+evidence/GRIP-EMS-v1.9.1.zip
+evidence/GRIP-EMS-v2.3.5.zip
+evidence/GRIP-EMS-v2.3.16.zip
+evidence/GRIP-EMS-v2.3.17.zip
+evidence/GRIP-EMS-v2.3.18.zip
+evidence/GRIP-EMS-v2.4.6.zip
+evidence/GRIP-EMS-v2.4.7.zip

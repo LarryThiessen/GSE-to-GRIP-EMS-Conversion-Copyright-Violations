@@ -91,6 +91,35 @@ Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **148941
   for AI or ML training`). That is a notice on his own code, not a check applied to anyone
   else's.
 
+## Addendum — 2026-08-26: full packages withdrawn for eight releases; cited files retained
+
+On 2026-08-26 the addon's developer, contacting the rights holder directly, pointed out that this
+document's own justification for archiving full installable packages — *"anyone can still
+download the same files from the same project... a third party can re-download, hash, and confirm
+byte-identity with what is in this directory"* — no longer holds for eight of the nine archives
+here. Checked independently and confirmed true: CurseForge, Wago Addons and WoWInterface each now
+serve only the current release, **v2.4.8**. The previous releases are not available from any
+distribution channel. The three CurseForge file IDs already noted as 404 above (`8537834`,
+`8557810`, `8578923`) are part of that same fact, not a separate one.
+
+He also holds a copyright in the addon itself, All Rights Reserved, and the eight withdrawn
+packages each carry that licence at the archive root (verified: byte-identical, SHA-256
+`17c6f6cf6d34721ef0cca4f3e9ce16d3494946065e2bba102c2390938cb3cf19`, across all eight). He did not
+ask that any analysis, exhibit, correspondence, finding, or quotation be removed, and none has
+been. He asked specifically that the eight full packages — v1.0.4, v1.9.1, v2.3.5, v2.3.16,
+v2.3.17, v2.3.18, v2.4.6, v2.4.7 — not v2.4.8, which remains available from every platform — be
+taken down, and offered to not object to any specific file being kept where an exhibit's citation
+actually needs it.
+
+**What changed:** those eight `.zip` files are removed from this repository and gitignored. They
+are retained on the rights holder's own machine for the ongoing investigation, not published.
+**What did not change:** every SHA-256 hash below stays, so the chain of custody is unbroken and
+anyone who already has a copy can still verify it against this record. Every `FILE:LINE` citation
+across every exhibit was located, and the specific source files those citations resolve into —
+117 files across all eight releases — are preserved and published at `evidence/cited-source/
+<version>/<path>`, in the same relative path structure the citations use. No citation in this
+package is unverifiable as a result of this change.
+
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
 - **v2.3.5** — the version the exhibits cite as operative.
