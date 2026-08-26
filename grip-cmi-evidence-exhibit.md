@@ -16,8 +16,11 @@ On 2026-08-20 CurseForge reviewed this exhibit and removed GRIP-EMS (project 148
 CurseForge. The project has since reappeared, with new releases v2.4.6, v2.4.7 and **v2.4.8**
 (current as of 2026-08-25, SHA-256 `33410ad5630787100b364455d4ddd207c88e453a55125b1a8bde680d67f5cbff`,
 downloaded directly from CurseForge). CurseForge's removal also purged the previously-reported
-file versions from its own systems; the archived copies of every release examined, v1.0.4
-through v2.4.8, are retained with hashes in `evidence/` and `evidence/PROVENANCE.md`.
+file versions from its own systems. **SHA-256 hashes for every release examined, v1.0.4 through
+v2.4.8, are retained in `evidence/SHA256SUMS.txt` and `evidence/PROVENANCE.md`.** The full
+packages for v1.0.4–v2.4.7 are no longer republished here — see the 2026-08-26 addendum in
+`PROVENANCE.md` — but every source file this exhibit cites is published unmodified at
+`evidence/cited-source/<version>/<path>`, so every `FILE:LINE` citation below still resolves.
 
 **All findings below were re-verified against v2.4.8 on 2026-08-26 and hold unchanged.**
 `PlatformID` and `HelpURL` appear zero times anywhere in the addon's code. There is no check
@@ -225,12 +228,12 @@ The copyright-management identifier (`PlatformID`) is gone; the protected conten
 
 ## 10. How a reviewer can verify every line
 
-1. Download GRIP-EMS from CurseForge (`grip-enhanced-macro-sequencer`) and unzip. Lua ships in plain text.
+0. **Two routes, both open.** For the **current release, v2.4.8**, download GRIP-EMS from CurseForge (`grip-enhanced-macro-sequencer`), Wago Addons, or WoWInterface (file 27081) and unzip — Lua ships in plain text, unobfuscated. For the **earlier releases this exhibit cites**, CurseForge purged every pre-v2.4.8 file when it actioned this claim on 2026-08-20, and no platform now serves them; the cited source files are published unmodified in this repository at `evidence/cited-source/<version>/<path>`, at the same relative paths used below. Every step from here resolves against either route. See `evidence/PROVENANCE.md` (2026-08-26 addendum) for why the full packages are no longer republished here.
 2. Open `Import/LegacyMigrate.lua` (or `GSEMigrate.lua` in ≤v1.0.x): confirm the `GSE.Library` / `GSESequences` reads (§4) and the six-field `opts` mapping with no `PlatformID` (§6).
 3. Open `Import/LegacyImport.lua`: confirm `importMeta.sourceVersion = ...MetaData.GSEVersion` (§5).
 4. Open `Import/GRIPExport.lua` (`PrepareExportVersions`): confirm only locale fields are stripped and no `PlatformID` is present (§7).
 5. Full-tree search the GRIP folder for `PlatformID`: confirm zero references in Lua.
-6. In the GSE addon (`GSE/API/Storage.lua`, `SequenceDelta.lua`): confirm `PlatformID` is the GSE.Tools identity, preserved on rename, cleared on duplicate (§3).
+6. In the GSE addon (`GSE/API/Storage.lua`, `SequenceDelta.lua`): confirm `PlatformID` is the GSE.Tools identity, preserved on rename, cleared on duplicate (§3). GSE is a different author's addon under its own licence and is **still archived in full** in this repository as `evidence/GSE-3.3.22.zip`, hashed in `SHA256SUMS.txt`.
 
 ---
 

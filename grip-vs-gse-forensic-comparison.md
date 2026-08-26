@@ -288,11 +288,15 @@ Run against the v2.3.5 archive hashed above (unpack it, or grep the archive dire
 | `Checksum` | 30 | **Not zero, and the claim is not that it is.** GRIP has its own checksum concept. The finding is narrower: GSE's *Ed25519 server-signed* `Checksum` is not carried into what GRIP exports or shares. Do not overstate this row. |
 
 ```bash
-# verify the artifact first, then the counts
-sha256sum -c SHA256SUMS.txt
-unzip -o GRIP-EMS-v2.3.5.zip -d grip235
-grep -ric "PlatformID" grip235/ | grep -v ':0$' || echo "PlatformID: zero occurrences"
+# from evidence/ in this repository - the cited sources, extracted unmodified
+grep -ric "PlatformID" cited-source/v2.3.5/ | grep -v ':0$' || echo "PlatformID: zero occurrences"
+grep -ric "HelpURL"    cited-source/v2.3.5/ | grep -v ':0$' || echo "HelpURL: zero occurrences"
 ```
+
+*The counts above were originally taken across all 182 Lua files of the full v2.3.5 package. The
+full package is no longer published here (`PROVENANCE.md`, 2026-08-26 addendum); `cited-source/`
+carries the files this exhibit cites. Its SHA-256 remains in `SHA256SUMS.txt` for anyone holding
+a copy of the original archive.*
 
 Confirmed on 2026-07-29 against the hashed archive. `PlatformID`, `HelpURL` and `gse.tools` each returned zero across all 182 Lua files.
 

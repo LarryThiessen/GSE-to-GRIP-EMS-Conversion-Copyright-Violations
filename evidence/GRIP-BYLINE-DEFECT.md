@@ -126,18 +126,26 @@ So: the converter strips the ownership identifiers server-side → GRIP's import
 
 ## Reproduce
 
-```
+Run from `evidence/` in this repository:
+
+```bash
 # the defect and the fix, side by side
-unzip -p GRIP-EMS-v2.3.5.zip  '*UI/SequenceEditor.lua' | sed -n '4906,4913p'
-unzip -p GRIP-EMS-v2.3.16.zip '*UI/SequenceEditor.lua' | sed -n '5118,5132p'
+sed -n '4906,4913p' cited-source/v2.3.5/UI/SequenceEditor.lua
+sed -n '5118,5132p' cited-source/v2.3.16/UI/SequenceEditor.lua
 
 # the import defaults that put content on that path
-unzip -p GRIP-EMS-v2.3.5.zip '*Import/LegacyImport.lua' | sed -n '870,879p'
+sed -n '870,879p' cited-source/v2.3.5/Import/LegacyImport.lua
 
 # the guard test that is new in 2.3.16
-unzip -l GRIP-EMS-v2.3.16.zip | grep test_v0_upgrade_guard
-unzip -l GRIP-EMS-v2.3.5.zip  | grep test_v0_upgrade_guard   # absent
+ls cited-source/v2.3.16/Test/test_v0_upgrade_guard.lua   # present
+ls cited-source/v2.3.5/Test/test_v0_upgrade_guard.lua    # absent - no such file
 ```
 
-Archives and hashes: `SHA256SUMS.txt` and `PROVENANCE.md` in this directory.
-Changelog source: CurseForge project 1489414, file `8537834`.
+**Note on the source of these files.** The full v2.3.5 and v2.3.16 packages are no longer
+published in this repository — see the 2026-08-26 addendum in `PROVENANCE.md` for why. The files
+above are the exact cited sources, extracted unmodified from those archives at their original
+relative paths. Hashes for the withdrawn packages remain in `SHA256SUMS.txt` and `PROVENANCE.md`,
+so anyone holding a copy can still confirm byte-identity.
+
+Changelog source: CurseForge project 1489414, file `8537834` (no longer resolves; CurseForge
+purged the pre-v2.4.8 files when it actioned this claim on 2026-08-20).

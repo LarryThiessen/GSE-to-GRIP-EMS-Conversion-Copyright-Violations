@@ -136,6 +136,12 @@ package is unverifiable as a result of this change.
 
 ## Why the archives are here, and why that is not a problem
 
+> **SUPERSEDED as of 2026-08-26 for eight of the nine releases — see the addendum at the top of
+> this file.** The paragraph below was true when written and is retained unaltered, because the
+> rule it states is the rule this package was then held to and the reason the archives came down.
+> It now holds only for **v2.4.8**, which is still published on CurseForge, Wago Addons and
+> WoWInterface.
+
 **The releases remain public on CurseForge.** These copies are not a substitute for an unavailable original — anyone can still download the same files from the same project. That is a *feature* of this evidence, not a gap: a third party can re-download, hash, and confirm byte-identity with what is in this directory. Few evidence exhibits are that easy to check.
 
 **What is not available is the source.** Per the rights holder, the GRIP-EMS author's GitHub repositories are **private**, and CurseForge distributes packaged builds only. So there is no public source tree to read or diff — the only way to examine GRIP's Lua, and therefore the only way to check a single `FILE:LINE` citation in the exhibits, is to obtain a release package and unpack it. That is precisely what these archives are, pinned to fixed hashes so the citations always resolve against the same bytes even if a future release renumbers lines. That is not hypothetical: between v2.3.5 and v2.3.16, `Import/LegacyImport.lua` grew from ~900 to 2,396 lines and one cited range moved, while `Engine/StepFunctions.lua:248-262` and `Import/LegacyMigrate.lua:92-99` stayed identical.
@@ -148,10 +154,31 @@ Keep these apart:
 
 ## How to verify these are genuine
 
+**For `GRIP-EMS-v2.4.8.zip` and `GSE-3.3.22.zip`, both still published:**
+
 1. `sha256sum -c SHA256SUMS.txt` against the archives in this directory.
-2. **Re-download the same files from CurseForge** (project 1489414, the file IDs above), hash them, and compare. The values must match exactly — this is the check that matters, and it is available to anyone.
-3. `data/version_scan_raw.csv` records the file ID and HTTP result for all 64 releases as fetched on 2026-07-12, if the comparison needs a wider baseline.
-4. Any archive that fails step 1 or 2 should be treated as unreliable, not argued around.
+2. **Re-download the same file from the platform** — v2.4.8 from CurseForge project 1489414, Wago
+   Addons, or WoWInterface file 27081; GSE from its own project — hash it, and compare. The values
+   must match exactly. This is the check that matters and it is available to anyone.
+
+**For the eight withdrawn releases (v1.0.4 → v2.4.7), whose packages are no longer published here
+or by any distribution channel:**
+
+3. Their SHA-256 values remain listed above and in `SHA256SUMS.txt`. **Anyone who already holds one
+   of those archives — including the addon's developer, CurseForge, or Wago — can hash their copy
+   and confirm it matches what this package was built from.** That is the check that survives.
+4. The specific source files this package's exhibits cite are published unmodified at
+   `cited-source/<version>/<path>`, at the same relative paths the `FILE:LINE` citations use, for
+   every one of the eight versions. **Every citation in every exhibit resolves against them
+   directly** — no archive needed. 117 files.
+5. `data/version_scan_raw.csv` records the file ID and HTTP result for all 64 releases as fetched
+   on 2026-07-12, if a wider baseline is needed. Note that those CurseForge file IDs **no longer
+   resolve**: CurseForge purged every pre-v2.4.8 file when it actioned this claim on 2026-08-20.
+6. Any archive that fails step 1 or 2 should be treated as unreliable, not argued around.
+
+**If you are reviewing this claim and need a complete package for a version no longer published,
+ask the rights holder.** The eight archives are retained on his own machine, unmodified, with the
+hashes above. They are simply not distributed from this repository.
 
 ## On browser malware warnings
 

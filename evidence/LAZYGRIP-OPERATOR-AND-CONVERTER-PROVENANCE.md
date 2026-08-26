@@ -290,7 +290,7 @@ Merged as PR #27 from `JesperLive/feat/workshop-gse-origin-label`. Message, verb
 >
 > **No gse.tools link and no Discord link is rendered anywhere. helpUrl, platformId and checksum are carried in the payload but are not shown in the UI.**"
 
-That final sentence is material. As at 2026-07-31, the fields are **carried in the exported payload but deliberately not displayed**. This is consistent with the finding already recorded elsewhere in this package: GRIP the addon references `platformId`, `helpUrl` and `gseVersion` **zero times** across its Lua source in both v2.3.5 and v2.3.16, and reads GSE's `Checksum` once, at `UI/ImportPreview.lua:745`, marked *"informational"*, without storing it. The website now passes the owner-identifying fields through; nothing downstream reads them, and nothing shows them to the user.
+That final sentence is material. As at 2026-07-31, the fields are **carried in the exported payload but deliberately not displayed**. This is consistent with the finding already recorded elsewhere in this package: GRIP the addon references `platformId`, `helpUrl` and `gseVersion` **zero times** across its Lua source in both v2.3.5 and v2.3.16, and reads GSE's `Checksum` once, at `Import/ImportPreview.lua:745`, marked *"informational"*, without storing it. The website now passes the owner-identifying fields through; nothing downstream reads them, and nothing shows them to the user.
 
 ---
 

@@ -43,3 +43,6 @@ evidence/GRIP-EMS-v2.3.17.zip
 evidence/GRIP-EMS-v2.3.18.zip
 evidence/GRIP-EMS-v2.4.6.zip
 evidence/GRIP-EMS-v2.4.7.zip
+
+# Local working storage, not published
+evidence/Storage/
