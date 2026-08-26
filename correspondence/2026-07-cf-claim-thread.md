@@ -418,6 +418,49 @@ the four.** Full audit: `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md` and the 
 keep its safe harbour. No fixed period is defined. No arbitrary chase date is set here; a single
 follow-up is reasonable if there is no acknowledgement within a fortnight.
 
+## 6h. Third platform — WoWInterface — complaint filed 2026-08-26
+
+**Why a third filing.** GRIP-EMS is published on three platforms. CurseForge actioned the claim
+on 2026-08-20 and the project subsequently reappeared there (§6g). Wago Addons received a formal
+§512(c) notice on 2026-08-20 (§6f). WoWInterface — file **27081**, listed under the author name
+**MrSataana**, currently serving **v2.4.8** — was still distributing it and had not been contacted.
+
+**No DMCA route exists there.** WoWInterface's Terms of Service, and those of its parent MMOUI,
+contain **no copyright section, no DMCA policy, and no designated agent**. Checked 2026-08-26:
+`wowinterface.com/terms.php` returns 404, and `mmoui.com/?tos` has no "copyright", "DMCA",
+"infringement", "agent" or "takedown" provision anywhere in it. The site's built-in **"Report this
+File"** control requires a registered account and is aimed at broken uploads and comments, not
+copyright.
+
+That left the address MMOUI publishes on its own contact page: **`admins@mmoui.com`**, with the
+instruction to name which of their sites the message concerns.
+
+**Filed as an IP/policy complaint, not a §512 notice** — deliberately. With no designated agent
+published there is nothing to serve, and a sworn notice would carry §512(f) exposure for no
+corresponding benefit. This is the same shape as the CurseForge filing that succeeded: no perjury
+statement, no sworn declaration.
+
+**Sent 2026-08-26 at 16:02** from `scarylarrygames@gmail.com` to `admins@mmoui.com`.
+
+Contents: the reported file and its URL; the works and the All-Rights-Reserved licence; the four
+findings stated as checkable against the addon's own shipped Lua — the migrate bulk-copy, the
+recorded source GSE version establishing knowledge of origin, `PlatformID` and `HelpURL` at **zero
+references in v2.4.8** with no licence check anywhere in the import or export path, and the
+re-encode plus player-to-player distribution with no author-permission check; CurseForge's
+2026-08-20 action quoted and expressly framed as context rather than as a substitute for their own
+review; a link to the evidence package; and the statement that no permission was granted or ever
+requested.
+
+**Only the rights holder's own repository was cited** —
+`github.com/LarryThiessen/GSE-to-GRIP-EMS-Conversion-Copyright-Violations`. The sibling repository
+concerns a different rights holder's claim and was deliberately left out, so the complaint stays on
+one copyright.
+
+**No response yet. No chase date set** — they publish no stated turnaround. If nothing arrives by
+roughly **2026-09-09**, one short follow-up on the same thread is reasonable.
+
+**All three platforms are now on notice.**
+
 ## 6. Awaiting
 
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
@@ -462,6 +505,7 @@ follow-up is reasonable if there is no acknowledgement within a fortnight.
 | **2026-08-20 09:31** | **CLAIM ACTIONED — project 1489414 removed from CurseForge.** Verified: 404, empty files API, gone from the author's listing |
 | — | Counter-claim window open. Nothing in the package altered. Archives retained. |
 | **2026-08-20** | **DMCA §512(c) notice filed with Wago Addons** — second platform, addon still live there |
+| **2026-08-26 16:02** | **Complaint filed with WoWInterface** (`admins@mmoui.com`) — third platform; no DMCA policy or agent published there, so filed as an IP/policy complaint |
 | ~2026-08-14 | Earliest expected response (their stated 10 business days) |
 
 ### Anticipated pushback and how to answer it
