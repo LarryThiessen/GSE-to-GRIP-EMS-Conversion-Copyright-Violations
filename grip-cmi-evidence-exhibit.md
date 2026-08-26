@@ -10,6 +10,26 @@
 
 ---
 
+## Addendum — 2026-08-26: conduct persists after removal and restoration
+
+On 2026-08-20 CurseForge reviewed this exhibit and removed GRIP-EMS (project 1489414) from
+CurseForge. The project has since reappeared, with new releases v2.4.6, v2.4.7 and **v2.4.8**
+(current as of 2026-08-25, SHA-256 `33410ad5630787100b364455d4ddd207c88e453a55125b1a8bde680d67f5cbff`,
+downloaded directly from CurseForge). CurseForge's removal also purged the previously-reported
+file versions from its own systems; the archived copies of every release examined, v1.0.4
+through v2.4.8, are retained with hashes in `evidence/` and `evidence/PROVENANCE.md`.
+
+**All findings below were re-verified against v2.4.8 on 2026-08-26 and hold unchanged.**
+`PlatformID` and `HelpURL` appear zero times anywhere in the addon's code. There is no check
+anywhere in the import or export path for a licence or copyright notice. The developer added
+real, well-engineered protections elsewhere in this same window — a do-not-share flag (v2.4.7)
+and an author-confirmation prompt that closes a related gap this exhibit's byline-defect finding
+documented (v2.4.8) — proving the capability to gate a feature exists and is used when chosen.
+The one field identifying content as belonging to a third-party author has not been restored
+across four releases since the removal. Full detail: `evidence/POST-COMPLAINT-CHANGES-2026-08-07.md`.
+
+---
+
 ## 1. Summary of the claim
 
 I and other creators have authored GSE macro sequences for years. **Every one of my own sequences is flagged Private on GSE.Tools — 100%, without exception —** and all are licensed for **personal use with no redistribution** (§2). The GSE ecosystem binds each unique sequence to an author-owned identity (a `PlatformID` that resolves to the author's GSE.Tools account record).
