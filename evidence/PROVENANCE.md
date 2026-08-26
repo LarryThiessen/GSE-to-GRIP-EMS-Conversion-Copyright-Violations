@@ -16,6 +16,7 @@ Unmodified GRIP-EMS release packages as distributed by CurseForge, retained beca
 | `GRIP-EMS-v2.3.18.zip` | `8578923` | 2026-08-04 | 3,092,514 B | `ec590cc0f78db732739d600578b2d9dbd1fd8564fcdf9a4fc54c3c75dfcbfac9` |
 | `GRIP-EMS-v2.4.6.zip` | *(not a CurseForge file - see note)* | 2026-08-17 | 3,338,043 B | `56a02b2b6138c030bed24a2bdf5ddc3192fe63daa670ad1c2d5432b9f22ea004` |
 | `GRIP-EMS-v2.4.7.zip` | *(not a CurseForge file - see note)* | 2026-08 | 3,338,245 B | `93bdbe66555665476bcfee7ade1e60975e2d5d3eab140db27394766fb936cf72` |
+| `GRIP-EMS-v2.4.8.zip` | *(back on CurseForge - see note)* | 2026-08-25 | 3,431,019 B | `33410ad5630787100b364455d4ddd207c88e453a55125b1a8bde680d67f5cbff` |
 | `GSE-3.3.22.zip` | *(GSE project, not GRIP)* | — | 2,553,456 B | `24a12424632f1a6e2e1298af1871308e0ef36675a98462fc01a200106e52dae9` |
 
 Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **1489414**, `grip-enhanced-macro-sequencer`, author `sirsataana`.
@@ -54,6 +55,41 @@ Hashes are also in `SHA256SUMS.txt`. Source project: CurseForge project **148941
   across `Import/` and `Engine/` remain at **zero**; every protective mechanism is unchanged with
   **zero deletions**. This release shipped after the CurseForge removal and after the Wago DMCA
   notice of 2026-08-20, and the identifier handling was not revisited.
+
+- **v2.4.8** — the project's most recent release, back on **CurseForge** after the
+  2026-08-20 removal. Downloaded by the rights holder directly from CurseForge.
+
+  **This release contains a genuine, well-engineered fix, and it is recorded here in full.**
+  Fork, save and rename were previously dropping the do-not-share flag on copy — a sequence
+  marked do-not-share became shareable simply by being duplicated locally. That is now fixed at
+  all four rebuild sites via a single tracked field list, with a structural test that fails CI if
+  a future sharing field is added without being carried everywhere
+  (`Test/test_rebuild_carry_parity.lua`).
+
+  **A new, separate mechanism was also added:** `GE.IsLocallyAuthored` / `GE.NeedsAuthorConfirm`
+  (`Import/GRIPExport.lua`). Any sequence whose `originalAuthorIdentity` does not match the local
+  player — true of every ordinary migrated GSE sequence, since migration stamps an empty string
+  — now raises a confirmation popup before it can be sent or exported. Their own comment states
+  its scope precisely: *"this is a single confirm naming the author, not a refusal."*
+
+  **It also closes the exact loophole this package's own `GRIP-BYLINE-DEFECT.md` documented.**
+  The auto-claim-on-save path audited there now additionally requires `IsLocallyAuthored`, which
+  is fail-closed false for any empty-identity migrated sequence. Their comment states the
+  tradeoff outright: *"an unmigrated signature is a cosmetic cost; a false authorship stamp is
+  not."* Verified: the byline-defect guard from v2.3.16 is present and this new condition is
+  layered on top of it, not in place of it.
+
+  **What did not change.** `PlatformID` and `HelpURL` remain at **zero references**. The new
+  confirmation is a click-through prompt, not a block, for ordinary migrated content — only
+  `GE.IsNoRedistribute` refuses outright, and that still keys on GSE's `noExport`, which the
+  platform stamps (per the operator, `companion-app/OPERATOR-STATEMENT-2026-08-07.md`) and the
+  GSE addon never writes. Nothing anywhere checks that a sequence carries an All-Rights-Reserved
+  licence — the new confirmation is about *authorship*, not permission. The migrate function
+  that bulk-copies out of GSE is unaffected by any of this.
+
+  A new copyright header appears on the developer's own files (`(c) 2026 Sataana... Not licensed
+  for AI or ML training`). That is a notice on his own code, not a check applied to anyone
+  else's.
 
 - **v1.0.4** — first release in the scan; establishes the GSE-import path existed from the beginning.
 - **v1.9.1** — mid-history control.
