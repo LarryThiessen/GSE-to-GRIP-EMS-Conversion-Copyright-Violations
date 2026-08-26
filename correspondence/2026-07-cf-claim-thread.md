@@ -321,6 +321,39 @@ review. Consequences:
 *(Received in the rights holder's personal mailbox as well as the account address; the message
 header reads "to scarylarrygames", the address the claim was filed from.)*
 
+## 6g. Reported again — conduct persists after restoration — 2026-08-26
+
+**Why this exists.** After the 2026-08-20 removal, GRIP-EMS reappeared on CurseForge under the
+same project ID, 1489414, with new releases v2.4.6, v2.4.7 and v2.4.8. CurseForge's own removal
+purged the previously-reported file versions from its systems — the three file IDs archived and
+cited in the original claim (`8537834`, `8557810`, `8578923`) all now return 404. No public
+notice on the project page or the files API indicates how or why the listing returned; that
+mechanism is **not established** and is not asserted here either way.
+
+**v2.4.8 was downloaded directly from CurseForge and audited on 2026-08-26.** The reported
+conduct is unchanged: `PlatformID` and `HelpURL` remain at zero references, no licence or
+copyright check exists anywhere in the import or export path, and the in-game Migrate function
+still bulk-copies a user's GSE library with no gate on the reproduction itself. In the same
+window the developer added two unrelated, well-engineered protections elsewhere in the addon — a
+do-not-share flag (v2.4.7) and an author-confirmation prompt (v2.4.8) that closes the exact
+loophole `GRIP-BYLINE-DEFECT.md` documented. Both are credited in full in
+`evidence/PROVENANCE.md`. Neither touches the field this claim concerns.
+
+**Sent 2026-08-26**, as a reply into the same acknowledgement thread CurseForge used to confirm
+the 2026-08-20 action (`copyright@curseforge.com`), not a new form submission. Deliberately
+framed as a status report on already-actioned conduct rather than a fresh complaint: states
+plainly it is not asking for a new review, credits the real fixes made since, and cites the
+current release's SHA-256 (`33410ad5630787100b364455d4ddd207c88e453a55125b1a8bde680d67f5cbff`)
+alongside a note that the evidence package now cites the rights holder's own archived hashes for
+pre-removal releases, since CurseForge's own file IDs for them no longer resolve.
+
+The exhibit (`grip-cmi-evidence-exhibit.md`) was updated with a dated addendum re-verifying every
+finding against v2.4.8 before this was sent, and pushed to both repos.
+
+**No new checkpoint date set.** This is a status update on a matter CurseForge has already ruled
+on once, not a fresh filing with its own clock. Watch for either a response or, if the listing
+disappears again, confirmation that it was actioned a second time.
+
 ## 6f. Second platform — Wago Addons — DMCA notice filed 2026-08-20
 
 **Why there is a second filing.** The CurseForge takedown removes the addon from CurseForge and
