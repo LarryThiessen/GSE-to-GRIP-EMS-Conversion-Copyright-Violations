@@ -136,6 +136,12 @@ published alongside it. No motive is asserted.*
 **Verified 2026-08-26 against the shipped v2.4.8 archive**, prompted by the GSE author's own
 report the same day. Both of his observations are correct and are credited here in full.
 
+> **Independently corroborated.** The GSE author tested the shipped addon in the game and
+> reported the result in writing the same evening — captured, with snowflake-decoded
+> timestamps, in `companion-app/OPERATOR-STATEMENT-2026-08-26.md`. His black-box test and this
+> white-box code reading were made separately and agree on **both** what was fixed and what was
+> not.
+
 **He now honours `noExport`.** `Import/LegacyImport.lua:628`, `LI.ResolveNoRedistribute`, reads
 `sequence.MetaData.noExport` and returns true when set. GSE's own do-not-export flag is
 respected.

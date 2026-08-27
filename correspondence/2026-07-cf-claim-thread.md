@@ -278,8 +278,11 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
   > confusion about a statement they never received. When the Wago follow-up goes out (§6f
   > contemplates one after a fortnight, i.e. ~2026-09-03), the plan-to-ship release timeline is
   > worth adding as new material.
-  > **Open action for the rights holder.** If the block rationale was put to CurseForge, correct
-  > the direction with them — the accurate version supports the same conclusion and is verifiable.
+  > **CLOSED 2026-08-26 — correction sent. See §6i.** The direction was corrected to CurseForge
+  > in the existing `copyright@curseforge.com` thread, together with a full disclosure of the
+  > withdrawn "Executed" claim, stating plainly that the submitted text is not archived and the
+  > rationale may never have reached them. The original open action read: if the block rationale
+  > was put to CurseForge, correct the direction with them — the accurate version supports the same conclusion and is verifiable.
   > If it was not, this log sentence is the only thing needing amendment.
 
 ## 6d. Bump sent — 2026-08-14
@@ -517,6 +520,49 @@ one copyright.
 roughly **2026-09-09**, one short follow-up on the same thread is reasonable.
 
 **All three platforms are now on notice.**
+
+
+## 6i. Correction sent — block direction and withdrawn claim — 2026-08-26
+
+**Sent 2026-08-26** by the rights holder, as a reply into the existing
+`copyright@curseforge.com` thread from `scarylarrygames@gmail.com`. **Not a new form
+submission and not a fresh claim** — framed throughout as a correction to a matter CurseForge
+has already reviewed, and it asks for nothing new.
+
+**Why it was sent.** Two things in this package needed correcting to CurseForge, and both were
+volunteered rather than waited on:
+
+1. **The block statement, direction inverted.** §6c recorded that the submission explained the
+   absence of prior contact by saying the developer had blocked the rights holder. It runs the
+   other way: the developer sent an unsolicited GitHub message to the GSE author, the GSE author
+   did not want to engage with it, and **both blocked him on GitHub**. The rights holder then
+   declined direct contact by choice. The developer has not blocked him — he emailed on
+   2026-08-26 and received a reply the same evening, and replied publicly to the rights holder
+   on Reddit on 2026-06-11 (`../evidence/reddit/`). The letter states plainly that the submitted
+   text is not archived, so **whether that rationale ever reached CurseForge is unknown**, and
+   corrects it either way.
+2. **The withdrawn "Executed" claim.** Disclosed in full — that the package had read *"Kind of
+   solved it"* (2026-04-30 16:24:57) as the moment the capability was built, that the developer
+   challenged it, that he was right, and that the rights holder's own capture proved it. Also
+   disclosed: the reattribution of two evidence-table quotes to CzarTheMad.
+
+**What the letter re-states as unaffected**, all from code rather than chat: `PlatformID` and
+`HelpURL` at zero references v1.0.4 through v2.4.8; the release timeline (v1.9.10 on 2026-04-23
+with no field yet to preserve → v2.0.0 on 2026-05-02, the first release facing the field,
+ignoring it → sixty releases since); and the v2.4.8 rewrite of 551 lines of the export path and
+341 of transmission without reading either field. Both repository links included; no
+attachments.
+
+**Why volunteer any of this.** A claimant who reports his own errors before anyone asks is
+harder to disbelieve on everything else — and the developer holds the same 2026-08-26 email
+exchange, so CurseForge would have heard a version of it regardless. Better theirs second.
+
+**No new checkpoint date.** This is a correction on a matter already ruled on once, not a filing
+with its own clock. It does not restart or extend anything.
+
+**Still open at CurseForge:** the §6g re-report of 2026-08-26 (conduct persisting after the
+listing's restoration) remains unanswered.
+
 
 ## 6. Awaiting
 
