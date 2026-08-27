@@ -224,6 +224,17 @@ The copyright-management identifier (`PlatformID`) is gone; the protected conten
 - **A user converting their own installed copy for personal use** is not the target. The actionable conduct is (a) ingesting **other creators'** licensed/gated content and (b) enabling its **redistribution** with the author identifier removed.
 - GRIP **retains the author's free-text label**, so this is not a claim of plagiarism/passing-off. It is a claim of unauthorized redistribution + CMI removal.
 
+> **Re-verified 2026-08-27 against v2.4.8, and it holds.** `Import/LegacyImport.lua` builds the
+> sequence with `author = ""` as a placeholder and then populates it — line 911 from
+> `opts.author`, 936 from `sequence.author`, 977 from GSE's own `MetaData.Author`. The byline is
+> carried through and displayed read-only at export (`ExportFrame.lua:933`).
+> `LI.LEGACY_UNKNOWN_AUTHOR = "Unknown (GSE legacy)"` applies only where an inbound payload names
+> nobody. **CurseForge relied on this in closing the claim on 2026-08-27 and were factually
+> correct to.** The distinction this exhibit has always drawn — byline retained, `PlatformID` and
+> `HelpURL` removed — is the difference between a claim that survives scrutiny and one that does
+> not. Anyone working from this package must keep it. See
+> `correspondence/2026-07-cf-claim-thread.md` §6j.
+
 ---
 
 ## 10. How a reviewer can verify every line

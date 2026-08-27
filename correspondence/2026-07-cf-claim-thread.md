@@ -564,6 +564,111 @@ with its own clock. It does not restart or extend anything.
 listing's restoration) remains unanswered.
 
 
+
+## 6j. CLOSED by CurseForge — claim rejected on the merits — 2026-08-27
+
+**Received 2026-08-27 06:31** (rights holder's local time) from
+`CurseForge Copyright Claims <copyright@curseforge.com>`, addressed to ScaryLarryGames, as a
+reply to the §6i correction. CurseForge state they *"fully re-examined this claim, read both
+your emails, and held an internal consultation."* **"Please consider this case closed."**
+
+### Their reasoning, in three parts
+
+**1. The author-confirmation prompt satisfies them.** *"Before a sequence you wrote can leave a
+player's client and be sent to friends, the addon now names you as the author and requires that
+player to actively confirm."*
+
+**2. Responsibility shifts to the user.** *"It is their decision whether to pass it on, and
+their responsibility if they do so without the right to do so. It's not different from
+downloading and sending it manually."* This is a *Sony*-style argument — a tool with a lawful
+use, misuse attributed to the user.
+
+**3. The local copy is licensed — by the rights holder's own §1.** They quote the SLG-Sequences
+licence back verbatim and conclude: *"A player bringing sequences they have already lawfully
+installed into a different tool, on their own machine, for their own play, is doing exactly what
+that grant permits. The addon carrying out that action on their instruction is therefore not a
+breach of your license."*
+
+### VERIFIED AGAINST THE CODE — their factual claim is correct
+
+**Checked 2026-08-27 against the shipped v2.4.8 archive.** The author name **is** carried
+through on import and displayed:
+
+- `Import/LegacyImport.lua:830` builds `seqData` with `author = ""` as a **placeholder only**.
+- It is then populated: **line 911** from `opts.author`, **line 936** from `sequence.author`, and
+  **line 977** `seqData.author = md.Author` — GSE's own `MetaData.Author`.
+- `Import/GRIPExport.lua` locks `originalAuthor` and `ExportFrame.lua:933` displays it read-only.
+- `LI.LEGACY_UNKNOWN_AUTHOR = "Unknown (GSE legacy)"` is used **only** where an inbound payload
+  names nobody.
+
+> **CORRECTION — the author name is NOT stripped.** An initial reading of the `author = ""`
+> placeholder at line 830 suggested it was. **That reading was wrong and was caught before it
+> reached CurseForge.** Any statement anywhere in this package that GRIP-EMS removes the author's
+> *name* is withdrawn. What is removed is `PlatformID` and `HelpURL` — the account binding and
+> the listing link — not the human-readable byline. **Do not conflate the two.** This
+> distinction is now the difference between a claim that survives and one that does not.
+
+### Why part 3 has real force
+
+*Grokster* and *Sony* liability both require **predicate direct infringement** — this package's
+own memo says so and instructs that it be pleaded, not assumed. §1 of the SLG-Sequences licence
+grants personal, non-commercial use *"in World of Warcraft"* — **not "in GSE"** — *"including
+modifying it for your own personal use."* If a licensee's local conversion falls inside that
+grant, there is no direct infringement on that path and nothing for a tool-provision theory to
+attach to. **Ambiguity in a licence is construed against its drafter, which here is the rights
+holder.** This is the strongest argument made against the claim by anyone to date, and it is
+built entirely from the rights holder's own text.
+
+### What their decision does not reach
+
+1. **`PlatformID` and `HelpURL` are not mentioned anywhere in their response.** Clause 2(d)
+   (no removal or alteration of author or attribution notices) and the §1202 CMI theory are
+   neither accepted nor rejected — they are simply unaddressed.
+2. **"Already lawfully installed" carries the whole argument.** The §1 grant is expressly
+   **non-transferable** and runs to a person who downloaded the Work under it. Supporter-only
+   sequences in the hands of someone never licensed have no §1 grant at all, and the migration
+   function copies an entire installed library indiscriminately rather than a work the user
+   chose. CurseForge reasoned about the clean case.
+3. **§1202(b) does not depend on the licensee's own copy being infringing.** It concerns removal
+   of CMI knowing it will induce, enable, facilitate or conceal infringement — the downstream
+   sharing, not the local copy. A platform applying its own policy does not adjudicate it.
+
+### Standing guidance
+
+- **Do not say the author's name is stripped.** It is not. Verified above.
+- **Do not re-argue §1.** It is ambiguous, the rights holder drafted it, and re-arguing a closed
+  decision costs more than losing it did.
+- **Do not use the word "circumvent."** It points at §1201 anti-circumvention, which this package
+  expressly declines to plead because the SavedVariables are plaintext on the user's own disk.
+  The available theory is *enables* or *facilitates*.
+- **The lever the rights holder controls is §1 itself.** As drafted it permits personal-use
+  modification with no condition preserving owner identifiers. Conditioning that grant would
+  defeat this argument for everything published afterwards. **Prospective only — it does not
+  reach anything already published.**
+- **Expect Wago and WoWInterface to reason the same way.** Both remain unanswered. Neither has
+  been told anything this analysis contradicts, but a follow-up that leans on §1 will likely
+  return the same answer.
+
+## 6k. Reply to the closure — scope of the record — drafted 2026-08-27
+
+Drafted for the rights holder in response to §6j. **Deliberately narrow**: it does not contest
+the decision and does not ask for a reopening. Three moves only —
+
+1. **Concedes the author-name point unprompted**, and withdraws any suggestion in the filings
+   that the name is removed. Conceding a verified error is what makes the rest credible.
+2. **Declines to argue §1**, noting only that CurseForge's conclusion rests on the words
+   *"already lawfully installed"*, which do not describe supporter-only content held by someone
+   never licensed — raised so the record shows the point was not reached, not as a demand.
+3. **Records that `PlatformID` and `HelpURL` were never addressed**, and asks that the closure
+   reflect the CMI point as *raised and not decided* rather than *raised and rejected*.
+
+**Why "raised and not decided" is the ask.** It is realistic, it costs CurseForge nothing to
+allow, and it preserves the position if the matter ever reaches counsel — where §1202 is
+actually justiciable, unlike in a platform policy review.
+
+**Status:** drafted. Record here whether it was sent, and any reply.
+
+
 ## 6. Awaiting
 
 - [x] Case/ticket reference — **#386456** (2026-07-31) — **superseded: misrouted to general support, see §6b**
