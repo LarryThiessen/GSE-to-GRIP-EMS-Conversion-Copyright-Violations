@@ -162,7 +162,17 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 | 9 | 2026-04-30 14:54:20 | Sataana | "You could always 'Clean-Room' something" | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499423669997277275 |
 | 10 | 2026-04-30 16:24:57 | Sataana | "Kind of solved it, not 100% happy though…" (+ **two image attachments**) | https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697 |
 
-**The whole arc — from "worried TL's obfuscation will make this time-prohibited" to "kind of solved it" with two images attached — spans under 4 hours on a single day (12:39–16:24 UTC, 2026-04-30).** That speed is itself notable: it is consistent with using an automated/AI-assisted method to work through TL's commit history rather than manual weeks-long study, corroborating Sataana's own suggestion in message #2 that "some good AI can do it."
+> **WITHDRAWN 2026-08-26.** This paragraph presented the 12:39–16:24 window as an arc from stated
+> difficulty to solved capability. **The 16:24 message is about the addon's own UI at narrow window
+> widths — see the correction at that entry below.** There is no four-hour arc, and no message here
+> dates the moment of execution — which is evidenced by the shipped code instead. The 12:39 message is also **CzarTheMad's**, not
+> Sataana's.
+>
+> The paragraph closed by calling that speed *"consistent with using an automated/AI-assisted
+> method to work through TL's commit history rather than manual weeks-long study."* **That
+> inference falls with the arc it rested on** and is withdrawn with it. Sataana's own suggestion
+> that *"some good AI can do it"* (12:54:22) stands on its own as a statement of proposed method
+> — it needs no timeline to support it, and none is offered.
 
 **Sataana (11:25:17 UTC — the origin message, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499371059013750896)):**
 > "The challenge is to convert every single option, field, data, text etc etc that GSE / EMS has and make it compatible with each other, as well as be included properly within the strings 🙃
@@ -203,8 +213,14 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 > "You could always 'Clean-Room' something"
 
 **Sataana (final, 16:24:57 UTC, with **two attached images**, [permalink](https://ptb.discord.com/channels/1209220571678646323/1209220572270297201/1499446471840239697)):**
-> "Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏"
-> [**two image attachments** — screenshots of the working result. **Correction, 2026-08-01:** earlier
+> "Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😛"
+> [**two image attachments** — **screenshots of the addon's own UI at two different window widths**
+> (a wide layout beside a squashed one over a WoW game view). **Correction, 2026-08-26:** this line
+> previously read "screenshots of the working result," which was an inference and was **wrong**. The
+> capture `19_sataana_2026-04-30_kind-of-solved-it-two-images.png` shows both images; MFDOOM's reply
+> *"the ideal result is the screenshot on the left lmao"* and Sataana's follow-up *"its even worse
+> though, look at what happens if i make it as short as possible as well"* confirm it is a UI-layout
+> conversation, unconnected to GSE. **Correction, 2026-08-01:** earlier
 > versions of this file described a single *video* attachment. The message carries **two images**,
 > confirmed by the rights holder against the live message and corroborated by MFDOOM's reply in
 > the same thread, *"the ideal result is the screenshot on the left lmao"* — which only makes sense
@@ -216,7 +232,7 @@ Every message below was individually right-click → "Copy Message Link"'d in th
 2. **Explicit knowledge of GSE's ARR license**, stated twice ("I cant advise it since the GitHub is under ARR Licence" / "Again, legally I cant advice it") — proves knowing engagement with, and conscious legal hedging around, GSE's license terms while planning to study/derive from GSE's source.
 3. **"Clean-Room" invoked by name** — a real legal term of art (clean-room reverse engineering) — immediately after describing a process that is the OPPOSITE of clean-room (reading TL's actual source commits with AI assistance). Using the term this way, right after describing a non-clean-room method, suggests either misunderstanding of what clean-room requires or an attempt to retroactively characterize the process using the term without following its actual discipline (a clean-room process requires a firewall between the team studying the original and the team writing new code — nothing here suggests that separation existed).
 4. **The disclaimer itself** ("I take no responsibility for anything that happens as a result of my out loud thinking") is worth preserving verbatim — it shows Sataana's own awareness that what he was describing carried legal risk.
-5. **"Kind of solved it"** — follow-up message with **two image attachments** showing the working result, suggesting the plan was acted on shortly after.
+5. ~~**"Kind of solved it"** — follow-up message with two image attachments showing the working result, suggesting the plan was acted on shortly after.~~ **WITHDRAWN 2026-08-26** — the attachments are screenshots of the addon's own UI at different window widths, and the message is unconnected to GSE. See the correction at the 16:24:57 entry above. **This exhibit establishes method, knowledge and planning. It does not date the moment of execution, and no longer claims to — the execution is evidenced by the shipped code in `../RELEASE-DELTA-ANALYSIS-2026-08-26.md`, not by this message.**
 
 ### Corroborating evidence — Sataana's routine use of Claude (AI) for exactly this kind of "parse and figure out the system" work
 
@@ -323,7 +339,7 @@ Clicking into the "strip"/"bypass" search hit revealed this is the **beginning**
 1. Sataana states the goal: bypass GSE's security system that blocks import without GSE.Tools-encoded "secret stuff."
 2. CzarTheMad proposes: strip the GSE.Tools stuff out.
 3. Sataana reframes it as a "basic goal" exercise, then proposes reading TL's ARR-licensed GitHub commits "with AI" to reverse-engineer the system, invoking "Clean-Room" — while disclaiming legal advice/responsibility twice.
-4. Same day, Sataana reports "kind of solved it" with two images.
+4. ~~Same day, Sataana reports "kind of solved it" with two images.~~ **Withdrawn 2026-08-26 — that message concerns UI layout, not GSE.**
 5. Same day (later), CzarTheMad states outright that a "stripped" mass-distributable version would be "against licensing" and pre-denies future involvement.
 6. Same day, CzarTheMad separately names "Slg" (ScaryLarryGames) by handle with an exact Patreon paid-member count, in a thread about the pay-Patreon-then-import-to-EMS workflow.
 
@@ -607,7 +623,7 @@ Each is a native-resolution capture of the Discord message pane, reached by sear
 | 7 | `16_czarthemad_2026-06-18_stripped-masses-against-licensing.png` | CzarTheMad — 2026-06-18 | Knowing that a stripped, mass-released version breaks the licence — and pre-writing the denial. |
 | 8 | `17_sataana_2026-04-30_how-to-bypass-gse-security.png` | Sataana — 2026-04-30 11:25:17 UTC | "how to bypass the new GSE security system" — the origin message of the 4/30 thread. |
 | 9 | `18_sataana_2026-04-30_ARR-licence-maybe-good-AI-can-do-it.png` | Sataana — 2026-04-30 12:54:22 UTC | The ARR licence named, and "Maybe some good AI can do it" — the method, with the legal hedge attached. |
-| 10 | `19_sataana_2026-04-30_kind-of-solved-it-two-images.png` | Sataana — 2026-04-30 16:24:57 UTC | "Kind of solved it" — under four hours after "how to bypass". **Shows the two image attachments**, the primary source for the correction recorded at that entry above. |
+| 10 | `19_sataana_2026-04-30_kind-of-solved-it-two-images.png` | Sataana — 2026-04-30 16:24:57 UTC | **The capture that disproved this package's own "Executed" claim.** Shows both attachments are screenshots of the addon's UI at different window widths, plus MFDOOM's reply and Sataana's follow-up about making it "as short as possible." Retained precisely because it corrects the record. *(This row previously read: "Kind of solved it — under four hours after 'how to bypass'.")* |
 | 11 | `21_sataana_2026-03-21_i-use-ai-tim-uses-ai-to-SLG.png` | Sataana — 2026-03-21 | Accused of building GRIP with AI, he answers by citing the GSE author's own use of it — addressed to SLG. |
 | 12 | `22_czarthemad_2026-04-30_import-gse-strings-into-ems.png` | CzarTheMad — 2026-04-30 | Importing GSE strings into EMS — the second of the two routes in. |
 | 13 | `24_czarthemad_reddit-thread-gse-addon-community.png` | CzarTheMad — 2026-07-09 6:42 PM | Sharing the r/wow thread "We Need to Talk About the GSE Addon Community" into the channel. **He shared it; who wrote it is not established** (see the note at that entry). |

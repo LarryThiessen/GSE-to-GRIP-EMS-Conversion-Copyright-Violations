@@ -44,5 +44,17 @@ evidence/GRIP-EMS-v2.3.18.zip
 evidence/GRIP-EMS-v2.4.6.zip
 evidence/GRIP-EMS-v2.4.7.zip
 
+
+# Loose working copies in the repo root, kept local (2026-08-26). GRIP-EMS-v2.4.8
+# is the current release and remains downloadable from CurseForge, Wago and
+# WoWInterface; GSE-3.3.22 is the rights holder's own addon build. Neither needs
+# to be republished here, and the same rule that withdrew the archives above
+# applies: a package a third party can fetch for themselves does not get mirrored
+# into this repository. Analysis of v2.4.8 lives in
+# evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md; its cited source files are in
+# evidence/cited-source/.
+/GRIP-EMS-v2.4.8.zip
+/GSE-3.3.22.zip
+
 # Local working storage, not published
 evidence/Storage/

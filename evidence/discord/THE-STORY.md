@@ -65,11 +65,38 @@ He knows exactly what he's describing — he says so twice, citing the ARR licen
 
 Clean-room reverse engineering is a real, defined process — one team studies the original, writes a specification with zero code, and hands it to a *second, walled-off* team who never saw the original to build something new. Nothing in this conversation describes that. It describes one person reading the original creator's actual commits, with AI, to build a copy. Using the term here doesn't make it clean-room; it just shows Sataana knew the term existed.
 
-**4:24 PM (16:24 UTC) — under four hours after "how to bypass":**
+**4:24 PM (16:24 UTC) — previously presented here as the moment the plan was executed. WITHDRAWN 2026-08-26:**
 
-> *"Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😏"*
+> *"Kind of solved it, not 100% happy though, because see what happens when I make it narrow 😛"*
 
 — with two images attached, showing his own screen.
+
+> **WITHDRAWN 2026-08-26 — this message is not about GSE.** It was presented here, and in the
+> §1202 memo, as the moment the plan was executed. That was wrong. The rights holder's own
+> capture of the message (`19_sataana_2026-04-30_kind-of-solved-it-two-images.png`) shows the two
+> attachments are **screenshots of the addon's own interface at different window widths** — a wide
+> layout beside a squashed one over a WoW game view. MFDOOM replies *"the ideal result is the
+> screenshot on the left lmao"*, and Sataana continues *"its even worse though, look at what
+> happens if i make it as short as possible as well."* It is a discussion about UI layout. It has
+> no connection to GSE, imports, identifiers or any protection measure. The error was the rights
+> holder's inference, not a misquotation — the words were always accurate; the meaning attached to
+> them was not. Raised by the developer on 2026-08-26 and confirmed against the capture the same
+> day. **What this changes is narrow: no Discord message in this record marks the moment the capability was built, and none is claimed to. Execution itself is not in doubt — it is established by the shipped code, in every release from v1.0.4 to v2.4.8, and does not depend on this thread at all.** The planning is here; the execution is in the addon.
+
+
+**And this is where the release record picks it up.** The last release before this conversation
+was **v1.9.10 on 2026-04-23** — at that point GSE carried no `PlatformID` at all, so there was
+nothing to strip and nothing to preserve. Nine days later, two days after this conversation,
+**v2.0.0 shipped on 2026-05-02**: a major version bump, and the **first GRIP release for which
+the identifier existed at all**. It references `PlatformID` **zero** times and does not carry it
+forward. Neither does any of the **60 releases since**, through v2.4.8 on 2026-08-25.
+
+That is the part of the story that does not depend on reading anyone's intent into a chat
+message. The plan is dated here. The first release that could act on it is dated two days
+later, and the behaviour begins at the exact release where the choice first arose — there is no
+"legacy code from before the field existed" explanation available. See
+`../../data/grip_version_scan.csv` for all 64 releases with CurseForge upload dates, and
+`../RELEASE-DELTA-ANALYSIS-2026-08-26.md` for the line-level changes.
 
 **9:17 PM (21:17:21 UTC), same day.** The conversation turns to money, and CzarTheMad names the rights holder specifically, with a number attached:
 
@@ -170,19 +197,23 @@ The same server also turned up who's behind the anti-GSE YouTube video shared as
 - A proposed method — AI-assisted study of Timothy Luke's private/licensed commit history — floated by the developer himself, with an explicit ARR-license citation and a legal disclaimer attached both times he described it.
 - A team member's direct admission that a stripped, mass-distributed version would violate the license, plus a pre-built denial.
 - Direct, named discussion of the rights holder's Patreon and his content — under a false assumption that it was gated (it is free).
-- A timeline in which "figure out how to bypass it" and "kind of solved it" are under four hours apart.
+- ~~A timeline in which "figure out how to bypass it" and "kind of solved it" are under four hours apart.~~ **Withdrawn 2026-08-26.** The 16:24 message is about the addon's own UI at narrow window widths, not about GSE. See the note at that entry.
 
 **What the record does NOT establish, and shouldn't be overclaimed:**
 - Whether the AI-assisted plan is what *actually* produced GRIP's code, versus manual work — the forensic code diff (`grip-vs-gse-forensic-comparison.md`) shows the shipped code is independently written, not copied line-for-line. This Discord record is about **stated intent and method**, not a confession that specific lines were AI-generated from GSE's source. Both things can be true at once: independently-written code that was built *by studying* GSE's original with AI assistance is still a derivative work, and the method described here is exactly that.
 - Whether "Clean-Room" was ever actually followed as a real process — nothing here shows the walled-off second team a genuine clean-room requires. If anything, invoking the term without following its discipline undercuts a defense built on it, not supports one.
 - The private side of this — DMs, the separate "GRIP Discord" Sataana mentioned, or any staff-only channel this account can't see. This document only covers what's visible in House of Macros' #general. There is very likely more.
+- **That any line of shipped code was written in response to any message here.** Added 2026-08-26. This file once told the story on a four-hour timeline — intent at 12:42, success at 16:24. That reading was wrong, and it is withdrawn above. No causal link between a message and a commit is evidenced anywhere in this package. What the messages establish is **object** — what the speakers said they were trying to do. The execution is established separately, by the releases: the first version facing the identifier shipped two days later and ignored it, and every version since has done the same. Read together they are a plan and a product, and a reader is entitled to draw the obvious conclusion from that. What no one has done is place a commit beside a message, and nothing here needs it.
+- **That the developer said everything attributed to "the team."** Two of the sharpest lines — proposing to strip the GSE.Tools data, and worrying the conversation would be stopped — are **CzarTheMad's**, and are now attributed to him by name wherever they appear. **This corrects authorship, not participation.** The thread is a two-person exchange the developer opened and led: he asked CzarTheMad to state his goal, split it into two problems, set out both routes including decoding the string, proposed reading TL's ARR-licensed commits with AI, and offered the clean-room framing. Six of the nine logged messages are his. Quote the right speaker — and do not argue that he was a bystander to his own conversation.
+
+> **Where the case does not depend on any of this.** The artifact record — `PlatformID` and `HelpURL` absent from every release v1.0.4 through v2.4.8, the same strip offered publicly as a web service, and the export/transmission rewrite in v2.4.8 that still reads neither field — stands entirely on its own. See `../RELEASE-DELTA-ANALYSIS-2026-08-26.md` and the "What this memo claims about intent, stated precisely" section of `../../grip-1202-cmi-analysis.md`. A reader who discounts every Discord message still has that.
 
 ---
 
 ## What's still open
 
 - Full permalinks/timestamps for the remaining lines in the April 30th thread not yet individually confirmed (a few are captured only via the search-panel snippet).
-- The video Sataana posted at 4:24 PM UTC on April 30 — not yet downloaded.
+- ~~The video Sataana posted at 4:24 PM UTC on April 30 — not yet downloaded.~~ **Closed and corrected 2026-08-26.** It was never a video: the 16:24:57 message carries **two image attachments**, both screenshots of GRIP's own UI at different window widths. Captured at `19_sataana_2026-04-30_kind-of-solved-it-two-images.png`. This is the capture that disproved this package's own "Executed" claim.
 - The full GitHub URL Sataana linked (pointed at Timothy Luke's commit history) — attempted, not yet captured cleanly.
 - Identity/context for **Tony_Hronik**, **rtx**, and **peytonjo** — newly surfaced names not on the original watch list.
 - Anything in DMs or the separate "GRIP Discord" server referenced by Sataana — outside this account's visibility.

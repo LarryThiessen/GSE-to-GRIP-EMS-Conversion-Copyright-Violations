@@ -15,7 +15,7 @@ Verified independently the same day: the project page returns **404**, the files
 
 **This is not a verdict, and this repository is not a victory lap.** CurseForge state that the reported party may still file a counter claim, in which case the matter returns to review. **Nothing in this package has been softened, removed or rewritten in light of the outcome.** It stands as it stood — including every dated correction, every withdrawn claim, and every point conceded to the other side. Those concessions are why it held up.
 
-**What this record is for.** It documents what was done, how it was done, and — from the developers' own messages — that it was planned before it was built. A platform applied its own policy to evidence anyone can check for themselves. That is the system working as intended.
+**What this record is for.** It documents what was done and how it was done, from the addon's own shipped code. It also records what the participants said in a public Discord — with each message attributed to its actual speaker, and with one claim built on that record **withdrawn on 2026-08-26** after the developer challenged it and the rights holder's own capture proved him right (see `evidence/discord/THE-STORY.md`). A platform applied its own policy to evidence anyone can check for themselves. That is the system working as intended.
 
 **Note on the archives.** The addon releases cited throughout can no longer be downloaded from CurseForge, Wago Addons or WoWInterface — all three now serve only the current release. **SHA-256 hashes for every one remain recorded** in `evidence/SHA256SUMS.txt` and `evidence/PROVENANCE.md`, and **every source file the exhibits cite is published unmodified in `evidence/cited-source/`**, so every citation still resolves. The full installable packages for v1.0.4→v2.4.7 were withdrawn from this repository on 2026-08-26 at the addon developer's request, once this package's own stated rule for hosting them — that a third party can independently re-download and compare — stopped being true; the 2026-08-26 addendum in `PROVENANCE.md` records what was verified before acting. They are retained unmodified offline. A reviewer needing a complete package should ask the rights holder.
 
@@ -75,7 +75,7 @@ It's a self-contained page (no internet needed) that walks anyone — no technic
 3. It omits the author-bound `PlatformID` — present in no GRIP release.
 4. `Import/GRIPExport.lua` + `Engine/Transmission.lua` re-encode and P2P-share the result with no license/redistribution guard.
 
-5. **The developers documented the intent before they built it** — *"how to bypass the new GSE security system"* → *"strip the gse tools stuff from gse"* → the ARR licence named by name → *"Kind of solved it"* ~4 hours later (`evidence/discord/`). The shipped code matches the plan, in every release.
+5. **The developers documented the intent before they built it** — *"how to bypass the new GSE security system"* (Sataana) → *"strip the gse tools stuff from gse"* (**CzarTheMad**, a different participant) → the ARR licence named by name (`evidence/discord/`). **A fourth link — *"Kind of solved it"* ~4 hours later — was withdrawn 2026-08-26**: that message is about the addon's own UI at narrow window widths, not about GSE. The shipped code matches the plan, in every release.
 
 Grounds, in order of strength:
 - **Direct infringement + license breach (the floor)** — unauthorized reproduction/distribution (17 U.S.C. §106(1),(3)) in breach of the SLG-Sequences license (2(a),(b),(d),3). Needs no CMI theory and no scienter showing.

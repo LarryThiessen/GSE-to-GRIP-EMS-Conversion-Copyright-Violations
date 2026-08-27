@@ -225,6 +225,49 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
 - They recommend contacting the other party first; the submission states why that was not
   realistic (the developer has blocked the rights holder).
 
+  > **CORRECTION — 2026-08-26. The statement names the wrong party. The direction is inverted.**
+  >
+  > **What actually happened, per the rights holder (2026-08-26).** The rights holder and the GSE
+  > author **blocked the developer on GitHub** at the outset of this matter, after the developer
+  > sent the GSE author what the rights holder describes as an AI-generated message the GSE author
+  > did not want to engage with. The rights holder then deliberately declined direct contact and
+  > discussed the matter publicly instead. **A block existed. It ran the other way.**
+  >
+  > **What the developer denies, and he is right on the point he denies.** On 2026-08-26 he wrote:
+  > *"I have never blocked you... the block never existed, and the simplest evidence is this thread.
+  > I emailed you at 17:00 and you replied at 21:19."* He is denying that **he** blocked the rights
+  > holder. That denial is correct and is not contradicted by the above. Separately, the rights
+  > holder posted publicly on Reddit — a long comment setting out the history, signed
+  > "ScaryLarryGames", captured at `evidence/Redditpost ScreenShot.png` (gitignored; local only).
+  > **The developer replied to him there. Located and captured 2026-08-26** — comment `oqycqr4`,
+  > **+195**, posted 2026-06-11 01:47:28 UTC as a **direct reply** to the rights holder's comment
+  > `oqwzfcb` (−24, 2026-06-10 21:20:26 UTC), 4h27m later, in r/wow thread `1u25ulq`. It quotes
+  > the rights holder's words inline throughout, including a section headed *"Things your own
+  > comment settles"* citing three of his phrases with *"your words:"*. Full record, both
+  > permalinks and the verification method: `../evidence/reddit/2026-06-10_reddit-exchange-slg-jesperlive.md`.
+  >
+  > **The qualification that must travel with this.** The reply opens *"This is the only reply
+  > I'll give you"* and closes *"I won't be replying again."* The channel was open on 2026-06-11
+  > and he declared it shut in the same comment. Both facts belong in any statement made about it.
+  >
+  > **Why this matters.** The submission's stated reason for not contacting the other party first
+  > was that the developer had closed the channel. He had not; the rights holder had, by choice.
+  > The underlying proposition survives — direct contact was not going to happen, and none occurred
+  > before 2026-08-26 — but the reason attributes the decision to the wrong party.
+  >
+  > **What is not established.** Whether this rationale ever reached CurseForge. The verbatim text
+  > submitted on 2026-08-02 is **not archived**: the folder this section names,
+  > `Desktop\CF-refile-attachments\`, no longer exists, and the Infringing Content field is
+  > preserved here only as a summary ("the four findings, trimmed to the 2,000-character cap,
+  > 1,991 used"), not reproduced. The sentence above is **this log's summary of the submission**,
+  > not a quotation from it. An earlier version of this correction asserted it "was made to
+  > CurseForge"; that was an inference of the same kind withdrawn elsewhere on this date, and is
+  > retracted.
+  >
+  > **Open action for the rights holder.** If the block rationale was put to CurseForge, correct
+  > the direction with them — the accurate version supports the same conclusion and is verifiable.
+  > If it was not, this log sentence is the only thing needing amendment.
+
 ## 6d. Bump sent — 2026-08-14
 
 Ten business days from the 2026-08-02 acknowledgement expired today with no response. Sent

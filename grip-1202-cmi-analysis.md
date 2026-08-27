@@ -53,13 +53,13 @@ The GSE.Tools server-record identity bound to the author's account; preserved on
 
 **Why the earlier "weak" rating no longer holds.** The prior draft assumed intent would have to be *inferred from the code*, and predicted the defense would win on "we dropped a key our schema has no field for." The contemporaneous record forecloses that:
 
-| Element | Evidence (developers' own words) |
+| Element | Evidence — **speaker named per row** |
 |---|---|
-| Knew GSE protected the data | *"how to bypass the new GSE security system that wont allow import unless it includes some sort of secret stuff encoded by their gse tools website"* |
-| Intended to remove the identifying data | *"Perhaps it would be easier for me to strip the gse tools stuff from gse"* |
-| **Knew the content was licensed** | *"(I cant advise it since the GitHub is under **ARR Licence**)"* — the license named, with a disclaimer attached |
-| Removal was the object, not a side effect | *"I'm worried you'll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited"* |
-| Executed | *"Kind of solved it"* — approx. four hours later; the capability ships in every release since |
+| Knew GSE protected the data — **Sataana** | *"how to bypass the new GSE security system that wont allow import unless it includes some sort of secret stuff encoded by their gse tools website"* |
+| A participant proposed removing it — **CzarTheMad**, answered by the developer | *"Perhaps it would be easier for me to strip the gse tools stuff from gse"* (12:38:03, user `212047896282005505`). **Attribution corrected 2026-08-26** — an earlier version of this table presented all five quotes under the heading "developers' own words," which read as one speaker. It is CzarTheMad's message. What is Sataana's is the **response**: at 12:39 he asks the goal, at 12:42–12:43 he sets out the two routes (migrate vs. decode the string), and at 12:54 he proposes reading TL's ARR-licensed commits with AI. |
+| **Knew a licence was engaged** — **Sataana** | *"(I cant advise it since the GitHub is under **ARR Licence**)"* — the licence named, with a disclaimer attached. **Note the subject:** the ARR licence named here is **TL's source repository**, not sequence content. The developer's position (2026-08-26) is that he declined to advise *because* of the licence and recommended clean-room instead. Both readings are available on the text; this row should not be pleaded as consciousness of guilt without more. |
+| Concern that protection would defeat the effort — **CzarTheMad**, *not* the developer | *"Yes I'm worried you'll stop the conversation in addon. Or TL will do so much obfuscating that it makes it time prohibited"* (12:39:37). **Attribution corrected 2026-08-26.** This row previously read "Removal was the object, not a side effect" and was attributed to the developer. It is CzarTheMad's statement of his own concern. |
+| ~~Executed~~ — **WITHDRAWN 2026-08-26** | This row cited *"Kind of solved it, not 100% happy though, because see what happens when I make it narrow"* (16:24:57) as the moment the capability was built, approximately four hours after the opening message. **That reading is wrong and the row is withdrawn in full.** The rights holder's own capture of that message (`evidence/discord/` image `19_sataana_2026-04-30_kind-of-solved-it-two-images.png`) shows the two attachments are **screenshots of the addon's own user interface at different window widths** — a wide layout beside a squashed one over a WoW game view. MFDOOM replies *"the ideal result is the screenshot on the left lmao"* and Sataana continues *"its even worse though, look at what happens if i make it as short as possible as well."* It is a conversation about UI layout at narrow widths. It has no connection to GSE, imports, identifiers or any protection measure. **What falls with this row is the timeline, not the execution.** No Discord message marks the moment the capability was built, and none is claimed to. The capability itself shipped and is checkable: `PlatformID` and `HelpURL` appear zero times in every release from v1.0.4 through v2.4.8, and v2.4.8 rewrote 551 non-header lines of `Import/GRIPExport.lua` and 341 of `Engine/Transmission.lua` without reading either field. **This thread evidences the planning; `evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md` evidences the execution.** |
 
 This is direct evidence of both prongs. The "innocent format-conversion" explanation — the defense's best argument in the earlier draft — is contradicted by the developers' own words: they did not omit the fields because their schema lacked them; they set out to **strip** them in order to **bypass** a protection they knew guarded licensed content. GRIP's own source comment corroborates (`LegacyMigrate.lua`: *"newer source builds keep the runtime table private … otherwise migrate straight from SavedVariables"*).
 
@@ -77,12 +77,111 @@ This is direct evidence of both prongs. The "innocent format-conversion" explana
 
 **Why it fits this record better than anything else.** The rights holder's framing — *"it's not about whether they did it; they wanted to, planned it, and executed it"* — is, in legal terms, inducement.
 
-- **Clear expression of the unlawful object:** the Discord chain above. Stating the goal as bypassing another project's protection, proposing to strip the owner data, naming the ARR license while planning around it, then announcing success four hours later, is about as close to *Grokster*'s "clear expression" as a real record gets.
-- **Affirmative steps:** the capability shipped, and has shipped in **every release from v1.0.4 through current v2.3.5** (`data/grip_version_scan.csv`); the same operator offers it publicly as a web service on LazyGrip.net.
+- **Clear expression of the unlawful object — narrowed 2026-08-26.** What remains after the corrections to the table above, and it is still substantial: **the developer's own opening message** stating the goal as *"how to bypass the new GSE security system"* (11:25:17); his setting out of the two technical routes, migrate or decode the string (12:42–12:43); and his proposal to read TL's **ARR-licensed** commits with AI (12:54:22), disclaimed twice as he made it. **What this bullet previously also relied on, and no longer does:** proposing to strip the owner data (**CzarTheMad's** words, not the developer's) and *"announcing success four hours later"* (**withdrawn** — that message is about UI layout). Counsel should note the setting: `#general` in the `Lounge` category of a third party's Discord server, not a development channel. That does not neutralise the developer's own statements, but it bears on how much weight a fact-finder gives any single line.
+- **Affirmative steps — now the strongest element, and it rests on code rather than chat.** The capability shipped and has shipped in **every release from v1.0.4 through the current v2.4.8**; the same operator offers it publicly as a web service on LazyGrip.net. `PlatformID` and `HelpURL` appear **zero times** in every release examined. In v2.4.6 the developer changed **8,193 lines** across the addon without touching the export, transmission or identity files at all; in v2.4.8 he rewrote **551 non-header lines of `Import/GRIPExport.lua`** and **341 of `Engine/Transmission.lua`** to add an author-confirmation flow, and still did not read the identifier his own website's converter writes into the payload. See `evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md`. **None of this depends on any Discord message.**
 - **The distributor's own licence says the restrictions must be observed — added in v2.4.8, 2026-08-25.** Section 6 of the rewritten `LICENSE` shipped in the current release states that sequences imported into or shared through the addon "are not part of the Work," that "rights in that content belong to whoever holds them," and that the user is responsible "for observing any restriction the author of that content has placed on it." Shipped in the same archive as code that removes `PlatformID` and `HelpURL` — zero references in that build — and performs no licence or copyright check anywhere in `Import/` or `Engine/`. **The significance is evidentiary, not admissive:** it establishes the distributor's contemporaneous knowledge that third-party restrictions attach to imported content, while the shipped code removes the field that conveys them. Full text and verification in `evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md` §3a.
 - **Predicate direct infringement:** satisfied whenever a user runs the migration with the rights holder's All-Rights-Reserved sequences installed — that reproduction is an unauthorized copy. This element must be **pleaded**, not assumed. It is trivially satisfied, but it is not optional: capability + intent alone, with no resulting copy, is not infringement.
 
 **Honest limits.** *Grokster* liability is not established by capability alone — *Sony Corp. v. Universal City Studios*, 464 U.S. 417 (1984) protects tools with substantial noninfringing uses, and a user migrating **their own** sequences is exactly such a use. What defeats a *Sony* safe harbor is evidence of unlawful **object** — which is what the Discord supplies. **Do not argue this by analogy to contraband** (a tool that is unlawful in itself): the analogy concedes *Sony*'s premise and invites the defence, because a macro sequencer plainly has substantial lawful uses. Argue object, not danger. **And on the v2.4.8 licence disclaimer specifically:** a term instructing the user to observe the author's restrictions does not shift the distributor's own responsibility — *Grokster* liability turns on the distributor's affirmative steps and expressed object, not on what the end user was told. Its evidentiary value runs the other way: it shows the distributor knew such restrictions existed and attached to imported content, in the same release whose code removes the field that conveys them. Counsel should expect it to be raised as a defence and should be ready to use it as evidence of knowledge instead. Expect a fair-use/interoperability defense on the import path.
+
+
+
+### The documented timeline — plan to ship, from release dates
+
+Added 2026-08-26, after the withdrawn "Executed" row. That row tried to date the execution
+from a Discord message and got it wrong. **The release record dates it properly, and does not
+depend on any message.** Source: `data/grip_version_scan.csv`, 64 releases with CurseForge
+upload dates.
+
+| Date | Release / event | GSE had `PlatformID`? | `PlatformID` refs in GRIP | Carries it forward? |
+|---|---|---|---|---|
+| 2026-04-23 | **v1.9.10** — last release before the conversation | **no — the field did not exist yet** | 0 | — |
+| **2026-04-30** | **The `#general` conversation** (11:25–14:54 UTC) | — | — | — |
+| **2026-05-02** | **v2.0.0** — first release after; a major version bump after a 9-day gap | **yes — first release facing the field** | **0** | **NO** |
+| … | 60 further releases | yes | 0 | NO |
+| 2026-08-25 | **v2.4.8** — current | yes | **0** | **NO** |
+
+**Two days** separate the stated plan from the first release that could act on it.
+
+**Why the "first release facing the field" line matters.** Before v2.0.0, GSE carried no
+`PlatformID` at all — there was nothing to strip, and no earlier release can be criticised for
+not preserving it. v2.0.0 is the **first** GRIP release for which the field existed to
+preserve. It preserved none of it. Neither has any of the 60 releases since. The behaviour
+therefore has no "legacy code predates the field" explanation available to it: it begins at
+the exact release where the choice first arose.
+
+**What this establishes.** A documented sequence: the object stated on 2026-04-30, and two
+days later a release that faces the identifier for the first time and ignores it —
+permanently, across 61 releases. **This is circumstantial evidence of intent, and it is the
+ordinary kind.** Intent is almost never proved by direct admission; it is proved by inference
+from conduct, and a fact-finder is entitled to draw the natural inference that a plan stated
+on Thursday and a matching product shipped on Saturday are connected. *Grokster* itself was
+decided on inference from conduct and statements, not on a confession.
+
+**The one thing to keep straight.** What was withdrawn above was not "an inference" — it was a
+**false** one: a message about the addon's window layout, read as an announcement of success.
+The distinction is between an inference whose underlying facts are verified (this one: dated
+releases, counted references, CurseForge's own timestamps) and one whose underlying fact
+turned out to be something else entirely. Plead this sequence with confidence. Do not plead
+that a specific line of code answers a specific message, because no one has put a commit
+beside a message — and that specificity adds nothing the sequence does not already carry.
+
+**Verify it.** `data/grip_version_scan.csv` carries version, upload date, whether GSE had the
+field at that date, the reference count in GRIP, and whether it is carried forward, for all 64
+releases. Upload dates are CurseForge's own.
+
+---
+
+### What this memo claims about intent, stated precisely
+
+Added 2026-08-26, after a message this package had read as proof of execution turned out to
+be about UI layout (see the withdrawn row above). The distinction below should be read into
+every intent statement in this package.
+
+**Established by artifact, not inference.** The capability exists and has shipped in every
+release from v1.0.4 through v2.4.8; `PlatformID` and `HelpURL` appear zero times in every
+release examined; the same operator offers the strip publicly as a web service; the current
+release rewrote the export and transmission paths without reading either field. All of this
+is checkable in `evidence/cited-source/` and `evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md`
+without reference to any chat message.
+
+**Claimed as intent evidence, and dependent on chat.** That the developer opened the
+discussion by naming the goal as bypassing GSE's security system; that he set out two
+technical routes; that he proposed reading All-Rights-Reserved commits with AI. These are
+quoted messages with decoded snowflake timestamps and server permalinks any member can open.
+They are offered as **statements of object under *Grokster*** — what he said he was trying to
+do — not as proof that any particular thing was built in response to them.
+
+**NOT established, and not claimed here:**
+
+- That any **specific line** of shipped code answers any **specific** Discord message. The
+  package once implied this on a four-hour timeline built on a message about window layout;
+  that reading was false and is withdrawn. **This is not a concession that the plan and the
+  product are unconnected** — see the release-date sequence above, where the object is stated
+  on 2026-04-30 and the first release facing the identifier ships two days later and ignores
+  it. That sequence is circumstantial evidence of intent and should be argued as such. What is
+  unavailable is commit-level correspondence, because no one has placed a commit beside a
+  message; nothing turns on it.
+- That the developer **authored** the messages attributed to CzarTheMad. Two of the strongest
+  lines in the original table were another participant's and are now attributed to him by name.
+  **This is a correction of authorship only — it does not detach the developer from the
+  exchange.** The 2026-04-30 thread is a two-person conversation the developer opened
+  (11:25:17), and he answers every one of CzarTheMad's messages: he asks him to state his goal
+  (12:39:11), splits it into "2 separate problems to solve" (12:42:08), sets out both technical
+  routes including decoding the string (12:43:13), proposes reading TL's ARR-licensed commits
+  with AI (12:54:22), and offers the clean-room framing (14:54:20). **Six of the nine logged
+  messages are his.** What is not claimed is that he wrote CzarTheMad's words; what the record
+  does show is that he solicited the goal behind them and supplied the method.
+- That the identifier removal was designed to defeat this rights holder specifically. The
+  mechanism is general and applies to every sequence carrying those fields.
+- That the developer knew the removed fields were this rights holder's CMI at the time the
+  code was written. § 1202(b)'s double scienter is argued from the shipped behaviour and its
+  persistence after notice, not from any admission.
+- That intent, however documented, is itself infringement. Predicate direct infringement must
+  be pleaded and proved; see the bullet above.
+
+Where a reader disagrees with the inference in any intent statement, the artifact case in
+`evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md` stands independently of it.
 
 ---
 
