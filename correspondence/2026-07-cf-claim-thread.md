@@ -666,7 +666,20 @@ the decision and does not ask for a reopening. Three moves only —
 allow, and it preserves the position if the matter ever reaches counsel — where §1202 is
 actually justiciable, unlike in a platform policy review.
 
-**Status:** drafted. Record here whether it was sent, and any reply.
+**SENT 2026-08-27** by the rights holder, into the same `copyright@curseforge.com` thread.
+
+**Nothing further is pending from this side at CurseForge.** The claim is closed (§6j), the
+correction on the block direction was sent (§6i), and this reply records the scope of what was
+decided. Do not send anything further on this matter unless CurseForge writes first — three
+messages after a closure is the point at which a claimant stops being credible.
+
+**If CurseForge replies**, record it here. The realistic outcomes are: no reply at all (most
+likely — they closed the case and this asks nothing of them); a short acknowledgement; or a
+statement on whether the CMI point was considered. Any of the three is useful. None of them
+reopens anything.
+
+**If the developer files a counter claim** at some later point, the matter returns to review on
+CurseForge's own initiative, not on a further submission from the rights holder.
 
 
 ## 6. Awaiting
