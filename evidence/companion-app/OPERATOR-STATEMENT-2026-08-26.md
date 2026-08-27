@@ -7,8 +7,17 @@ what it does and does not now honour. The **server operator and addon author tes
 and reported the result. His account and this package's independent code reading agree — see
 "Two independent verifications" below.
 
-**Provenance.** Direct messages to the rights holder, captured in
-`claim-screenshots/`. **Verbatim below, including original typos.**
+**Provenance.** Direct messages to the rights holder, captured in `claim-screenshots/`:
+
+| Message | Capture | SHA-256 (first 16) |
+|---|---|---|
+| 8:13 PM | `34_timothyluke_2026-08-26_v248-honours-noexport-wont-convert-gsetools.png` | `e79a22421d666805` |
+| 8:14 PM | `35_timothyluke_2026-08-26_ingame-and-gse-lua-still-converted.png` | `a9db8b81eaa737cf` |
+
+Supplied by the rights holder 2026-08-26 as `Discord_5dnPXsxH9w.zip`; renamed on filing, bytes
+unaltered. Identical copies are held in the image vault at
+`C:\Git\Image-Vault\grip-evidence\`. Each capture was read and checked against the
+transcription below before filing. **Verbatim below, including original typos.**
 
 | Message ID | UTC (decoded from the snowflake) | Local (UTC−5) |
 |---|---|---|
