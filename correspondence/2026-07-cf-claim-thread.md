@@ -264,6 +264,20 @@ Paste sheet and both attachments kept together in `Desktop\CF-refile-attachments
   > CurseForge"; that was an inference of the same kind withdrawn elsewhere on this date, and is
   > retracted.
   >
+
+  >
+  > **Scope of this correction — CurseForge only. Checked 2026-08-26.** The Wago §512(c) notice
+  > (§6f) and the WoWInterface complaint (§6h) were searched for this statement and for the
+  > withdrawn "Executed" claim. **Neither appears in either filing.** The block rationale is
+  > specific to CurseForge's "contact the other party first" guidance, which has no counterpart
+  > at the other two platforms. The archived complaint text (`curseforge-complaint-final.md`)
+  > contains no reference to the Discord record at all — it is built entirely on file-and-line
+  > code citations — and the Wago notice cites the 2026-04-30 thread only as **planning**, which
+  > is unaffected by the withdrawal and is now better evidenced by the release-date sequence.
+  > **No correction is owed to Wago or WoWInterface.** Sending one unprompted would introduce
+  > confusion about a statement they never received. When the Wago follow-up goes out (§6f
+  > contemplates one after a fortnight, i.e. ~2026-09-03), the plan-to-ship release timeline is
+  > worth adding as new material.
   > **Open action for the rights holder.** If the block rationale was put to CurseForge, correct
   > the direction with them — the accurate version supports the same conclusion and is verifiable.
   > If it was not, this log sentence is the only thing needing amendment.

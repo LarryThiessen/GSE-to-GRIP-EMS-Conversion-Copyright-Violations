@@ -86,6 +86,39 @@ This is direct evidence of both prongs. The "innocent format-conversion" explana
 
 
 
+
+### v2.4.8 honours GSE's own protections — verified 2026-08-26
+
+Reported by the GSE author and verified against the shipped archive the same day. **Both
+observations are correct.** v2.4.8 honours GSE's `noExport` flag
+(`Import/LegacyImport.lua:628`), and refuses GSE.Tools' encrypted `!GSE3!+` exports outright
+before any decode is attempted (`Import/Serialization.lua:93`, enforced at eight call sites).
+Sequences exported through GSE.Tools with the current encryption are beyond GRIP's reach. This
+is a genuine fix and is credited.
+
+**What remains, stated precisely.** Plain `!GSE3!` still imports — raw in-game exports and
+sequences copied from a user's own `GSE.lua`. On that path the importer builds `importMeta` and
+**preserves `sourceVersion` and `sourceChecksum` from `MetaData`**, while `PlatformID` and
+`HelpURL` remain at **zero references across all 220 Lua files**. He reads the metadata table,
+copies the checksum out of it, and passes over the owner identifier in the same table. That is a
+selection within a parsed structure, not a failure to parse it — and it is stronger evidence of
+the scienter §1202(b) requires than the earlier "zero references" framing was.
+
+**The answer to "use the encrypted export, then."** Copyright subsists on creation; §102
+requires no registration, no notice and no technical protection measure. §1202 protects
+*information*, and its removal is actionable whether or not the work was ever encrypted — the
+provision keyed to technical measures is §1201, which this memo declines to plead (¶4 below).
+**A rights holder cannot be required to adopt a third party's platform in order to have their
+licence observed.** As shipped, an author who exports from the game — the ordinary case, and
+the only route open to someone without a GSE.Tools account — has the field identifying them
+as owner discarded on import.
+
+**For counsel.** This narrows the *reach* of the conduct, not the *right*. Plead the narrowing
+openly: it covers the majority of sequence authors, who publish All-Rights-Reserved content
+without a platform account, and volunteering it costs nothing that having it discovered would
+not cost more. Full verification: `evidence/RELEASE-DELTA-ANALYSIS-2026-08-26.md` §3b.
+
+
 ### The documented timeline — plan to ship, from release dates
 
 Added 2026-08-26, after the withdrawn "Executed" row. That row tried to date the execution

@@ -130,6 +130,67 @@ that communicates them, and asks the user nothing about licence at any point.
 from a licence the developer wrote and published, set beside a verifiable property of the code
 published alongside it. No motive is asserted.*
 
+
+## 3b. v2.4.8 honours GSE's protections — and what that leaves
+
+**Verified 2026-08-26 against the shipped v2.4.8 archive**, prompted by the GSE author's own
+report the same day. Both of his observations are correct and are credited here in full.
+
+**He now honours `noExport`.** `Import/LegacyImport.lua:628`, `LI.ResolveNoRedistribute`, reads
+`sequence.MetaData.noExport` and returns true when set. GSE's own do-not-export flag is
+respected.
+
+**He now refuses GSE.Tools' encrypted exports outright.** `Data/Defaults.lua:946` defines
+`GSE3_ENCRYPTED_PREFIX = "!GSE3!+"`, commented *"encrypted legacy sequences
+(protected/subscriber-only; not importable)"*. `Import/Serialization.lua:93` refuses that format
+**before any decode is attempted**, returning: *"This is an encrypted sequence and GRIP-EMS
+can't import it. The source sequencer locks its protected and subscriber-only content so other
+addons can't read it."* The check appears at **eight call sites** across `ImportPreview.lua`,
+`LegacyImport.lua` and `LegacyMigrate.lua` — it is implemented deliberately, not incidentally.
+
+**This is a real fix and the package credits it.** Sequences exported through GSE.Tools with the
+current encryption are out of GRIP's reach entirely.
+
+### What it does not resolve
+
+**Plain `!GSE3!` still imports — raw in-game exports, and sequences copied from a user's own
+`GSE.lua`.** On that path, `Import/LegacyImport.lua:849-857` builds `importMeta` and preserves
+**`sourceVersion`** (from `MetaData.GSEVersion`) and **`sourceChecksum`** (from
+`MetaData.Checksum`). `PlatformID` and `HelpURL` remain at **zero references across all 220 Lua
+files in the release.**
+
+That is the finding, stated precisely: **he reads the metadata table, copies the checksum out of
+it, and walks past the owner identifier sitting in the same table.** This is materially stronger
+than the earlier "zero references" framing. It is not a failure to parse GSE's structure — the
+structure is parsed, and a selection is made within it.
+
+### Why "use the encrypted export then" is not an answer
+
+**Copyright subsists on creation.** 17 U.S.C. §102 requires no registration, no notice, and no
+technical protection measure. An author who has never opened a GSE.Tools account holds precisely
+the same rights in their sequences as one who publishes through it.
+
+**§1202 concerns information, not locks.** CMI is defined as *information* conveyed with a work;
+its removal is actionable irrespective of whether the work was encrypted. The provision that
+turns on technical protection is **§1201**, which this package expressly declines to plead
+(`grip-1202-cmi-analysis.md`, Bottom line ¶4) because the SavedVariables are plaintext on the
+user's own disk.
+
+**The practical consequence.** As shipped, respect for an All-Rights-Reserved sequence is
+contingent on its author having used a particular third party's platform and its current
+encryption. An author who exports from the game — the ordinary case, and the only route
+available to someone without a GSE.Tools account — receives no such treatment, and the field
+identifying them as owner is discarded on import. **No rights holder should have to adopt
+another party's platform to have their licence observed.**
+
+**Scope note for any filing.** The conduct complained of now concerns unprotected in-game
+exports and local `GSE.lua` copies. That is a narrowing of *reach*, not of *right*, and it
+covers the majority of sequence authors, who publish All-Rights-Reserved content without a
+platform account. State the narrowing plainly — volunteering it costs nothing and the
+alternative is having it found.
+
+---
+
 ## 4. Method
 
 ```bash

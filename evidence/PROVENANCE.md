@@ -193,3 +193,27 @@ Recorded because it affects the verification route this document recommends, and
 ## Scope note
 
 These are the author's own published release packages, retained unmodified for evidentiary comparison and cited for the purpose of criticism and analysis. They are not offered as a download of the addon, and no derivative or modified build is distributed here.
+
+
+### v2.4.8 — GSE.Tools encrypted exports refused, `noExport` honoured (verified 2026-08-26)
+
+Reported by the GSE author 2026-08-26 and verified against the shipped archive the same day.
+Credited here on the same terms as the do-not-share gate (v2.3.17) and the fork/rename fix
+(v2.4.7).
+
+- **`noExport` honoured.** `Import/LegacyImport.lua:628` — `LI.ResolveNoRedistribute` reads
+  `sequence.MetaData.noExport` and returns true when set.
+- **`!GSE3!+` refused before decode.** `Data/Defaults.lua:946` defines the encrypted prefix as
+  *"protected/subscriber-only; not importable"*; `Import/Serialization.lua:93` refuses it with a
+  clear user-facing message and writes nothing. Enforced at **eight call sites** across
+  `ImportPreview.lua`, `LegacyImport.lua` and `LegacyMigrate.lua`.
+
+**This is a real protection and it works.** Sequences exported through GSE.Tools with the
+current encryption cannot be imported by GRIP-EMS.
+
+**It does not close the claim.** Plain `!GSE3!` — raw in-game exports and copies from a user's
+own `GSE.lua` — still import, and on that path `PlatformID` and `HelpURL` remain at zero
+references while `sourceChecksum` and `sourceVersion` are preserved from the same `MetaData`
+table. See `RELEASE-DELTA-ANALYSIS-2026-08-26.md` §3b, including why an author cannot be
+required to use a third party's platform to have their licence observed.
+
